@@ -1,0 +1,1263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Healthcare | Freedoms Party of Square Country</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/feather-icons"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            freedoms: '#C8102E',
+            freedomsDark: '#9F0C24'
+          },
+          fontFamily: {
+            serif: ['Georgia', 'serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    .nav-link {
+      position: relative;
+    }
+
+    .nav-link::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -7px;
+      width: 0;
+      height: 2px;
+      background: #C8102E;
+      transition: width 0.25s ease;
+    }
+
+    .nav-link:hover::after,
+    .nav-link.active::after {
+      width: 100%;
+    }
+
+    .commitment {
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .commitment:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 15px 35px rgba(0,0,0,0.07);
+    }
+  </style>
+</head>
+
+<body class="bg-white text-gray-900">
+
+
+<!-- ========================================================= -->
+<!-- NAVIGATION -->
+<!-- ========================================================= -->
+
+<header class="border-b border-gray-100 bg-white">
+
+  <div class="max-w-7xl mx-auto px-6">
+
+    <div class="h-20 flex items-center justify-between">
+
+      <!-- LOGO -->
+      <a href="index.html" class="flex items-center gap-3">
+
+        <div class="w-12 h-12 bg-freedoms flex items-center justify-center">
+          <span class="text-white font-black text-2xl">F</span>
+        </div>
+
+        <div class="leading-tight">
+
+          <div class="font-black text-xl tracking-tight">
+            FREEDOMS
+          </div>
+
+          <div class="text-xs tracking-[0.22em] text-gray-500 font-semibold">
+            SQUARE COUNTRY
+          </div>
+
+        </div>
+
+      </a>
+
+
+      <!-- DESKTOP NAV -->
+      <nav class="hidden lg:flex items-center gap-9 text-sm font-semibold">
+
+        <a href="about.html" class="nav-link">
+          About
+        </a>
+
+        <a href="policies.html"
+           class="nav-link active text-freedoms">
+          Our policies
+        </a>
+
+        <a href="team.html" class="nav-link">
+          Our team
+        </a>
+
+        <a href="news.html" class="nav-link">
+          News
+        </a>
+
+        <a href="contact.html" class="nav-link">
+          Contact
+        </a>
+
+        <a href="#join"
+           class="bg-freedoms text-white px-6 py-3 rounded-md
+                  hover:bg-freedomsDark transition">
+          Join us
+        </a>
+
+      </nav>
+
+
+      <!-- MOBILE BUTTON -->
+      <button
+        onclick="toggleMenu()"
+        class="lg:hidden p-2"
+        aria-label="Open menu">
+
+        <i data-feather="menu"></i>
+
+      </button>
+
+    </div>
+
+  </div>
+
+
+  <!-- MOBILE NAV -->
+  <div id="mobileMenu"
+       class="hidden border-t bg-white lg:hidden">
+
+    <div class="px-6 py-5 space-y-4 text-sm font-semibold">
+
+      <a href="about.html"
+         onclick="toggleMenu()"
+         class="block">
+        About
+      </a>
+
+      <a href="policies.html"
+         onclick="toggleMenu()"
+         class="block text-freedoms">
+        Our policies
+      </a>
+
+      <a href="team.html"
+         onclick="toggleMenu()"
+         class="block">
+        Our team
+      </a>
+
+      <a href="news.html"
+         onclick="toggleMenu()"
+         class="block">
+        News
+      </a>
+
+      <a href="contact.html"
+         onclick="toggleMenu()"
+         class="block">
+        Contact
+      </a>
+
+      <a href="#join"
+         onclick="toggleMenu()"
+         class="block bg-freedoms text-white text-center
+                px-5 py-3 rounded-md">
+        Join us
+      </a>
+
+    </div>
+
+  </div>
+
+</header>
+
+
+<!-- ========================================================= -->
+<!-- BREADCRUMB -->
+<!-- ========================================================= -->
+
+<div class="border-b border-gray-200 bg-gray-50">
+
+  <div class="max-w-7xl mx-auto px-6 py-4">
+
+    <div class="flex flex-wrap items-center gap-2
+                text-sm text-gray-500">
+
+      <a href="index.html"
+         class="hover:text-freedoms">
+        Home
+      </a>
+
+      <i data-feather="chevron-right" class="w-4 h-4"></i>
+
+      <a href="policies.html"
+         class="hover:text-freedoms">
+        Our policies
+      </a>
+
+      <i data-feather="chevron-right" class="w-4 h-4"></i>
+
+      <span class="text-gray-900 font-semibold">
+        Healthcare
+      </span>
+
+    </div>
+
+  </div>
+
+</div>
+
+
+<!-- ========================================================= -->
+<!-- HERO -->
+<!-- ========================================================= -->
+
+<section class="bg-freedoms text-white">
+
+  <div class="max-w-7xl mx-auto px-6 py-20 md:py-28">
+
+    <div class="max-w-5xl">
+
+      <p class="uppercase tracking-[0.3em]
+                text-sm font-bold text-red-100 mb-6">
+        Our health policy
+      </p>
+
+      <h1 class="serif text-5xl md:text-7xl lg:text-8xl
+                 font-bold leading-[0.92]">
+        Healthcare
+        <span class="block">for everyone.</span>
+      </h1>
+
+      <p class="mt-8 text-lg md:text-xl text-red-50
+                max-w-3xl leading-relaxed">
+        A stronger public health system where people can
+        see a doctor, access treatment and receive the care
+        they need — when they need it.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ========================================================= -->
+<!-- INTRO -->
+<!-- ========================================================= -->
+
+<section class="py-20 md:py-28">
+
+  <div class="max-w-7xl mx-auto px-6">
+
+    <div class="grid lg:grid-cols-[0.8fr_1.5fr] gap-16">
+
+      <div>
+
+        <p class="uppercase tracking-[0.2em]
+                  text-freedoms text-sm font-bold mb-4">
+          Our position
+        </p>
+
+        <h2 class="serif text-4xl md:text-5xl
+                   font-bold leading-tight">
+          Healthcare is a
+          <span class="text-freedoms">
+            public right.
+          </span>
+        </h2>
+
+      </div>
+
+
+      <div class="text-gray-600 text-lg leading-relaxed">
+
+        <p>
+          The Freedoms Party believes that your ability to
+          receive quality healthcare should not depend on
+          your income, your postcode or your circumstances.
+        </p>
+
+        <p class="mt-6">
+          Our public health system should be properly
+          supported, well managed and accessible to every
+          person in Square Country.
+        </p>
+
+        <p class="mt-6">
+          We will focus on reducing waiting times, improving
+          access to primary care, supporting our healthcare
+          workforce and making sure hospitals have the
+          resources they need.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ========================================================= -->
+<!-- BIG STATEMENT -->
+<!-- ========================================================= -->
+
+<section class="bg-gray-50 py-20 md:py-24">
+
+  <div class="max-w-7xl mx-auto px-6">
+
+    <div class="border-l-4 border-freedoms
+                pl-7 md:pl-10 max-w-5xl">
+
+      <p class="serif text-3xl md:text-5xl
+                font-bold leading-tight">
+        "When you need healthcare,
+        you shouldn't have to wonder
+        whether you can get it."
+      </p>
+
+      <p class="mt-6 text-gray-500 font-semibold">
+        — Lisa Bancroft, Health Spokesperson
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ========================================================= -->
+<!-- COMMITMENTS -->
+<!-- ========================================================= -->
+
+<section class="py-20 md:py-28" id="commitments">
+
+  <div class="max-w-7xl mx-auto px-6">
+
+    <div class="mb-14">
+
+      <p class="uppercase tracking-[0.2em]
+                text-freedoms text-sm font-bold mb-3">
+        Our commitments
+      </p>
+
+      <h2 class="serif text-4xl md:text-5xl font-bold">
+        A health system that puts people first.
+      </h2>
+
+      <p class="mt-5 text-gray-600 text-lg max-w-2xl">
+        Our plan focuses on access, capacity and quality —
+        making sure the system is there when people need it.
+      </p>
+
+    </div>
+
+
+    <div class="grid md:grid-cols-2 gap-6">
+
+
+      <!-- 01 -->
+
+      <article class="commitment border border-gray-200
+                      p-8 md:p-10">
+
+        <div class="flex items-start gap-6">
+
+          <div class="text-freedoms font-black text-3xl">
+            01
+          </div>
+
+          <div>
+
+            <h3 class="serif text-2xl md:text-3xl font-bold">
+              Cut hospital waiting times
+            </h3>
+
+            <p class="text-gray-600 mt-4 leading-relaxed">
+              We will increase hospital capacity and focus
+              resources on reducing unnecessary delays for
+              patients waiting for appointments, procedures
+              and treatment.
+            </p>
+
+          </div>
+
+        </div>
+
+      </article>
+
+
+      <!-- 02 -->
+
+      <article class="commitment border border-gray-200
+                      p-8 md:p-10">
+
+        <div class="flex items-start gap-6">
+
+          <div class="text-freedoms font-black text-3xl">
+            02
+          </div>
+
+          <div>
+
+            <h3 class="serif text-2xl md:text-3xl font-bold">
+              Strengthen primary care
+            </h3>
+
+            <p class="text-gray-600 mt-4 leading-relaxed">
+              Better access to GPs, nurses and community
+              health services can help people get treatment
+              earlier and reduce pressure on hospitals.
+            </p>
+
+          </div>
+
+        </div>
+
+      </article>
+
+
+      <!-- 03 -->
+
+      <article class="commitment border border-gray-200
+                      p-8 md:p-10">
+
+        <div class="flex items-start gap-6">
+
+          <div class="text-freedoms font-black text-3xl">
+            03
+          </div>
+
+          <div>
+
+            <h3 class="serif text-2xl md:text-3xl font-bold">
+              Back our healthcare workers
+            </h3>
+
+            <p class="text-gray-600 mt-4 leading-relaxed">
+              Doctors, nurses, paramedics, carers and other
+              health professionals deserve safe workplaces,
+              proper support and the resources to do their jobs.
+            </p>
+
+          </div>
+
+        </div>
+
+      </article>
+
+
+      <!-- 04 -->
+
+      <article class="commitment border border-gray-200
+                      p-8 md:p-10">
+
+        <div class="flex items-start gap-6">
+
+          <div class="text-freedoms font-black text-3xl">
+            04
+          </div>
+
+          <div>
+
+            <h3 class="serif text-2xl md:text-3xl font-bold">
+              Improve mental healthcare
+            </h3>
+
+            <p class="text-gray-600 mt-4 leading-relaxed">
+              Mental healthcare should be treated as an
+              essential part of healthcare, with accessible
+              services for people who need support.
+            </p>
+
+          </div>
+
+        </div>
+
+      </article>
+
+
+      <!-- 05 -->
+
+      <article class="commitment border border-gray-200
+                      p-8 md:p-10">
+
+        <div class="flex items-start gap-6">
+
+          <div class="text-freedoms font-black text-3xl">
+            05
+          </div>
+
+          <div>
+
+            <h3 class="serif text-2xl md:text-3xl font-bold">
+              Modernise hospitals
+            </h3>
+
+            <p class="text-gray-600 mt-4 leading-relaxed">
+              We will invest in hospital facilities,
+              equipment and technology so healthcare
+              professionals have the tools they need.
+            </p>
+
+          </div>
+
+        </div>
+
+      </article>
+
+
+      <!-- 06 -->
+
+      <article class="commitment border border-gray-200
+                      p-8 md:p-10">
+
+        <div class="flex items-start gap-6">
+
+          <div class="text-freedoms font-black text-3xl">
+            06
+          </div>
+
+          <div>
+
+            <h3 class="serif text-2xl md:text-3xl font-bold">
+              Proceed with the Queenstown City Hospital
+            </h3>
+
+            <p class="text-gray-600 mt-4 leading-relaxed">
+              We will invest in the Queenstown City Hospital that was put on indefinite hold by the Liberty Government.
+            </p>
+
+          </div>
+
+        </div>
+
+      </article>
+
+
+      <!-- 07 -->
+
+      <article class="commitment border border-gray-200
+                      p-8 md:p-10">
+
+        <div class="flex items-start gap-6">
+
+          <div class="text-freedoms font-black text-3xl">
+            07
+          </div>
+
+          <div>
+
+            <h3 class="serif text-2xl md:text-3xl font-bold">
+              Focus on prevention
+            </h3>
+
+            <p class="text-gray-600 mt-4 leading-relaxed">
+              Prevention and early intervention can keep
+              people healthier and reduce pressure on the
+              health system over the long term.
+            </p>
+
+          </div>
+
+        </div>
+
+      </article>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ========================================================= -->
+<!-- ACCESS -->
+<!-- ========================================================= -->
+
+<section class="bg-gray-950 text-white py-20 md:py-28">
+
+  <div class="max-w-7xl mx-auto px-6">
+
+    <div class="grid lg:grid-cols-2 gap-16">
+
+      <div>
+
+        <p class="uppercase tracking-[0.2em]
+                  text-red-300 text-sm font-bold mb-5">
+          Access
+        </p>
+
+        <h2 class="serif text-4xl md:text-5xl
+                   font-bold leading-tight">
+          Care when you need it.
+        </h2>
+
+        <p class="mt-6 text-gray-300 text-lg leading-relaxed">
+          Access to healthcare should not depend on where
+          you live or whether you can afford to wait.
+          We will make access and timely treatment a
+          central measure of health system performance.
+        </p>
+
+      </div>
+
+
+      <div class="space-y-8">
+
+
+        <div class="border-b border-white/20 pb-8">
+
+          <div class="flex gap-5">
+
+            <i data-feather="clock"
+               class="text-red-300 shrink-0 mt-1">
+            </i>
+
+            <div>
+
+              <h3 class="font-bold text-xl">
+                Shorter waits
+              </h3>
+
+              <p class="text-gray-400 mt-2 leading-relaxed">
+                Patients should receive appointments,
+                diagnostics and treatment within reasonable
+                and transparent timeframes.
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <div class="border-b border-white/20 pb-8">
+
+          <div class="flex gap-5">
+
+            <i data-feather="map-pin"
+               class="text-red-300 shrink-0 mt-1">
+            </i>
+
+            <div>
+
+              <h3 class="font-bold text-xl">
+                Better regional healthcare
+              </h3>
+
+              <p class="text-gray-400 mt-2 leading-relaxed">
+                People outside major centres deserve access
+                to high-quality healthcare close to home.
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <div class="border-b border-white/20 pb-8">
+
+          <div class="flex gap-5">
+
+            <i data-feather="phone"
+               class="text-red-300 shrink-0 mt-1">
+            </i>
+
+            <div>
+
+              <h3 class="font-bold text-xl">
+                Easier access to primary care
+              </h3>
+
+              <p class="text-gray-400 mt-2 leading-relaxed">
+                We will support services that help people
+                access appropriate care before conditions
+                become more serious.
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <div>
+
+          <div class="flex gap-5">
+
+            <i data-feather="heart"
+               class="text-red-300 shrink-0 mt-1">
+            </i>
+
+            <div>
+
+              <h3 class="font-bold text-xl">
+                Care based on need
+              </h3>
+
+              <p class="text-gray-400 mt-2 leading-relaxed">
+                Healthcare decisions should be based on
+                clinical need and patient wellbeing.
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ========================================================= -->
+<!-- HEALTHCARE WORKFORCE -->
+<!-- ========================================================= -->
+
+<section class="py-20 md:py-28">
+
+  <div class="max-w-7xl mx-auto px-6">
+
+    <div class="grid lg:grid-cols-3 gap-12">
+
+      <div>
+
+        <p class="uppercase tracking-[0.2em]
+                  text-freedoms text-sm font-bold mb-4">
+          Our workforce
+        </p>
+
+        <h2 class="serif text-4xl md:text-5xl font-bold">
+          Backing the people who care for us.
+        </h2>
+
+      </div>
+
+
+      <div class="lg:col-span-2 grid md:grid-cols-2 gap-10">
+
+
+        <div>
+
+          <div class="w-11 h-11 bg-red-50 text-freedoms
+                      flex items-center justify-center mb-5">
+
+            <i data-feather="users"></i>
+
+          </div>
+
+          <h3 class="font-bold text-xl">
+            Recruit and retain staff
+          </h3>
+
+          <p class="text-gray-600 mt-3 leading-relaxed">
+            Square Country needs enough doctors, nurses,
+            midwives, allied health professionals and
+            support staff to meet demand.
+          </p>
+
+        </div>
+
+
+        <div>
+
+          <div class="w-11 h-11 bg-red-50 text-freedoms
+                      flex items-center justify-center mb-5">
+
+            <i data-feather="award"></i>
+
+          </div>
+
+          <h3 class="font-bold text-xl">
+            Value expertise
+          </h3>
+
+          <p class="text-gray-600 mt-3 leading-relaxed">
+            Healthcare workers should have a meaningful
+            voice in how services are designed and delivered.
+          </p>
+
+        </div>
+
+
+        <div>
+
+          <div class="w-11 h-11 bg-red-50 text-freedoms
+                      flex items-center justify-center mb-5">
+
+            <i data-feather="shield"></i>
+
+          </div>
+
+          <h3 class="font-bold text-xl">
+            Safer workplaces
+          </h3>
+
+          <p class="text-gray-600 mt-3 leading-relaxed">
+            Healthcare workers deserve safe, respectful
+            workplaces where they can focus on caring for
+            patients.
+          </p>
+
+        </div>
+
+
+        <div>
+
+          <div class="w-11 h-11 bg-red-50 text-freedoms
+                      flex items-center justify-center mb-5">
+
+            <i data-feather="book-open"></i>
+
+          </div>
+
+          <h3 class="font-bold text-xl">
+            Train the next generation
+          </h3>
+
+          <p class="text-gray-600 mt-3 leading-relaxed">
+            We will support education and training pathways
+            that build a strong healthcare workforce for
+            the future.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ========================================================= -->
+<!-- MENTAL HEALTH -->
+<!-- ========================================================= -->
+
+<section class="bg-red-50 py-20 md:py-28">
+
+  <div class="max-w-7xl mx-auto px-6">
+
+    <div class="grid lg:grid-cols-2 gap-16 items-center">
+
+      <div>
+
+        <p class="uppercase tracking-[0.2em]
+                  text-freedoms text-sm font-bold mb-4">
+          Mental health
+        </p>
+
+        <h2 class="serif text-4xl md:text-5xl
+                   font-bold leading-tight">
+          Mental health is health.
+        </h2>
+
+        <p class="mt-6 text-gray-600 text-lg leading-relaxed">
+          Too many people struggle to access timely mental
+          health support. We will make mental healthcare
+          a core part of a stronger public health system.
+        </p>
+
+      </div>
+
+
+      <div class="bg-white border border-red-100 p-8 md:p-10">
+
+        <div class="w-12 h-12 bg-red-50 text-freedoms
+                    flex items-center justify-center mb-6">
+
+          <i data-feather="heart"></i>
+
+        </div>
+
+        <h3 class="serif text-2xl md:text-3xl font-bold">
+          Earlier support, better outcomes
+        </h3>
+
+        <p class="text-gray-600 mt-4 leading-relaxed">
+          We will expand access to community-based support,
+          improve pathways into treatment and strengthen
+          services for people experiencing serious mental
+          health challenges.
+        </p>
+
+        <div class="mt-7 pt-6 border-t border-gray-200">
+
+          <p class="text-sm font-bold text-freedoms">
+            Our approach
+          </p>
+
+          <p class="text-gray-600 mt-2">
+            Accessible. Early. Compassionate.
+            Evidence-based.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ========================================================= -->
+<!-- PREVENTION -->
+<!-- ========================================================= -->
+
+<section class="py-20 md:py-28">
+
+  <div class="max-w-7xl mx-auto px-6">
+
+    <div class="max-w-3xl">
+
+      <p class="uppercase tracking-[0.2em]
+                text-freedoms text-sm font-bold mb-4">
+        Prevention
+      </p>
+
+      <h2 class="serif text-4xl md:text-5xl font-bold">
+        Keeping people healthy.
+      </h2>
+
+      <p class="mt-6 text-gray-600 text-lg leading-relaxed">
+        The best health system is one that helps people stay
+        healthy in the first place. Prevention can improve
+        lives while reducing pressure on hospitals and
+        emergency services.
+      </p>
+
+    </div>
+
+
+    <div class="grid md:grid-cols-3 gap-6 mt-14">
+
+
+      <div class="border border-gray-200 p-8">
+
+        <div class="text-freedoms font-black text-4xl">
+          01
+        </div>
+
+        <h3 class="font-bold text-xl mt-5">
+          Early intervention
+        </h3>
+
+        <p class="text-gray-600 mt-3 leading-relaxed">
+          Identify health problems earlier and help people
+          access treatment before conditions worsen.
+        </p>
+
+      </div>
+
+
+      <div class="border border-gray-200 p-8">
+
+        <div class="text-freedoms font-black text-4xl">
+          02
+        </div>
+
+        <h3 class="font-bold text-xl mt-5">
+          Healthy communities
+        </h3>
+
+        <p class="text-gray-600 mt-3 leading-relaxed">
+          Support community-based programmes that help
+          people make healthier choices and stay active.
+        </p>
+
+      </div>
+
+
+      <div class="border border-gray-200 p-8">
+
+        <div class="text-freedoms font-black text-4xl">
+          03
+        </div>
+
+        <h3 class="font-bold text-xl mt-5">
+          Better information
+        </h3>
+
+        <p class="text-gray-600 mt-3 leading-relaxed">
+          Give people clear, reliable information so they
+          can make informed decisions about their health.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ========================================================= -->
+<!-- FINAL PROMISE -->
+<!-- ========================================================= -->
+
+<section class="bg-gray-950 text-white py-20 md:py-28">
+
+  <div class="max-w-5xl mx-auto px-6 text-center">
+
+    <p class="uppercase tracking-[0.25em]
+              text-red-300 text-sm font-bold">
+      Our promise
+    </p>
+
+    <h2 class="serif text-4xl md:text-6xl
+               font-bold mt-4 leading-tight">
+      A health system
+      people can rely on.
+    </h2>
+
+    <p class="max-w-2xl mx-auto mt-6 text-gray-400
+              text-lg leading-relaxed">
+      The Freedoms Party will build a stronger public
+      health system that puts patients first, backs
+      healthcare workers and delivers care when people
+      need it.
+    </p>
+
+    <a href="policies.html"
+       class="inline-flex items-center gap-2 mt-9
+              bg-freedoms text-white px-7 py-4 rounded-md
+              font-bold hover:bg-freedomsDark transition">
+
+      Back to all policies
+
+      <i data-feather="arrow-right" class="w-4 h-4"></i>
+
+    </a>
+
+  </div>
+
+</section>
+
+
+<!-- ========================================================= -->
+<!-- JOIN -->
+<!-- ========================================================= -->
+
+<section id="join" class="bg-white py-20">
+
+  <div class="max-w-4xl mx-auto px-6 text-center">
+
+    <p class="uppercase tracking-[0.25em]
+              text-freedoms text-sm font-bold">
+      Be part of the movement
+    </p>
+
+    <h2 class="serif text-4xl md:text-6xl
+               font-bold mt-4">
+      Help us build a healthier Square Country.
+    </h2>
+
+    <p class="max-w-2xl mx-auto mt-6 text-gray-600 text-lg">
+      Join the Freedoms Party and help us build stronger
+      public services for everyone.
+    </p>
+
+    <div class="mt-9 flex flex-col sm:flex-row
+                justify-center gap-4">
+
+      <a href="#"
+         class="bg-freedoms text-white px-8 py-4 rounded-md
+                font-bold hover:bg-freedomsDark transition">
+        Join the Freedoms Party
+      </a>
+
+      <a href="#"
+         class="border border-gray-300 px-8 py-4 rounded-md
+                font-bold hover:border-freedoms
+                hover:text-freedoms transition">
+        Volunteer
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ========================================================= -->
+<!-- FOOTER -->
+<!-- ========================================================= -->
+
+<footer class="bg-white border-t border-gray-200">
+
+  <div class="max-w-7xl mx-auto px-6 py-14">
+
+    <div class="grid md:grid-cols-3 gap-10">
+
+      <div>
+
+        <div class="text-freedoms font-black text-2xl">
+          FREEDOMS
+        </div>
+
+        <p class="text-gray-500 mt-2">
+          The opposition for Square Country.
+        </p>
+
+      </div>
+
+
+      <div>
+
+        <h3 class="font-bold mb-4">
+          Get involved
+        </h3>
+
+        <div class="space-y-2 text-gray-600 text-sm">
+
+          <a href="#" class="block hover:text-freedoms">
+            Join us
+          </a>
+
+          <a href="#" class="block hover:text-freedoms">
+            Volunteer
+          </a>
+
+          <a href="#" class="block hover:text-freedoms">
+            Donate
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <div>
+
+        <h3 class="font-bold mb-4">
+          Follow us
+        </h3>
+
+        <div class="flex gap-3">
+
+          <a href="#"
+             class="w-10 h-10 border border-gray-300
+                    flex items-center justify-center
+                    hover:border-freedoms hover:text-freedoms">
+            <i data-feather="facebook"></i>
+          </a>
+
+          <a href="#"
+             class="w-10 h-10 border border-gray-300
+                    flex items-center justify-center
+                    hover:border-freedoms hover:text-freedoms">
+            <i data-feather="twitter"></i>
+          </a>
+
+          <a href="#"
+             class="w-10 h-10 border border-gray-300
+                    flex items-center justify-center
+                    hover:border-freedoms hover:text-freedoms">
+            <i data-feather="instagram"></i>
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <div class="border-t border-gray-200">
+
+    <div class="max-w-7xl mx-auto px-6 py-7">
+
+      <div class="flex flex-col md:flex-row
+                  justify-between gap-5 text-sm text-gray-500">
+
+        <p>
+          © 2026 Freedoms Party of Square Country
+        </p>
+
+        <div class="flex flex-wrap gap-6">
+
+          <a href="#" class="hover:text-freedoms">
+            Privacy
+          </a>
+
+          <a href="#" class="hover:text-freedoms">
+            Contact
+          </a>
+
+          <a href="#" class="hover:text-freedoms">
+            Accessibility
+          </a>
+
+          <span>
+            Authorised by the Freedoms Party, 13 Upperbank Parkway, Masterton City
+          </span>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</footer>
+
+
+<script>
+
+  feather.replace();
+
+  function toggleMenu() {
+    const menu = document.getElementById("mobileMenu");
+    menu.classList.toggle("hidden");
+  }
+
+</script>
+
+</body>
+</html>

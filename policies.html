@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Our Policies | Freedoms Party of Square Country</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/feather-icons"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            freedoms: '#C8102E',
+            freedomsDark: '#9F0C24'
+          },
+          fontFamily: {
+            serif: ['Georgia', 'serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    .nav-link {
+      position: relative;
+    }
+
+    .nav-link::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -7px;
+      width: 0;
+      height: 2px;
+      background: #C8102E;
+      transition: width 0.25s ease;
+    }
+
+    .nav-link:hover::after,
+    .nav-link.active::after {
+      width: 100%;
+    }
+
+    .policy-card {
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .policy-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+    }
+
+    .category-link {
+      transition: all 0.2s ease;
+    }
+
+    .category-link:hover {
+      padding-left: 8px;
+    }
+  </style>
+</head>
+
+<body class="bg-white text-gray-900">
+
+<!-- ========================================================= -->
+<!-- NAVBAR -->
+<!-- ========================================================= -->
+
+<header class="border-b border-gray-100 bg-white">
+
+  <div class="max-w-7xl mx-auto px-6">
+
+    <div class="h-20 flex items-center justify-between">
+
+      <!-- LOGO -->
+      <a href="index.html" class="flex items-center gap-3">
+
+        <div class="w-12 h-12 bg-freedoms flex items-center justify-center">
+          <span class="text-white font-black text-2xl">F</span>
+        </div>
+
+        <div class="leading-tight">
+          <div class="font-black text-xl tracking-tight">
+            FREEDOMS
+          </div>
+
+          <div class="text-xs tracking-[0.22em] text-gray-500 font-semibold">
+            SQUARE COUNTRY
+          </div>
+        </div>
+
+      </a>
+
+
+      <!-- DESKTOP NAV -->
+      <nav class="hidden lg:flex items-center gap-9 text-sm font-semibold">
+
+        <a href="about.html" class="nav-link">
+          About
+        </a>
+
+        <a href="policies.html" class="nav-link active text-freedoms">
+          Our policies
+        </a>
+
+        <a href="team.html" class="nav-link">
+          Our team
+        </a>
+
+        <a href="news.html" class="nav-link">
+          News
+        </a>
+
+        <a href="contact.html" class="nav-link">
+          Contact
+        </a>
+
+        <a href="#join"
+           class="bg-freedoms text-white px-6 py-3 rounded-md
+                  hover:bg-freedomsDark transition">
+          Join us
+        </a>
+
+      </nav>
+
+
+      <!-- MOBILE BUTTON -->
+      <button
+        onclick="toggleMenu()"
+        class="lg:hidden p-2"
+        aria-label="Open menu">
+
+        <i data-feather="menu"></i>
+
+      </button>
+
+    </div>
+
+  </div>
+
+
+  <!-- MOBILE NAV -->
+  <div id="mobileMenu" class="hidden border-t bg-white lg:hidden">
+
+    <div class="px-6 py-5 space-y-4 text-sm font-semibold">
+
+      <a href="about.html"
+         onclick="toggleMenu()"
+         class="block">
+        About
+      </a>
+
+      <a href="policies.html"
+         onclick="toggleMenu()"
+         class="block text-freedoms">
+        Our policies
+      </a>
+
+      <a href="team.html"
+         onclick="toggleMenu()"
+         class="block">
+        Our team
+      </a>
+
+      <a href="news.html"
+         onclick="toggleMenu()"
+         class="block">
+        News
+      </a>
+
+      <a href="contact.html"
+         onclick="toggleMenu()"
+         class="block">
+        Contact
+      </a>
+
+      <a href="#join"
+         onclick="toggleMenu()"
+         class="block bg-freedoms text-white text-center px-5 py-3 rounded-md">
+        Join us
+      </a>
+
+    </div>
+
+  </div>
+
+</header>
+
+
+<!-- ========================================================= -->
+<!-- HERO -->
+<!-- ========================================================= -->
+
+<section class="bg-freedoms text-white">
+
+  <div class="max-w-7xl mx-auto px-6 py-20 md:py-28">
+
+    <div class="max-w-4xl">
+
+      <p class="uppercase tracking-[0.3em] text-sm font-bold text-red-100 mb-6">
+        What we stand for
+      </p>
+
+      <h1 class="serif text-5xl md:text-7xl font-bold leading-[0.95]">
+        Our policies.
+      </h1>
+
+      <p class="mt-8 text-lg md:text-xl text-red-50 max-w-2xl leading-relaxed">
+        A fairer economy. Stronger public services. Better
+        opportunities. Our policies set out how a Freedoms
+        government would build a better Square Country.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ========================================================= -->
+<!-- INTRODUCTION -->
+<!-- ========================================================= -->
+
+<section class="py-20 md:py-28">
+
+  <div class="max-w-7xl mx-auto px-6">
+
+    <div class="grid lg:grid-cols-[1fr_1.4fr] gap-16">
+
+      <div>
+
+        <p class="uppercase tracking-[0.2em] text-freedoms text-sm font-bold mb-4">
+          Our vision
+        </p>
+
+        <h2 class="serif text-4xl md:text-5xl font-bold leading-tight">
+          Politics should
+          <span class="text-freedoms">deliver.</span>
+        </h2>
+
+      </div>
+
+      <div class="text-gray-600 text-lg leading-relaxed max-w-3xl">
+
+        <p>
+          The Freedoms Party believes government should make
+          people's lives better — not harder.
+        </p>
+
+        <p class="mt-6">
+          Our policies are built around a simple idea:
+          Square Country works best when everyone has a fair
+          chance to get ahead, when public services are there
+          when people need them, and when government focuses
+          on the things that matter.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ========================================================= -->
+<!-- FEATURED POLICY -->
+<!-- ========================================================= -->
+
+<section class="pb-20 md:pb-28">
+
+  <div class="max-w-7xl mx-auto px-6">
+
+    <div class="bg-gray-950 text-white">
+
+      <div class="grid lg:grid-cols-2">
+
+        <div class="p-10 md:p-14 lg:p-16">
+
+          <p class="uppercase tracking-[0.2em] text-red-300 text-sm font-bold mb-5">
+            Featured policy
+          </p>
+
+          <h2 class="serif text-4xl md:text-5xl font-bold leading-tight">
+            We will end the War in Rivoria.
+          </h2>
+
+          <p class="mt-6 text-gray-300 text-lg leading-relaxed">
+            It has gone on long enough. A Freedoms Government will end the War in Rivoria as soon as it possibly can. Every effort will be made to end the conflict from <strong>day one</strong>.
+          </p>
+
+          <a href="#cats"
+             class="inline-flex items-center gap-2 mt-8 bg-freedoms
+                    px-6 py-3 rounded-md font-bold
+                    hover:bg-freedomsDark transition">
+
+            Explore all policies
+
+            <i data-feather="arrow-right" class="w-4 h-4"></i>
+
+          </a>
+
+        </div>
+
+
+        <div class="bg-freedoms p-10 md:p-14 lg:p-16 flex items-center">
+
+          <div>
+
+            <div class="text-6xl md:text-7xl font-black">
+              01
+            </div>
+
+            <div class="mt-5 h-px bg-white/30"></div>
+
+            <p class="mt-5 text-red-100 text-lg leading-relaxed">
+              Putting Square Country first involves ending the war, spending more on peace, and ensuring the genocide of Rivorians stops.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ========================================================= -->
+<!-- POLICY CATEGORIES -->
+<!-- ========================================================= -->
+
+<section id="cats" class="bg-gray-50 py-20 md:py-28" id="policies">
+
+  <div class="max-w-7xl mx-auto px-6">
+
+    <div class="mb-14">
+
+      <p class="uppercase tracking-[0.2em] text-freedoms text-sm font-bold mb-3">
+        Our agenda
+      </p>
+
+      <h2 class="serif text-4xl md:text-5xl font-bold">
+        Policies for a better country
+      </h2>
+
+      <p class="mt-5 text-gray-600 text-lg max-w-2xl">
+        Explore our policies across the issues that matter
+        most to people across Square Country.
+      </p>
+
+    </div>
+
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+
+      <!-- ECONOMY -->
+
+      <article id="economy"
+               class="policy-card bg-white border border-gray-200 p-8">
+
+        <div class="w-12 h-12 bg-red-50 text-freedoms
+                    flex items-center justify-center mb-7">
+
+          <i data-feather="trending-up"></i>
+
+        </div>
+
+        <p class="text-freedoms uppercase tracking-widest
+                  text-xs font-bold">
+          Economy
+        </p>
+
+        <h3 class="serif text-2xl font-bold mt-3">
+          A fair economy
+        </h3>
+
+        <p class="text-gray-600 mt-4 leading-relaxed">
+          Growing the economy, supporting workers and
+          making sure prosperity is shared across
+          Square Country.
+        </p>
+
+        <a href="economy.html"
+           class="inline-flex items-center gap-2 mt-7
+                  text-freedoms font-bold text-sm">
+
+          Explore policy
+
+          <i data-feather="arrow-right" class="w-4 h-4"></i>
+
+        </a>
+
+      </article>
+
+
+      <!-- HEALTH -->
+
+      <article class="policy-card bg-white border border-gray-200 p-8">
+
+        <div class="w-12 h-12 bg-red-50 text-freedoms
+                    flex items-center justify-center mb-7">
+
+          <i data-feather="heart"></i>
+
+        </div>
+
+        <p class="text-freedoms uppercase tracking-widest
+                  text-xs font-bold">
+          Health
+        </p>
+
+        <h3 class="serif text-2xl font-bold mt-3">
+          Better healthcare
+        </h3>
+
+        <p class="text-gray-600 mt-4 leading-relaxed">
+          A strong public health system that is properly
+          funded, accessible and there when people need it.
+        </p>
+
+        <a href="healthcare.html"
+           class="inline-flex items-center gap-2 mt-7
+                  text-freedoms font-bold text-sm">
+
+          Explore policy
+
+          <i data-feather="arrow-right" class="w-4 h-4"></i>
+
+        </a>
+
+      </article>
+
+
+      <!-- EDUCATION -->
+
+      <article class="policy-card bg-white border border-gray-200 p-8">
+
+        <div class="w-12 h-12 bg-red-50 text-freedoms
+                    flex items-center justify-center mb-7">
+
+          <i data-feather="book-open"></i>
+
+        </div>
+
+        <p class="text-freedoms uppercase tracking-widest
+                  text-xs font-bold">
+          Education
+        </p>
+
+        <h3 class="serif text-2xl font-bold mt-3">
+          Education that opens doors
+        </h3>
+
+        <p class="text-gray-600 mt-4 leading-relaxed">
+          Giving every young person the opportunity to
+          learn, succeed and build the future they want.
+        </p>
+
+        <a href="education.html"
+           class="inline-flex items-center gap-2 mt-7
+                  text-freedoms font-bold text-sm">
+
+          Explore policy
+
+          <i data-feather="arrow-right" class="w-4 h-4"></i>
+
+        </a>
+
+      </article>
+
+
+      <!-- HOUSING -->
+
+      <article class="policy-card bg-white border border-gray-200 p-8">
+
+        <div class="w-12 h-12 bg-red-50 text-freedoms
+                    flex items-center justify-center mb-7">
+
+          <i data-feather="home"></i>
+
+        </div>
+
+        <p class="text-freedoms uppercase tracking-widest
+                  text-xs font-bold">
+          Housing
+        </p>
+
+        <h3 class="serif text-2xl font-bold mt-3">
+          Homes people can afford
+        </h3>
+
+        <p class="text-gray-600 mt-4 leading-relaxed">
+          Building more homes, improving affordability and
+          making sure families have a safe place to live.
+        </p>
+
+        <a href="housing.html"
+           class="inline-flex items-center gap-2 mt-7
+                  text-freedoms font-bold text-sm">
+
+          Explore policy
+
+          <i data-feather="arrow-right" class="w-4 h-4"></i>
+
+        </a>
+
+      </article>
+
+
+      <!-- ENVIRONMENT -->
+
+      <article class="policy-card bg-white border border-gray-200 p-8">
+
+        <div class="w-12 h-12 bg-red-50 text-freedoms
+                    flex items-center justify-center mb-7">
+
+          <i data-feather="globe"></i>
+
+        </div>
+
+        <p class="text-freedoms uppercase tracking-widest
+                  text-xs font-bold">
+          Environment
+        </p>
+
+        <h3 class="serif text-2xl font-bold mt-3">
+          Protecting our future
+        </h3>
+
+        <p class="text-gray-600 mt-4 leading-relaxed">
+          Protecting Square Country's environment while
+          creating practical and sustainable solutions.
+        </p>
+
+        <a href="environment.html"
+           class="inline-flex items-center gap-2 mt-7
+                  text-freedoms font-bold text-sm">
+
+          Explore policy
+
+          <i data-feather="arrow-right" class="w-4 h-4"></i>
+
+        </a>
+
+      </article>
+
+
+      <!-- COMMUNITIES -->
+
+      <article class="policy-card bg-white border border-gray-200 p-8">
+
+        <div class="w-12 h-12 bg-red-50 text-freedoms
+                    flex items-center justify-center mb-7">
+
+          <i data-feather="users"></i>
+
+        </div>
+
+        <p class="text-freedoms uppercase tracking-widest
+                  text-xs font-bold">
+          Communities & Government
+        </p>
+
+        <h3 class="serif text-2xl font-bold mt-3">
+          Strong communities
+        </h3>
+
+        <p class="text-gray-600 mt-4 leading-relaxed">
+          Investing in local communities and giving people
+          a greater say in the decisions that affect them.
+        </p>
+
+        <a href="communities-government.html"
+           class="inline-flex items-center gap-2 mt-7
+                  text-freedoms font-bold text-sm">
+
+          Explore policy
+
+          <i data-feather="arrow-right" class="w-4 h-4"></i>
+
+        </a>
+
+      </article>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ========================================================= -->
+<!-- PRINCIPLES -->
+<!-- ========================================================= -->
+
+<section class="py-20 md:py-28">
+
+  <div class="max-w-7xl mx-auto px-6">
+
+    <div class="grid lg:grid-cols-3 gap-12">
+
+      <div>
+
+        <p class="uppercase tracking-[0.2em] text-freedoms text-sm font-bold mb-4">
+          Our principles
+        </p>
+
+        <h2 class="serif text-4xl md:text-5xl font-bold leading-tight">
+          The values behind our policies.
+        </h2>
+
+      </div>
+
+
+      <div class="lg:col-span-2 grid md:grid-cols-2 gap-x-10 gap-y-10">
+
+        <div class="border-t-2 border-freedoms pt-5">
+
+          <div class="text-freedoms font-black text-2xl">
+            01
+          </div>
+
+          <h3 class="font-bold text-xl mt-3">
+            Fairness
+          </h3>
+
+          <p class="text-gray-600 mt-3 leading-relaxed">
+            Everyone deserves a fair opportunity to build
+            a good life, regardless of where they come from.
+          </p>
+
+        </div>
+
+
+        <div class="border-t-2 border-freedoms pt-5">
+
+          <div class="text-freedoms font-black text-2xl">
+            02
+          </div>
+
+          <h3 class="font-bold text-xl mt-3">
+            Opportunity
+          </h3>
+
+          <p class="text-gray-600 mt-3 leading-relaxed">
+            Government should remove barriers and give
+            people the tools to succeed.
+          </p>
+
+        </div>
+
+
+        <div class="border-t-2 border-freedoms pt-5">
+
+          <div class="text-freedoms font-black text-2xl">
+            03
+          </div>
+
+          <h3 class="font-bold text-xl mt-3">
+            Responsibility
+          </h3>
+
+          <p class="text-gray-600 mt-3 leading-relaxed">
+            We believe in responsible government that
+            delivers value and plans for the future.
+          </p>
+
+        </div>
+
+
+        <div class="border-t-2 border-freedoms pt-5">
+
+          <div class="text-freedoms font-black text-2xl">
+            04
+          </div>
+
+          <h3 class="font-bold text-xl mt-3">
+            Community
+          </h3>
+
+          <p class="text-gray-600 mt-3 leading-relaxed">
+            Strong communities are the foundation of a
+            strong and prosperous Square Country.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ========================================================= -->
+<!-- POLICY DOCUMENT -->
+<!-- ========================================================= -->
+
+<section class="bg-gray-950 text-white py-20 md:py-24">
+
+  <div class="max-w-7xl mx-auto px-6">
+
+    <div class="grid lg:grid-cols-2 gap-14 items-center">
+
+      <div>
+
+        <p class="uppercase tracking-[0.2em] text-red-300 text-sm font-bold mb-4">
+          Our plan for government
+        </p>
+
+        <h2 class="serif text-4xl md:text-5xl font-bold">
+          From opposition
+          to government.
+        </h2>
+
+        <p class="mt-6 text-gray-300 text-lg leading-relaxed">
+          These policies are the beginning of our plan to
+          give Square Country a different direction — one
+          based on fairness, opportunity and practical
+          government.
+        </p>
+
+      </div>
+
+
+      <div class="border border-white/20 p-8 md:p-10">
+
+        <div class="flex items-start justify-between gap-6">
+
+          <div>
+
+            <p class="text-red-300 uppercase tracking-widest text-xs font-bold">
+              Freedoms Party
+            </p>
+
+            <h3 class="serif text-3xl font-bold mt-3">
+              Our policy programme
+            </h3>
+
+            <p class="text-gray-400 mt-3">
+              Our vision for the future of Square Country.
+            </p>
+
+          </div>
+
+          <i data-feather="file-text"
+             class="w-10 h-10 text-red-300 shrink-0">
+          </i>
+
+        </div>
+
+        <a href="#"
+           class="mt-8 inline-flex items-center gap-2
+                  bg-freedoms px-6 py-3 rounded-md
+                  font-bold hover:bg-freedomsDark transition">
+
+          Read our programme
+
+          <i data-feather="arrow-right" class="w-4 h-4"></i>
+
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ========================================================= -->
+<!-- JOIN CTA -->
+<!-- ========================================================= -->
+
+<section id="join" class="bg-red-50 py-20 md:py-24">
+
+  <div class="max-w-4xl mx-auto px-6 text-center">
+
+    <p class="uppercase tracking-[0.25em] text-freedoms text-sm font-bold">
+      Be part of the movement
+    </p>
+
+    <h2 class="serif text-4xl md:text-6xl font-bold mt-4">
+      Help us build a better Square Country.
+    </h2>
+
+    <p class="max-w-2xl mx-auto mt-6 text-gray-600 text-lg leading-relaxed">
+      Our policies are about people. Join the Freedoms
+      Party and help us turn our vision into action.
+    </p>
+
+    <div class="mt-9 flex flex-col sm:flex-row justify-center gap-4">
+
+      <a href="#"
+         class="bg-freedoms text-white px-8 py-4 rounded-md
+                font-bold hover:bg-freedomsDark transition">
+        Join the Freedoms Party
+      </a>
+
+      <a href="#"
+         class="border border-gray-300 px-8 py-4 rounded-md
+                font-bold hover:border-freedoms hover:text-freedoms transition">
+        Volunteer
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ========================================================= -->
+<!-- FOOTER -->
+<!-- ========================================================= -->
+
+<footer class="bg-white border-t border-gray-200">
+
+  <div class="max-w-7xl mx-auto px-6 py-14">
+
+    <div class="grid md:grid-cols-3 gap-10">
+
+      <div>
+
+        <div class="text-freedoms font-black text-2xl">
+          FREEDOMS
+        </div>
+
+        <p class="text-gray-500 mt-2">
+          The opposition for Square Country.
+        </p>
+
+      </div>
+
+
+      <div>
+
+        <h3 class="font-bold mb-4">
+          Get involved
+        </h3>
+
+        <div class="space-y-2 text-gray-600 text-sm">
+
+          <a href="#" class="block hover:text-freedoms">
+            Join us
+          </a>
+
+          <a href="#" class="block hover:text-freedoms">
+            Volunteer
+          </a>
+
+          <a href="#" class="block hover:text-freedoms">
+            Donate
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <div>
+
+        <h3 class="font-bold mb-4">
+          Follow us
+        </h3>
+
+        <div class="flex gap-3">
+
+          <a href="#"
+             class="w-10 h-10 border border-gray-300
+                    flex items-center justify-center
+                    hover:border-freedoms hover:text-freedoms">
+
+            <i data-feather="facebook"></i>
+
+          </a>
+
+          <a href="#"
+             class="w-10 h-10 border border-gray-300
+                    flex items-center justify-center
+                    hover:border-freedoms hover:text-freedoms">
+
+            <i data-feather="twitter"></i>
+
+          </a>
+
+          <a href="#"
+             class="w-10 h-10 border border-gray-300
+                    flex items-center justify-center
+                    hover:border-freedoms hover:text-freedoms">
+
+            <i data-feather="instagram"></i>
+
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <div class="border-t border-gray-200">
+
+    <div class="max-w-7xl mx-auto px-6 py-7">
+
+      <div class="flex flex-col md:flex-row
+                  justify-between gap-5 text-sm text-gray-500">
+
+        <p>
+          © 2026 Freedoms Party of Square Country
+        </p>
+
+        <div class="flex flex-wrap gap-6">
+
+          <a href="#" class="hover:text-freedoms">
+            Privacy
+          </a>
+
+          <a href="#" class="hover:text-freedoms">
+            Contact
+          </a>
+
+          <a href="#" class="hover:text-freedoms">
+            Accessibility
+          </a>
+
+          <span>
+            Authorised by the Freedoms Party, 13 Upperbank Parkway, Masterton City
+          </span>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</footer>
+
+
+<script>
+
+  feather.replace();
+
+  function toggleMenu() {
+    const menu = document.getElementById("mobileMenu");
+    menu.classList.toggle("hidden");
+  }
+
+</script>
+
+</body>
+</html>

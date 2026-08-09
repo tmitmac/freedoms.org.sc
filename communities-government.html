@@ -1,0 +1,1023 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Communities & Government | Freedoms Party of Square Country</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/feather-icons"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            freedoms: '#C8102E',
+            freedomsDark: '#9F0C24'
+          },
+          fontFamily: {
+            serif: ['Georgia', 'serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    .nav-link {
+      position: relative;
+    }
+
+    .nav-link::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -7px;
+      width: 0;
+      height: 2px;
+      background: #C8102E;
+      transition: width 0.25s ease;
+    }
+
+    .nav-link:hover::after,
+    .nav-link.active::after {
+      width: 100%;
+    }
+
+    .commitment {
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .commitment:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 15px 35px rgba(0,0,0,0.07);
+    }
+  </style>
+</head>
+
+<body class="bg-white text-gray-900">
+
+
+<!-- ========================================================= -->
+<!-- NAVIGATION -->
+<!-- ========================================================= -->
+
+<header class="border-b border-gray-100 bg-white">
+
+  <div class="max-w-7xl mx-auto px-6">
+
+    <div class="h-20 flex items-center justify-between">
+
+      <a href="index.html" class="flex items-center gap-3">
+
+        <div class="w-12 h-12 bg-freedoms flex items-center justify-center">
+          <span class="text-white font-black text-2xl">F</span>
+        </div>
+
+        <div class="leading-tight">
+          <div class="font-black text-xl tracking-tight">
+            FREEDOMS
+          </div>
+
+          <div class="text-xs tracking-[0.22em] text-gray-500 font-semibold">
+            SQUARE COUNTRY
+          </div>
+        </div>
+
+      </a>
+
+
+      <nav class="hidden lg:flex items-center gap-9 text-sm font-semibold">
+
+        <a href="about.html" class="nav-link">
+          About
+        </a>
+
+        <a href="policies.html" class="nav-link active text-freedoms">
+          Our policies
+        </a>
+
+        <a href="team.html" class="nav-link">
+          Our team
+        </a>
+
+        <a href="news.html" class="nav-link">
+          News
+        </a>
+
+        <a href="contact.html" class="nav-link">
+          Contact
+        </a>
+
+        <a href="#join"
+           class="bg-freedoms text-white px-6 py-3 rounded-md
+                  hover:bg-freedomsDark transition">
+          Join us
+        </a>
+
+      </nav>
+
+
+      <button
+        onclick="toggleMenu()"
+        class="lg:hidden p-2"
+        aria-label="Open menu">
+
+        <i data-feather="menu"></i>
+
+      </button>
+
+    </div>
+
+  </div>
+
+
+  <div id="mobileMenu" class="hidden border-t bg-white lg:hidden">
+
+    <div class="px-6 py-5 space-y-4 text-sm font-semibold">
+
+      <a href="about.html" onclick="toggleMenu()" class="block">
+        About
+      </a>
+
+      <a href="policies.html" onclick="toggleMenu()" class="block text-freedoms">
+        Our policies
+      </a>
+
+      <a href="team.html" onclick="toggleMenu()" class="block">
+        Our team
+      </a>
+
+      <a href="news.html" onclick="toggleMenu()" class="block">
+        News
+      </a>
+
+      <a href="contact.html" onclick="toggleMenu()" class="block">
+        Contact
+      </a>
+
+      <a href="#join"
+         onclick="toggleMenu()"
+         class="block bg-freedoms text-white text-center px-5 py-3 rounded-md">
+        Join us
+      </a>
+
+    </div>
+
+  </div>
+
+</header>
+
+
+<!-- ========================================================= -->
+<!-- BREADCRUMB -->
+<!-- ========================================================= -->
+
+<div class="border-b border-gray-200 bg-gray-50">
+
+  <div class="max-w-7xl mx-auto px-6 py-4">
+
+    <div class="flex flex-wrap items-center gap-2 text-sm text-gray-500">
+
+      <a href="index.html" class="hover:text-freedoms">
+        Home
+      </a>
+
+      <i data-feather="chevron-right" class="w-4 h-4"></i>
+
+      <a href="policies.html" class="hover:text-freedoms">
+        Our policies
+      </a>
+
+      <i data-feather="chevron-right" class="w-4 h-4"></i>
+
+      <span class="text-gray-900 font-semibold">
+        Communities & Government
+      </span>
+
+    </div>
+
+  </div>
+
+</div>
+
+
+<!-- ========================================================= -->
+<!-- HERO -->
+<!-- ========================================================= -->
+
+<section class="bg-freedoms text-white">
+
+  <div class="max-w-7xl mx-auto px-6 py-20 md:py-28">
+
+    <div class="max-w-5xl">
+
+      <p class="uppercase tracking-[0.3em] text-sm font-bold text-red-100 mb-6">
+        Our policies
+      </p>
+
+      <h1 class="serif text-5xl md:text-7xl lg:text-8xl
+                 font-bold leading-[0.92]">
+        Communities
+        <span class="block">& government.</span>
+      </h1>
+
+      <p class="mt-8 text-lg md:text-xl text-red-50
+                max-w-3xl leading-relaxed">
+        Putting power closer to people, strengthening local
+        communities and building a government that listens,
+        delivers and answers to the public.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ========================================================= -->
+<!-- INTRODUCTION -->
+<!-- ========================================================= -->
+
+<section class="py-20 md:py-28">
+
+  <div class="max-w-7xl mx-auto px-6">
+
+    <div class="grid lg:grid-cols-[0.8fr_1.5fr] gap-16">
+
+      <div>
+
+        <p class="uppercase tracking-[0.2em]
+                  text-freedoms text-sm font-bold mb-4">
+          Our position
+        </p>
+
+        <h2 class="serif text-4xl md:text-5xl
+                   font-bold leading-tight">
+          Government should
+          <span class="text-freedoms">work for people.</span>
+        </h2>
+
+      </div>
+
+
+      <div class="text-gray-600 text-lg leading-relaxed">
+
+        <p>
+          Too often, decisions are made far away from the
+          communities they affect. Local people know what
+          their communities need, but governments can be
+          slow to listen and even slower to act.
+        </p>
+
+        <p class="mt-6">
+          The Freedoms Party believes in a government that
+          trusts people, strengthens communities and gives
+          local leaders the tools they need to get things done.
+        </p>
+
+        <p class="mt-6">
+          We want public institutions that are transparent,
+          accountable and focused on delivering results —
+          not creating unnecessary bureaucracy.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ========================================================= -->
+<!-- BIG STATEMENT -->
+<!-- ========================================================= -->
+
+<section class="bg-gray-50 py-20 md:py-24">
+
+  <div class="max-w-7xl mx-auto px-6">
+
+    <div class="border-l-4 border-freedoms pl-7 md:pl-10 max-w-5xl">
+
+      <p class="serif text-3xl md:text-5xl
+                font-bold leading-tight">
+        "Strong communities are the foundation
+        of a strong Square Country."
+      </p>
+
+      <p class="mt-6 text-gray-500 font-semibold">
+        — Anna Corfield, Communities & Government Spokesperson
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ========================================================= -->
+<!-- COMMITMENTS -->
+<!-- ========================================================= -->
+
+<section class="py-20 md:py-28" id="commitments">
+
+  <div class="max-w-7xl mx-auto px-6">
+
+    <div class="mb-14">
+
+      <p class="uppercase tracking-[0.2em]
+                text-freedoms text-sm font-bold mb-3">
+        Our commitments
+      </p>
+
+      <h2 class="serif text-4xl md:text-5xl font-bold">
+        A government closer to you.
+      </h2>
+
+      <p class="mt-5 text-gray-600 text-lg max-w-2xl">
+        We will give communities more control, make
+        government more accountable and put delivery
+        back at the centre of public service.
+      </p>
+
+    </div>
+
+
+    <div class="grid md:grid-cols-2 gap-6">
+
+
+      <!-- COMMITMENT 01 -->
+
+      <article class="commitment border border-gray-200 p-8 md:p-10">
+
+        <div class="flex items-start gap-6">
+
+          <div class="text-freedoms font-black text-3xl">
+            01
+          </div>
+
+          <div>
+
+            <h3 class="serif text-2xl md:text-3xl font-bold">
+              Give communities a stronger voice
+            </h3>
+
+            <p class="text-gray-600 mt-4 leading-relaxed">
+              We will strengthen local decision-making and
+              ensure communities have a meaningful say in
+              the policies and projects that affect them.
+            </p>
+
+          </div>
+
+        </div>
+
+      </article>
+
+
+      <!-- COMMITMENT 02 -->
+
+      <article class="commitment border border-gray-200 p-8 md:p-10">
+
+        <div class="flex items-start gap-6">
+
+          <div class="text-freedoms font-black text-3xl">
+            02
+          </div>
+
+          <div>
+
+            <h3 class="serif text-2xl md:text-3xl font-bold">
+              Make government more accountable
+            </h3>
+
+            <p class="text-gray-600 mt-4 leading-relaxed">
+              Government should explain its decisions,
+              publish information openly and be held
+              responsible when promises are not delivered.
+            </p>
+
+          </div>
+
+        </div>
+
+      </article>
+
+
+      <!-- COMMITMENT 03 -->
+
+      <article class="commitment border border-gray-200 p-8 md:p-10">
+
+        <div class="flex items-start gap-6">
+
+          <div class="text-freedoms font-black text-3xl">
+            03
+          </div>
+
+          <div>
+
+            <h3 class="serif text-2xl md:text-3xl font-bold">
+              Amend the Electoral Act 1986
+            </h3>
+
+            <p class="text-gray-600 mt-4 leading-relaxed">
+              We will amend the Electoral Act 1986 to increase the number of MPs from 26 to 34, giving Square Country more representation in Parliament.
+            </p>
+
+          </div>
+
+        </div>
+
+      </article>
+
+
+      <!-- COMMITMENT 04 -->
+
+      <article class="commitment border border-gray-200 p-8 md:p-10">
+
+        <div class="flex items-start gap-6">
+
+          <div class="text-freedoms font-black text-3xl">
+            04
+          </div>
+
+          <div>
+
+            <h3 class="serif text-2xl md:text-3xl font-bold">
+              Cut unnecessary red tape
+            </h3>
+
+            <p class="text-gray-600 mt-4 leading-relaxed">
+              We will simplify government processes so
+              people, charities and businesses can spend
+              less time navigating bureaucracy.
+            </p>
+
+          </div>
+
+        </div>
+
+      </article>
+
+
+      <!-- COMMITMENT 05 -->
+
+      <article class="commitment border border-gray-200 p-8 md:p-10">
+
+        <div class="flex items-start gap-6">
+
+          <div class="text-freedoms font-black text-3xl">
+            05
+          </div>
+
+          <div>
+
+            <h3 class="serif text-2xl md:text-3xl font-bold">
+              Work with Westland (Tierras del oeste)
+            </h3>
+
+            <p class="text-gray-600 mt-4 leading-relaxed">
+              A Freedoms Government will work with the Westland (Tierras del oeste) Council,
+              in hopes of securing a long-term relationship with the region. Freedoms won't throw them out like the Liberty Government.
+            </p>
+
+          </div>
+
+        </div>
+
+      </article>
+
+
+      <!-- COMMITMENT 06 -->
+
+      <article class="commitment border border-gray-200 p-8 md:p-10">
+
+        <div class="flex items-start gap-6">
+
+          <div class="text-freedoms font-black text-3xl">
+            06
+          </div>
+
+          <div>
+
+            <h3 class="serif text-2xl md:text-3xl font-bold">
+              Modernise public services
+            </h3>
+
+            <p class="text-gray-600 mt-4 leading-relaxed">
+              Government services should be simple to access,
+              easy to understand and designed around the
+              people who use them.
+            </p>
+
+          </div>
+
+        </div>
+
+      </article>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ========================================================= -->
+<!-- POLICY DETAIL -->
+<!-- ========================================================= -->
+
+<section class="bg-gray-950 text-white py-20 md:py-28">
+
+  <div class="max-w-7xl mx-auto px-6">
+
+    <div class="grid lg:grid-cols-2 gap-16">
+
+      <div>
+
+        <p class="uppercase tracking-[0.2em]
+                  text-red-300 text-sm font-bold mb-5">
+          What will change
+        </p>
+
+        <h2 class="serif text-4xl md:text-5xl font-bold leading-tight">
+          A government that
+          gets things done.
+        </h2>
+
+      </div>
+
+
+      <div class="space-y-8">
+
+        <div class="border-b border-white/20 pb-8">
+
+          <div class="flex gap-5">
+
+            <i data-feather="check"
+               class="text-red-300 shrink-0 mt-1">
+            </i>
+
+            <div>
+
+              <h3 class="font-bold text-xl">
+                Decisions closer to communities
+              </h3>
+
+              <p class="text-gray-400 mt-2 leading-relaxed">
+                More decisions should be made by people
+                who understand the communities they affect.
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <div class="border-b border-white/20 pb-8">
+
+          <div class="flex gap-5">
+
+            <i data-feather="check"
+               class="text-red-300 shrink-0 mt-1">
+            </i>
+
+            <div>
+
+              <h3 class="font-bold text-xl">
+                Greater transparency
+              </h3>
+
+              <p class="text-gray-400 mt-2 leading-relaxed">
+                Public money and public decisions should
+                be visible to the people who fund them.
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <div class="border-b border-white/20 pb-8">
+
+          <div class="flex gap-5">
+
+            <i data-feather="check"
+               class="text-red-300 shrink-0 mt-1">
+            </i>
+
+            <div>
+
+              <h3 class="font-bold text-xl">
+                Less bureaucracy
+              </h3>
+
+              <p class="text-gray-400 mt-2 leading-relaxed">
+                We will identify outdated rules and
+                processes that make it harder to get
+                things done.
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <div>
+
+          <div class="flex gap-5">
+
+            <i data-feather="check"
+               class="text-red-300 shrink-0 mt-1">
+            </i>
+
+            <div>
+
+              <h3 class="font-bold text-xl">
+                Better public services
+              </h3>
+
+              <p class="text-gray-400 mt-2 leading-relaxed">
+                Services should be built around people's
+                needs rather than the structure of government.
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ========================================================= -->
+<!-- LOCAL COMMUNITIES -->
+<!-- ========================================================= -->
+
+<section class="py-20 md:py-28">
+
+  <div class="max-w-7xl mx-auto px-6">
+
+    <div class="grid lg:grid-cols-3 gap-12">
+
+      <div>
+
+        <p class="uppercase tracking-[0.2em]
+                  text-freedoms text-sm font-bold mb-4">
+          Stronger places
+        </p>
+
+        <h2 class="serif text-4xl md:text-5xl font-bold">
+          Every community matters.
+        </h2>
+
+      </div>
+
+
+      <div class="lg:col-span-2 grid md:grid-cols-2 gap-10">
+
+        <div>
+
+          <div class="w-11 h-11 bg-red-50 text-freedoms
+                      flex items-center justify-center mb-5">
+
+            <i data-feather="map-pin"></i>
+
+          </div>
+
+          <h3 class="font-bold text-xl">
+            Vibrant local communities
+          </h3>
+
+          <p class="text-gray-600 mt-3 leading-relaxed">
+            We will support local initiatives, community
+            groups and projects that make neighbourhoods
+            stronger and more connected.
+          </p>
+
+        </div>
+
+
+        <div>
+
+          <div class="w-11 h-11 bg-red-50 text-freedoms
+                      flex items-center justify-center mb-5">
+
+            <i data-feather="home"></i>
+
+          </div>
+
+          <h3 class="font-bold text-xl">
+            Better local infrastructure
+          </h3>
+
+          <p class="text-gray-600 mt-3 leading-relaxed">
+            Roads, public spaces, community facilities and
+            essential infrastructure should be maintained
+            properly and planned for the future.
+          </p>
+
+        </div>
+
+
+        <div>
+
+          <div class="w-11 h-11 bg-red-50 text-freedoms
+                      flex items-center justify-center mb-5">
+
+            <i data-feather="users"></i>
+
+          </div>
+
+          <h3 class="font-bold text-xl">
+            Supporting volunteers
+          </h3>
+
+          <p class="text-gray-600 mt-3 leading-relaxed">
+            Volunteers and community organisations do
+            enormous amounts of work. Government should
+            help them, not burden them with unnecessary
+            administration.
+          </p>
+
+        </div>
+
+
+        <div>
+
+          <div class="w-11 h-11 bg-red-50 text-freedoms
+                      flex items-center justify-center mb-5">
+
+            <i data-feather="message-circle"></i>
+
+          </div>
+
+          <h3 class="font-bold text-xl">
+            A stronger public voice
+          </h3>
+
+          <p class="text-gray-600 mt-3 leading-relaxed">
+            People deserve genuine opportunities to
+            participate in decisions that affect their
+            homes, families and communities.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ========================================================= -->
+<!-- FINAL STATEMENT -->
+<!-- ========================================================= -->
+
+<section class="bg-red-50 py-20 md:py-24">
+
+  <div class="max-w-5xl mx-auto px-6 text-center">
+
+    <p class="uppercase tracking-[0.25em]
+              text-freedoms text-sm font-bold">
+      Our promise
+    </p>
+
+    <h2 class="serif text-4xl md:text-6xl
+               font-bold mt-4 leading-tight">
+      Government should serve
+      the people — not the other way around.
+    </h2>
+
+    <p class="max-w-2xl mx-auto mt-6 text-gray-600
+              text-lg leading-relaxed">
+      The Freedoms Party will put communities at the
+      centre of government and give people a stronger
+      voice in the future of their country.
+    </p>
+
+    <a href="policies.html"
+       class="inline-flex items-center gap-2 mt-9
+              bg-freedoms text-white px-7 py-4 rounded-md
+              font-bold hover:bg-freedomsDark transition">
+
+      Back to all policies
+
+      <i data-feather="arrow-right" class="w-4 h-4"></i>
+
+    </a>
+
+  </div>
+
+</section>
+
+
+<!-- ========================================================= -->
+<!-- JOIN -->
+<!-- ========================================================= -->
+
+<section id="join" class="bg-gray-950 text-white py-20">
+
+  <div class="max-w-4xl mx-auto px-6 text-center">
+
+    <p class="uppercase tracking-[0.25em]
+              text-red-300 text-sm font-bold">
+      Be part of the movement
+    </p>
+
+    <h2 class="serif text-4xl md:text-6xl font-bold mt-4">
+      Help us change Square Country.
+    </h2>
+
+    <p class="max-w-2xl mx-auto mt-6 text-gray-400 text-lg">
+      Join the Freedoms Party and help us build stronger
+      communities and a government that works for you.
+    </p>
+
+    <div class="mt-9 flex flex-col sm:flex-row
+                justify-center gap-4">
+
+      <a href="#"
+         class="bg-freedoms px-8 py-4 rounded-md
+                font-bold hover:bg-freedomsDark transition">
+        Join the Freedoms Party
+      </a>
+
+      <a href="#"
+         class="border border-gray-600 px-8 py-4 rounded-md
+                font-bold hover:bg-white/10 transition">
+        Volunteer
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ========================================================= -->
+<!-- FOOTER -->
+<!-- ========================================================= -->
+
+<footer class="bg-white border-t border-gray-200">
+
+  <div class="max-w-7xl mx-auto px-6 py-14">
+
+    <div class="grid md:grid-cols-3 gap-10">
+
+      <div>
+
+        <div class="text-freedoms font-black text-2xl">
+          FREEDOMS
+        </div>
+
+        <p class="text-gray-500 mt-2">
+          The opposition for Square Country.
+        </p>
+
+      </div>
+
+
+      <div>
+
+        <h3 class="font-bold mb-4">
+          Get involved
+        </h3>
+
+        <div class="space-y-2 text-gray-600 text-sm">
+
+          <a href="#" class="block hover:text-freedoms">
+            Join us
+          </a>
+
+          <a href="#" class="block hover:text-freedoms">
+            Volunteer
+          </a>
+
+          <a href="#" class="block hover:text-freedoms">
+            Donate
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <div>
+
+        <h3 class="font-bold mb-4">
+          Follow us
+        </h3>
+
+        <div class="flex gap-3">
+
+          <a href="#"
+             class="w-10 h-10 border border-gray-300
+                    flex items-center justify-center
+                    hover:border-freedoms hover:text-freedoms">
+            <i data-feather="facebook"></i>
+          </a>
+
+          <a href="#"
+             class="w-10 h-10 border border-gray-300
+                    flex items-center justify-center
+                    hover:border-freedoms hover:text-freedoms">
+            <i data-feather="twitter"></i>
+          </a>
+
+          <a href="#"
+             class="w-10 h-10 border border-gray-300
+                    flex items-center justify-center
+                    hover:border-freedoms hover:text-freedoms">
+            <i data-feather="instagram"></i>
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <div class="border-t border-gray-200">
+
+    <div class="max-w-7xl mx-auto px-6 py-7">
+
+      <div class="flex flex-col md:flex-row
+                  justify-between gap-5 text-sm text-gray-500">
+
+        <p>
+          © 2026 Freedoms Party of Square Country
+        </p>
+
+        <div class="flex flex-wrap gap-6">
+
+          <a href="#" class="hover:text-freedoms">
+            Privacy
+          </a>
+
+          <a href="#" class="hover:text-freedoms">
+            Contact
+          </a>
+
+          <a href="#" class="hover:text-freedoms">
+            Accessibility
+          </a>
+
+          <span>
+            Authorised by the Freedoms Party
+          </span>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</footer>
+
+
+<script>
+
+  feather.replace();
+
+  function toggleMenu() {
+    const menu = document.getElementById("mobileMenu");
+    menu.classList.toggle("hidden");
+  }
+
+</script>
+
+</body>
+</html>

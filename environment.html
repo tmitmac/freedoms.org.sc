@@ -1,0 +1,1218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Environment | Freedoms Party of Square Country</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/feather-icons"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            freedoms: '#C8102E',
+            freedomsDark: '#9F0C24'
+          },
+          fontFamily: {
+            serif: ['Georgia', 'serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    .nav-link {
+      position: relative;
+    }
+
+    .nav-link::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -7px;
+      width: 0;
+      height: 2px;
+      background: #C8102E;
+      transition: width 0.25s ease;
+    }
+
+    .nav-link:hover::after,
+    .nav-link.active::after {
+      width: 100%;
+    }
+
+    .environment-card {
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .environment-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 16px 35px rgba(0,0,0,0.07);
+    }
+  </style>
+</head>
+
+<body class="bg-white text-gray-900">
+
+
+<!-- ========================================================= -->
+<!-- NAVIGATION -->
+<!-- ========================================================= -->
+
+<header class="border-b border-gray-100 bg-white">
+
+  <div class="max-w-7xl mx-auto px-6">
+
+    <div class="h-20 flex items-center justify-between">
+
+      <a href="index.html" class="flex items-center gap-3">
+
+        <div class="w-12 h-12 bg-freedoms flex items-center justify-center">
+          <span class="text-white font-black text-2xl">F</span>
+        </div>
+
+        <div class="leading-tight">
+
+          <div class="font-black text-xl tracking-tight">
+            FREEDOMS
+          </div>
+
+          <div class="text-xs tracking-[0.22em] text-gray-500 font-semibold">
+            SQUARE COUNTRY
+          </div>
+
+        </div>
+
+      </a>
+
+
+      <nav class="hidden lg:flex items-center gap-9 text-sm font-semibold">
+
+        <a href="about.html" class="nav-link">
+          About
+        </a>
+
+        <a href="policies.html"
+           class="nav-link active text-freedoms">
+          Our policies
+        </a>
+
+        <a href="team.html" class="nav-link">
+          Our team
+        </a>
+
+        <a href="news.html" class="nav-link">
+          News
+        </a>
+
+        <a href="contact.html" class="nav-link">
+          Contact
+        </a>
+
+        <a href="#join"
+           class="bg-freedoms text-white px-6 py-3 rounded-md
+                  hover:bg-freedomsDark transition">
+          Join us
+        </a>
+
+      </nav>
+
+
+      <button
+        onclick="toggleMenu()"
+        class="lg:hidden p-2"
+        aria-label="Open menu">
+
+        <i data-feather="menu"></i>
+
+      </button>
+
+    </div>
+
+  </div>
+
+
+  <div id="mobileMenu"
+       class="hidden border-t bg-white lg:hidden">
+
+    <div class="px-6 py-5 space-y-4 text-sm font-semibold">
+
+      <a href="about.html" onclick="toggleMenu()" class="block">
+        About
+      </a>
+
+      <a href="policies.html"
+         onclick="toggleMenu()"
+         class="block text-freedoms">
+        Our policies
+      </a>
+
+      <a href="team.html" onclick="toggleMenu()" class="block">
+        Our team
+      </a>
+
+      <a href="news.html" onclick="toggleMenu()" class="block">
+        News
+      </a>
+
+      <a href="contact.html" onclick="toggleMenu()" class="block">
+        Contact
+      </a>
+
+      <a href="#join"
+         onclick="toggleMenu()"
+         class="block bg-freedoms text-white text-center
+                px-5 py-3 rounded-md">
+        Join us
+      </a>
+
+    </div>
+
+  </div>
+
+</header>
+
+
+<!-- ========================================================= -->
+<!-- BREADCRUMB -->
+<!-- ========================================================= -->
+
+<div class="border-b border-gray-200 bg-gray-50">
+
+  <div class="max-w-7xl mx-auto px-6 py-4">
+
+    <div class="flex flex-wrap items-center gap-2
+                text-sm text-gray-500">
+
+      <a href="index.html" class="hover:text-freedoms">
+        Home
+      </a>
+
+      <i data-feather="chevron-right" class="w-4 h-4"></i>
+
+      <a href="policies.html" class="hover:text-freedoms">
+        Our policies
+      </a>
+
+      <i data-feather="chevron-right" class="w-4 h-4"></i>
+
+      <span class="text-gray-900 font-semibold">
+        Environment
+      </span>
+
+    </div>
+
+  </div>
+
+</div>
+
+
+<!-- ========================================================= -->
+<!-- HERO -->
+<!-- ========================================================= -->
+
+<section class="bg-freedoms text-white">
+
+  <div class="max-w-7xl mx-auto px-6 py-20 md:py-28">
+
+    <div class="max-w-5xl">
+
+      <p class="uppercase tracking-[0.3em]
+                text-sm font-bold text-red-100 mb-6">
+        Our environment policy
+      </p>
+
+      <h1 class="serif text-5xl md:text-7xl lg:text-8xl
+                 font-bold leading-[0.92]">
+        Protecting the place
+        <span class="block">we call home.</span>
+      </h1>
+
+      <p class="mt-8 text-lg md:text-xl text-red-50
+                max-w-3xl leading-relaxed">
+        We will protect Square Country's natural environment,
+        invest in clean energy and make our communities more
+        resilient for generations to come.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ========================================================= -->
+<!-- INTRO -->
+<!-- ========================================================= -->
+
+<section class="py-20 md:py-28">
+
+  <div class="max-w-7xl mx-auto px-6">
+
+    <div class="grid lg:grid-cols-[0.8fr_1.5fr] gap-16">
+
+      <div>
+
+        <p class="uppercase tracking-[0.2em]
+                  text-freedoms text-sm font-bold mb-4">
+          Our position
+        </p>
+
+        <h2 class="serif text-4xl md:text-5xl
+                   font-bold leading-tight">
+          A cleaner,
+          <span class="text-freedoms">
+            healthier future.
+          </span>
+        </h2>
+
+      </div>
+
+
+      <div class="text-gray-600 text-lg leading-relaxed">
+
+        <p>
+          The environment we inherit is one of Square
+          Country's greatest assets. From our coastlines and
+          forests to our rivers, farmland and cities, we have
+          a responsibility to protect it.
+        </p>
+
+        <p class="mt-6">
+          The Freedoms Party believes environmental action
+          should improve people's lives as well as protect
+          the natural world. Cleaner energy, better public
+          transport and healthier communities can go hand
+          in hand with a stronger economy.
+        </p>
+
+        <p class="mt-6">
+          We will take practical action to reduce pollution,
+          protect nature and prepare Square Country for the
+          environmental challenges ahead.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ========================================================= -->
+<!-- STATEMENT -->
+<!-- ========================================================= -->
+
+<section class="bg-gray-50 py-20 md:py-24">
+
+  <div class="max-w-7xl mx-auto px-6">
+
+    <div class="border-l-4 border-freedoms
+                pl-7 md:pl-10 max-w-5xl">
+
+      <p class="serif text-3xl md:text-5xl
+                font-bold leading-tight">
+        "We do not have to choose between a strong economy
+        and a healthy environment. We can build both."
+      </p>
+
+      <p class="mt-6 text-gray-500 font-semibold">
+        — Max Kingswell, Environment Spokesperson
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ========================================================= -->
+<!-- CORE policies -->
+<!-- ========================================================= -->
+
+<section class="py-20 md:py-28">
+
+  <div class="max-w-7xl mx-auto px-6">
+
+    <div class="mb-14">
+
+      <p class="uppercase tracking-[0.2em]
+                text-freedoms text-sm font-bold mb-3">
+        Our commitments
+      </p>
+
+      <h2 class="serif text-4xl md:text-5xl font-bold">
+        Practical action for our environment.
+      </h2>
+
+      <p class="mt-5 text-gray-600 text-lg max-w-2xl">
+        Our environmental plan focuses on clean energy,
+        conservation, resilient communities and reducing
+        pollution.
+      </p>
+
+    </div>
+
+
+    <div class="grid md:grid-cols-2 gap-6">
+
+
+      <!-- 01 -->
+
+      <article class="environment-card border border-gray-200
+                      p-8 md:p-10">
+
+        <div class="flex items-start gap-6">
+
+          <div class="text-freedoms font-black text-3xl">
+            01
+          </div>
+
+          <div>
+
+            <h3 class="serif text-2xl md:text-3xl font-bold">
+              Clean energy
+            </h3>
+
+            <p class="text-gray-600 mt-4 leading-relaxed">
+              We are committing to 100% clean, renewable energy
+            </p>
+
+          </div>
+
+        </div>
+
+      </article>
+
+
+      <!-- 02 -->
+
+      <article class="environment-card border border-gray-200
+                      p-8 md:p-10">
+
+        <div class="flex items-start gap-6">
+
+          <div class="text-freedoms font-black text-3xl">
+            02
+          </div>
+
+          <div>
+
+            <h3 class="serif text-2xl md:text-3xl font-bold">
+              Protect our natural environment
+            </h3>
+
+            <p class="text-gray-600 mt-4 leading-relaxed">
+              We will protect native forests, waterways,
+              coastlines and habitats while strengthening
+              conservation across Square Country.
+            </p>
+
+          </div>
+
+        </div>
+
+      </article>
+
+
+      <!-- 03 -->
+
+      <article class="environment-card border border-gray-200
+                      p-8 md:p-10">
+
+        <div class="flex items-start gap-6">
+
+          <div class="text-freedoms font-black text-3xl">
+            03
+          </div>
+
+          <div>
+
+            <h3 class="serif text-2xl md:text-3xl font-bold">
+              Cleaner communities
+            </h3>
+
+            <p class="text-gray-600 mt-4 leading-relaxed">
+              Cleaner streets, healthier waterways and
+              better waste management will help make our
+              towns and cities healthier places to live.
+            </p>
+
+          </div>
+
+        </div>
+
+      </article>
+
+
+      <!-- 04 -->
+
+      <article class="environment-card border border-gray-200
+                      p-8 md:p-10">
+
+        <div class="flex items-start gap-6">
+
+          <div class="text-freedoms font-black text-3xl">
+            04
+          </div>
+
+          <div>
+
+            <h3 class="serif text-2xl md:text-3xl font-bold">
+              Climate resilience
+            </h3>
+
+            <p class="text-gray-600 mt-4 leading-relaxed">
+              We will prepare communities for environmental
+              risks by investing in resilient infrastructure
+              and long-term planning.
+            </p>
+
+          </div>
+
+        </div>
+
+      </article>
+
+
+      <!-- 05 -->
+
+      <article class="environment-card border border-gray-200
+                      p-8 md:p-10">
+
+        <div class="flex items-start gap-6">
+
+          <div class="text-freedoms font-black text-3xl">
+            05
+          </div>
+
+          <div>
+
+            <h3 class="serif text-2xl md:text-3xl font-bold">
+              Sustainable transport
+            </h3>
+
+            <p class="text-gray-600 mt-4 leading-relaxed">
+              Better public transport, walking and cycling
+              infrastructure will give people cleaner and
+              more practical ways to get around.
+            </p>
+
+          </div>
+
+        </div>
+
+      </article>
+
+
+      <!-- 06 -->
+
+      <article class="environment-card border border-gray-200
+                      p-8 md:p-10">
+
+        <div class="flex items-start gap-6">
+
+          <div class="text-freedoms font-black text-3xl">
+            06
+          </div>
+
+          <div>
+
+            <h3 class="serif text-2xl md:text-3xl font-bold">
+              A circular economy
+            </h3>
+
+            <p class="text-gray-600 mt-4 leading-relaxed">
+              We will reduce waste, encourage recycling and
+              support businesses developing products and
+              systems that use resources more efficiently.
+            </p>
+
+          </div>
+
+        </div>
+
+      </article>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ========================================================= -->
+<!-- CLEAN ENERGY -->
+<!-- ========================================================= -->
+
+<section class="bg-gray-950 text-white py-20 md:py-28">
+
+  <div class="max-w-7xl mx-auto px-6">
+
+    <div class="grid lg:grid-cols-2 gap-16">
+
+      <div>
+
+        <p class="uppercase tracking-[0.2em]
+                  text-red-300 text-sm font-bold mb-5">
+          Clean energy
+        </p>
+
+        <h2 class="serif text-4xl md:text-5xl
+                   font-bold leading-tight">
+          Cleaner energy.
+          Stronger economy.
+        </h2>
+
+        <p class="mt-6 text-gray-300 text-lg leading-relaxed">
+          The transition to cleaner energy is an opportunity
+          to create jobs, attract investment and build a more
+          secure energy system for Square Country.
+        </p>
+
+      </div>
+
+
+      <div class="space-y-8">
+
+
+        <div class="border-b border-white/20 pb-8">
+
+          <div class="flex gap-5">
+
+            <i data-feather="zap"
+               class="text-red-300 shrink-0 mt-1">
+            </i>
+
+            <div>
+
+              <h3 class="font-bold text-xl">
+                Invest in clean generation
+              </h3>
+
+              <p class="text-gray-400 mt-2 leading-relaxed">
+                Support new clean energy generation and the
+                infrastructure required to deliver reliable
+                electricity.
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <div class="border-b border-white/20 pb-8">
+
+          <div class="flex gap-5">
+
+            <i data-feather="battery-charging"
+               class="text-red-300 shrink-0 mt-1">
+            </i>
+
+            <div>
+
+              <h3 class="font-bold text-xl">
+                Strengthen energy security
+              </h3>
+
+              <p class="text-gray-400 mt-2 leading-relaxed">
+                A cleaner energy system must also be
+                dependable and affordable for households
+                and businesses.
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <div class="border-b border-white/20 pb-8">
+
+          <div class="flex gap-5">
+
+            <i data-feather="home"
+               class="text-red-300 shrink-0 mt-1">
+            </i>
+
+            <div>
+
+              <h3 class="font-bold text-xl">
+                More efficient homes
+              </h3>
+
+              <p class="text-gray-400 mt-2 leading-relaxed">
+                Better energy efficiency can reduce household
+                costs while making homes warmer and healthier.
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <div>
+
+          <div class="flex gap-5">
+
+            <i data-feather="briefcase"
+               class="text-red-300 shrink-0 mt-1">
+            </i>
+
+            <div>
+
+              <h3 class="font-bold text-xl">
+                Create green jobs
+              </h3>
+
+              <p class="text-gray-400 mt-2 leading-relaxed">
+                New industries and technologies can create
+                skilled jobs and economic opportunities across
+                Square Country.
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ========================================================= -->
+<!-- NATURE -->
+<!-- ========================================================= -->
+
+<section class="py-20 md:py-28">
+
+  <div class="max-w-7xl mx-auto px-6">
+
+    <div class="grid lg:grid-cols-3 gap-12">
+
+      <div>
+
+        <p class="uppercase tracking-[0.2em]
+                  text-freedoms text-sm font-bold mb-4">
+          Conservation
+        </p>
+
+        <h2 class="serif text-4xl md:text-5xl font-bold">
+          Protecting our
+          natural heritage.
+        </h2>
+
+        <p class="mt-6 text-gray-600 text-lg leading-relaxed">
+          Square Country's natural environment belongs to
+          all of us. Protecting it means protecting the places
+          and ecosystems that future generations will inherit.
+        </p>
+
+      </div>
+
+
+      <div class="lg:col-span-2 grid md:grid-cols-2 gap-8">
+
+
+        <div class="border-t-2 border-freedoms pt-6">
+
+          <div class="text-freedoms mb-5">
+            <i data-feather="wind"></i>
+          </div>
+
+          <h3 class="font-bold text-xl">
+            Restore native ecosystems
+          </h3>
+
+          <p class="text-gray-600 mt-3 leading-relaxed">
+            Support restoration of native habitats and
+            strengthen protection for threatened ecosystems.
+          </p>
+
+        </div>
+
+
+        <div class="border-t-2 border-freedoms pt-6">
+
+          <div class="text-freedoms mb-5">
+            <i data-feather="droplet"></i>
+          </div>
+
+          <h3 class="font-bold text-xl">
+            Protect our waterways
+          </h3>
+
+          <p class="text-gray-600 mt-3 leading-relaxed">
+            Improve the health of rivers, lakes and coastal
+            waters and reduce harmful pollution.
+          </p>
+
+        </div>
+
+
+        <div class="border-t-2 border-freedoms pt-6">
+
+          <div class="text-freedoms mb-5">
+            <i data-feather="tree"></i>
+          </div>
+
+          <h3 class="font-bold text-xl">
+            Protect native forests
+          </h3>
+
+          <p class="text-gray-600 mt-3 leading-relaxed">
+            Safeguard important native forests and support
+            responsible land management.
+          </p>
+
+        </div>
+
+
+        <div class="border-t-2 border-freedoms pt-6">
+
+          <div class="text-freedoms mb-5">
+            <i data-feather="compass"></i>
+          </div>
+
+          <h3 class="font-bold text-xl">
+            Better access to nature
+          </h3>
+
+          <p class="text-gray-600 mt-3 leading-relaxed">
+            Protect parks and public spaces so people can
+            enjoy the natural environment close to where
+            they live.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ========================================================= -->
+<!-- POLLUTION & WASTE -->
+<!-- ========================================================= -->
+
+<section class="bg-red-50 py-20 md:py-28">
+
+  <div class="max-w-7xl mx-auto px-6">
+
+    <div class="grid lg:grid-cols-2 gap-8">
+
+
+      <div class="bg-white border border-red-100 p-8 md:p-10">
+
+        <div class="w-12 h-12 bg-red-50 text-freedoms
+                    flex items-center justify-center mb-6">
+
+          <i data-feather="trash-2"></i>
+
+        </div>
+
+        <p class="uppercase tracking-[0.2em]
+                  text-freedoms text-xs font-bold">
+          Waste
+        </p>
+
+        <h2 class="serif text-3xl md:text-4xl
+                   font-bold mt-3">
+          Less waste.
+          More reuse.
+        </h2>
+
+        <p class="text-gray-600 mt-5 leading-relaxed">
+          We will reduce unnecessary waste and encourage
+          recycling, reuse and better resource management
+          across households, businesses and government.
+        </p>
+
+      </div>
+
+
+      <div class="bg-white border border-red-100 p-8 md:p-10">
+
+        <div class="w-12 h-12 bg-red-50 text-freedoms
+                    flex items-center justify-center mb-6">
+
+          <i data-feather="cloud"></i>
+
+        </div>
+
+        <p class="uppercase tracking-[0.2em]
+                  text-freedoms text-xs font-bold">
+          Pollution
+        </p>
+
+        <h2 class="serif text-3xl md:text-4xl
+                   font-bold mt-3">
+          Cleaner air.
+          Cleaner water.
+        </h2>
+
+        <p class="text-gray-600 mt-5 leading-relaxed">
+          We will tackle sources of pollution that affect
+          people's health and the quality of the environment,
+          with practical action at local and national level.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ========================================================= -->
+<!-- RESILIENT SQUARE COUNTRY -->
+<!-- ========================================================= -->
+
+<section class="py-20 md:py-28">
+
+  <div class="max-w-7xl mx-auto px-6">
+
+    <div class="max-w-4xl">
+
+      <p class="uppercase tracking-[0.2em]
+                text-freedoms text-sm font-bold mb-4">
+        A resilient Square Country
+      </p>
+
+      <h2 class="serif text-4xl md:text-5xl font-bold">
+        Preparing our communities
+        for the future.
+      </h2>
+
+      <p class="mt-6 text-gray-600 text-lg leading-relaxed">
+        Environmental challenges can affect homes,
+        infrastructure, businesses and communities.
+        Government must plan ahead rather than wait for
+        problems to become crises.
+      </p>
+
+    </div>
+
+
+    <div class="grid md:grid-cols-3 gap-6 mt-14">
+
+
+      <div class="border border-gray-200 p-8">
+
+        <div class="text-freedoms font-black text-4xl">
+          01
+        </div>
+
+        <h3 class="font-bold text-xl mt-5">
+          Resilient infrastructure
+        </h3>
+
+        <p class="text-gray-600 mt-3 leading-relaxed">
+          Invest in infrastructure that can withstand
+          environmental pressures and protect essential
+          services.
+        </p>
+
+      </div>
+
+
+      <div class="border border-gray-200 p-8">
+
+        <div class="text-freedoms font-black text-4xl">
+          02
+        </div>
+
+        <h3 class="font-bold text-xl mt-5">
+          Better planning
+        </h3>
+
+        <p class="text-gray-600 mt-3 leading-relaxed">
+          Make long-term environmental risks part of
+          decisions about housing, transport and development.
+        </p>
+
+      </div>
+
+
+      <div class="border border-gray-200 p-8">
+
+        <div class="text-freedoms font-black text-4xl">
+          03
+        </div>
+
+        <h3 class="font-bold text-xl mt-5">
+          Stronger communities
+        </h3>
+
+        <p class="text-gray-600 mt-3 leading-relaxed">
+          Give councils and communities the resources and
+          support they need to prepare for environmental
+          challenges.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ========================================================= -->
+<!-- FINAL PROMISE -->
+<!-- ========================================================= -->
+
+<section class="bg-gray-950 text-white py-20 md:py-28">
+
+  <div class="max-w-5xl mx-auto px-6 text-center">
+
+    <p class="uppercase tracking-[0.25em]
+              text-red-300 text-sm font-bold">
+      Our promise
+    </p>
+
+    <h2 class="serif text-4xl md:text-6xl
+               font-bold mt-4 leading-tight">
+      A cleaner country.
+      A stronger future.
+    </h2>
+
+    <p class="max-w-2xl mx-auto mt-6 text-gray-400
+              text-lg leading-relaxed">
+      The Freedoms Party will protect our environment,
+      support cleaner energy and make sure Square Country
+      is ready for the challenges of tomorrow.
+    </p>
+
+    <a href="policies.html"
+       class="inline-flex items-center gap-2 mt-9
+              bg-freedoms text-white px-7 py-4 rounded-md
+              font-bold hover:bg-freedomsDark transition">
+
+      Back to all policies
+
+      <i data-feather="arrow-right" class="w-4 h-4"></i>
+
+    </a>
+
+  </div>
+
+</section>
+
+
+<!-- ========================================================= -->
+<!-- JOIN -->
+<!-- ========================================================= -->
+
+<section id="join" class="bg-white py-20">
+
+  <div class="max-w-4xl mx-auto px-6 text-center">
+
+    <p class="uppercase tracking-[0.25em]
+              text-freedoms text-sm font-bold">
+      Be part of the movement
+    </p>
+
+    <h2 class="serif text-4xl md:text-6xl
+               font-bold mt-4">
+      Help us build a cleaner Square Country.
+    </h2>
+
+    <p class="max-w-2xl mx-auto mt-6 text-gray-600 text-lg">
+      Join the Freedoms Party and help us build a fairer,
+      stronger and more sustainable future.
+    </p>
+
+    <div class="mt-9 flex flex-col sm:flex-row
+                justify-center gap-4">
+
+      <a href="#"
+         class="bg-freedoms text-white px-8 py-4 rounded-md
+                font-bold hover:bg-freedomsDark transition">
+        Join the Freedoms Party
+      </a>
+
+      <a href="#"
+         class="border border-gray-300 px-8 py-4 rounded-md
+                font-bold hover:border-freedoms
+                hover:text-freedoms transition">
+        Volunteer
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ========================================================= -->
+<!-- FOOTER -->
+<!-- ========================================================= -->
+
+<footer class="bg-white border-t border-gray-200">
+
+  <div class="max-w-7xl mx-auto px-6 py-14">
+
+    <div class="grid md:grid-cols-3 gap-10">
+
+      <div>
+
+        <div class="text-freedoms font-black text-2xl">
+          FREEDOMS
+        </div>
+
+        <p class="text-gray-500 mt-2">
+          The opposition for Square Country.
+        </p>
+
+      </div>
+
+
+      <div>
+
+        <h3 class="font-bold mb-4">
+          Get involved
+        </h3>
+
+        <div class="space-y-2 text-gray-600 text-sm">
+
+          <a href="#" class="block hover:text-freedoms">
+            Join us
+          </a>
+
+          <a href="#" class="block hover:text-freedoms">
+            Volunteer
+          </a>
+
+          <a href="#" class="block hover:text-freedoms">
+            Donate
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <div>
+
+        <h3 class="font-bold mb-4">
+          Follow us
+        </h3>
+
+        <div class="flex gap-3">
+
+          <a href="#"
+             class="w-10 h-10 border border-gray-300
+                    flex items-center justify-center
+                    hover:border-freedoms hover:text-freedoms">
+            <i data-feather="facebook"></i>
+          </a>
+
+          <a href="#"
+             class="w-10 h-10 border border-gray-300
+                    flex items-center justify-center
+                    hover:border-freedoms hover:text-freedoms">
+            <i data-feather="twitter"></i>
+          </a>
+
+          <a href="#"
+             class="w-10 h-10 border border-gray-300
+                    flex items-center justify-center
+                    hover:border-freedoms hover:text-freedoms">
+            <i data-feather="instagram"></i>
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <div class="border-t border-gray-200">
+
+    <div class="max-w-7xl mx-auto px-6 py-7">
+
+      <div class="flex flex-col md:flex-row
+                  justify-between gap-5 text-sm text-gray-500">
+
+        <p>
+          © 2026 Freedoms Party of Square Country
+        </p>
+
+        <div class="flex flex-wrap gap-6">
+
+          <a href="#" class="hover:text-freedoms">
+            Privacy
+          </a>
+
+          <a href="#" class="hover:text-freedoms">
+            Contact
+          </a>
+
+          <a href="#" class="hover:text-freedoms">
+            Accessibility
+          </a>
+
+          <span>
+            Authorised by the Freedoms Party
+          </span>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</footer>
+
+
+<script>
+
+  feather.replace();
+
+  function toggleMenu() {
+    const menu = document.getElementById("mobileMenu");
+    menu.classList.toggle("hidden");
+  }
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Lisa Bancroft | Freedoms Party | Square Country</title>
+
+  <link rel="icon" type="image/x-icon" href="images/freedoms-logo.png">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/feather-icons"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            freedoms: '#c8102e',
+            freedomsDark: '#8f0b20',
+            freedomsLight: '#fff1f3',
+            navy: '#172033'
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .serif {
+      font-family: Georgia, 'Times New Roman', serif;
+    }
+
+    .nav-link {
+      position: relative;
+    }
+
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -7px;
+      width: 0;
+      height: 2px;
+      background: #c8102e;
+      transition: width .25s ease;
+    }
+
+    .nav-link:hover::after {
+      width: 100%;
+    }
+
+    .stat-card {
+      transition: transform .2s ease;
+    }
+
+    .stat-card:hover {
+      transform: translateY(-3px);
+    }
+  </style>
+</head>
+
+<body class="bg-white text-gray-900">
+
+
+  <!-- NAVIGATION -->
+  <header class="bg-white border-b border-gray-200 sticky top-0 z-50">
+
+    <div class="max-w-7xl mx-auto px-6">
+
+      <div class="h-20 flex items-center justify-between">
+
+        <a href="index.html" class="flex items-center gap-3">
+
+          <div class="w-12 h-12 bg-freedoms flex items-center justify-center">
+            <span class="text-white font-black text-2xl">F</span>
+          </div>
+
+          <div class="leading-tight">
+            <div class="font-black text-xl tracking-tight">
+              FREEDOMS
+            </div>
+
+            <div class="text-xs tracking-[0.22em] text-gray-500 font-semibold">
+              SQUARE COUNTRY
+            </div>
+          </div>
+
+        </a>
+
+
+        <nav class="hidden lg:flex items-center gap-9 text-sm font-semibold">
+
+          <a href="index.html#about" class="nav-link">
+            About
+          </a>
+
+          <a href="priorities.html" class="nav-link">
+            Our priorities
+          </a>
+
+          <a href="team.html" class="nav-link">
+            Our team
+          </a>
+
+          <a href="news.html" class="nav-link">
+            News
+          </a>
+
+          <a href="contact.html" class="nav-link">
+            Contact
+          </a>
+
+          <a href="join.html"
+             class="bg-freedoms text-white px-6 py-3 rounded-md
+                    hover:bg-freedomsDark transition">
+            Join us
+          </a>
+
+        </nav>
+
+
+        <button
+          onclick="toggleMenu()"
+          class="lg:hidden p-2"
+          aria-label="Open menu">
+
+          <i data-feather="menu"></i>
+
+        </button>
+
+      </div>
+
+    </div>
+
+
+    <!-- MOBILE MENU -->
+    <div id="mobileMenu" class="hidden border-t bg-white lg:hidden">
+
+      <div class="px-6 py-5 space-y-4 text-sm font-semibold">
+
+        <a href="index.html#about" class="block">
+          About
+        </a>
+
+        <a href="priorities.html" class="block">
+          Our priorities
+        </a>
+
+        <a href="team.html" class="block">
+          Our team
+        </a>
+
+        <a href="news.html" class="block">
+          News
+        </a>
+
+        <a href="contact.html" class="block">
+          Contact
+        </a>
+
+        <a href="join.html"
+           class="block bg-freedoms text-white text-center px-5 py-3 rounded-md">
+          Join us
+        </a>
+
+      </div>
+
+    </div>
+
+  </header>
+
+
+
+  <!-- BREADCRUMB -->
+  <div class="bg-freedomsLight border-b border-red-100">
+
+    <div class="max-w-7xl mx-auto px-6 py-4">
+
+      <div class="flex items-center gap-2 text-sm">
+
+        <a href="index.html"
+           class="text-freedoms hover:underline">
+          Freedoms Party
+        </a>
+
+        <i data-feather="chevron-right"
+           class="w-4 h-4 text-gray-400"></i>
+
+        <a href="team.html"
+           class="text-freedoms hover:underline">
+          Our team
+        </a>
+
+        <i data-feather="chevron-right"
+           class="w-4 h-4 text-gray-400"></i>
+
+        <span class="text-gray-600">
+          Lisa Bancroft
+        </span>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+  <!-- PROFILE HERO -->
+  <section class="bg-freedoms text-white">
+
+    <div class="max-w-7xl mx-auto px-6 py-16 md:py-20">
+
+      <div class="grid lg:grid-cols-[360px_1fr] gap-12 items-center">
+
+
+        <!-- PHOTO -->
+        <div class="bg-white/10 border border-white/20 p-3">
+
+          <div class="aspect-[4/5] bg-red-900/40 flex items-center justify-center">
+
+            <!-- Replace this with:
+            <img src="images/mp-name.jpg"
+                 alt="[MP Name]"
+                 class="w-full h-full object-cover">
+            -->
+
+            <i data-feather="user"
+               class="w-28 h-28 text-red-200"></i>
+
+          </div>
+
+        </div>
+
+
+        <!-- DETAILS -->
+        <div>
+
+          <p class="uppercase tracking-[0.25em] text-sm font-bold text-red-100">
+            Member of Parliament
+          </p>
+
+          <h1 class="serif text-5xl md:text-7xl font-bold mt-4 leading-tight">
+            Lisa Bancroft
+          </h1>
+
+          <p class="text-xl md:text-2xl text-red-100 mt-5">
+            List MP
+          </p>
+
+          <div class="mt-8 flex flex-wrap gap-3">
+
+            <span class="bg-white text-freedoms px-4 py-2 text-sm font-bold">
+              Freedoms Party
+            </span>
+
+            <span class="border border-white/40 px-4 py-2 text-sm font-semibold">
+              Opposition
+            </span>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- QUICK INFORMATION -->
+  <section class="border-b border-gray-200 bg-white">
+
+    <div class="max-w-7xl mx-auto px-6">
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4">
+
+        <div class="stat-card py-7 lg:px-8 lg:border-r border-gray-200">
+
+          <p class="text-xs uppercase tracking-widest text-gray-500 font-bold">
+            Electorate
+          </p>
+
+          <p class="font-bold text-lg mt-2">
+            List MP
+          </p>
+
+        </div>
+
+
+        <div class="stat-card py-7 lg:px-8 border-t sm:border-t-0 lg:border-r border-gray-200">
+
+          <p class="text-xs uppercase tracking-widest text-gray-500 font-bold">
+            Party
+          </p>
+
+          <p class="font-bold text-lg mt-2 text-freedoms">
+            Freedoms Party
+          </p>
+
+        </div>
+
+
+        <div class="stat-card py-7 lg:px-8 border-t lg:border-t-0 lg:border-r border-gray-200">
+
+          <p class="text-xs uppercase tracking-widest text-gray-500 font-bold">
+            Parliament
+          </p>
+
+          <p class="font-bold text-lg mt-2">
+            Member since 2014
+          </p>
+
+        </div>
+
+
+        <div class="stat-card py-7 lg:px-8 border-t lg:border-t-0">
+
+          <p class="text-xs uppercase tracking-widest text-gray-500 font-bold">
+            Role
+          </p>
+
+          <p class="font-bold text-lg mt-2">
+            Opposition MP
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- ABOUT -->
+  <main>
+
+    <section class="py-20">
+
+      <div class="max-w-7xl mx-auto px-6">
+
+        <div class="grid lg:grid-cols-[1fr_360px] gap-16">
+
+
+          <!-- MAIN BIO -->
+          <div>
+
+            <p class="uppercase tracking-[0.2em] text-freedoms text-sm font-bold mb-4">
+              About Lisa
+            </p>
+
+            <h2 class="serif text-4xl md:text-5xl font-bold">
+              Fighting for Square Country
+            </h2>
+
+            <div class="mt-8 text-gray-600 text-lg leading-relaxed space-y-6">
+
+              <p>
+                Born in Masterton in 1980, Lisa Bancroft grew up in the rural town of Milford, where she attended Westfield College. She later moved to Square City to study at the University of Square Country, becoming involved in the Freedoms Party through its student wing.
+              </p>
+
+              <p>
+                Bancroft entered Parliament as a List MP in 2014, joining the Freedoms Party opposition. She works alongside party leader David Campbell and fellow MPs as deputy leader of the Freedoms Party, campaigning for greater opportunity and a fairer future for all Squares.
+              </p>
+
+            </div>
+
+
+            <!-- VALUES -->
+            <div class="mt-12">
+
+              <h3 class="serif text-3xl font-bold">
+                Parliamentary priorities
+              </h3>
+
+              <div class="mt-6 grid sm:grid-cols-2 gap-4">
+
+                <div class="border border-gray-200 p-5">
+
+                  <div class="text-freedoms mb-3">
+                    <i data-feather="home"></i>
+                  </div>
+
+                  <h4 class="font-bold">
+                    Affordable housing
+                  </h4>
+
+                  <p class="text-gray-600 text-sm mt-2">
+                    Making sure families can find a safe and affordable
+                    place to live.
+                  </p>
+
+                </div>
+
+
+                <div class="border border-gray-200 p-5">
+
+                  <div class="text-freedoms mb-3">
+                    <i data-feather="briefcase"></i>
+                  </div>
+
+                  <h4 class="font-bold">
+                    A fair economy
+                  </h4>
+
+                  <p class="text-gray-600 text-sm mt-2">
+                    Supporting workers, businesses and local economies.
+                  </p>
+
+                </div>
+
+
+                <div class="border border-gray-200 p-5">
+
+                  <div class="text-freedoms mb-3">
+                    <i data-feather="heart"></i>
+                  </div>
+
+                  <h4 class="font-bold">
+                    Public services
+                  </h4>
+
+                  <p class="text-gray-600 text-sm mt-2">
+                    Strong healthcare, education and essential services.
+                  </p>
+
+                </div>
+
+
+                <div class="border border-gray-200 p-5">
+
+                  <div class="text-freedoms mb-3">
+                    <i data-feather="users"></i>
+                  </div>
+
+                  <h4 class="font-bold">
+                    Strong communities
+                  </h4>
+
+                  <p class="text-gray-600 text-sm mt-2">
+                    Giving local communities a stronger voice.
+                  </p>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+
+          <!-- SIDEBAR -->
+          <aside>
+
+            <div class="bg-gray-50 border border-gray-200 p-7">
+
+              <p class="uppercase tracking-widest text-xs text-freedoms font-bold">
+                Contact Lisa
+              </p>
+
+              <h3 class="serif text-2xl font-bold mt-3">
+                Get in touch
+              </h3>
+
+              <p class="text-gray-600 text-sm leading-relaxed mt-4">
+                Contact the office of Lisa Bancroft about local issues,
+                parliamentary matters or constituency enquiries.
+              </p>
+
+
+              <div class="mt-7 space-y-4">
+
+                <a href="mailto:lisabancroft@freedoms.org.sc"
+                   class="flex items-center gap-3 text-sm font-semibold hover:text-freedoms">
+
+                  <i data-feather="mail"
+                     class="w-5 h-5 text-freedoms"></i>
+
+                  lisabancroft@freedoms.org.sc
+
+                </a>
+
+
+                <a href="#"
+                   class="flex items-center gap-3 text-sm font-semibold hover:text-freedoms">
+
+                  <i data-feather="map-pin"
+                     class="w-5 h-5 text-freedoms"></i>
+
+                  13 Upperbank Parkway, Masterton City
+
+                </a>
+
+              </div>
+
+
+              <a href="contact.html"
+                 class="block mt-7 bg-freedoms text-white text-center
+                        px-5 py-3 rounded-md font-bold
+                        hover:bg-freedomsDark transition">
+
+                Contact office
+
+              </a>
+
+            </div>
+
+
+            <!-- SOCIAL -->
+            <div class="mt-6 border border-gray-200 p-7">
+
+              <h3 class="font-bold">
+                Follow Lisa
+              </h3>
+
+              <div class="flex gap-3 mt-5">
+
+                <a href="#"
+                   class="w-10 h-10 border border-gray-300 flex items-center justify-center
+                          hover:border-freedoms hover:text-freedoms">
+
+                  <i data-feather="facebook"></i>
+
+                </a>
+
+
+                <a href="#"
+                   class="w-10 h-10 border border-gray-300 flex items-center justify-center
+                          hover:border-freedoms hover:text-freedoms">
+
+                  <i data-feather="twitter"></i>
+
+                </a>
+
+
+                <a href="#"
+                   class="w-10 h-10 border border-gray-300 flex items-center justify-center
+                          hover:border-freedoms hover:text-freedoms">
+
+                  <i data-feather="instagram"></i>
+
+                </a>
+
+              </div>
+
+            </div>
+
+          </aside>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- PARLIAMENT -->
+    <section class="bg-gray-50 py-20">
+
+      <div class="max-w-7xl mx-auto px-6">
+
+        <div class="max-w-3xl">
+
+          <p class="uppercase tracking-[0.2em] text-freedoms text-sm font-bold mb-4">
+            In Parliament
+          </p>
+
+          <h2 class="serif text-4xl md:text-5xl font-bold">
+            Working for Square Country
+          </h2>
+
+          <p class="mt-6 text-gray-600 text-lg leading-relaxed">
+            Lisa Bancroft is committed to making sure the concerns of
+            Square Country are represented in Parliament and that local
+            communities have a strong voice in national decisions.
+          </p>
+
+        </div>
+
+
+        <div class="grid md:grid-cols-3 gap-6 mt-12">
+
+
+          <div class="bg-white border border-gray-200 p-7">
+
+            <div class="text-freedoms">
+              <i data-feather="mic"></i>
+            </div>
+
+            <h3 class="font-bold text-xl mt-5">
+              Parliamentary debates
+            </h3>
+
+            <p class="text-gray-600 mt-3">
+              Speaking up for the electorate and challenging the
+              government's policies.
+            </p>
+
+          </div>
+
+
+          <div class="bg-white border border-gray-200 p-7">
+
+            <div class="text-freedoms">
+              <i data-feather="file-text"></i>
+            </div>
+
+            <h3 class="font-bold text-xl mt-5">
+              Policy
+            </h3>
+
+            <p class="text-gray-600 mt-3">
+              Helping develop and promote Freedoms Party policies
+              for a better Square Country.
+            </p>
+
+          </div>
+
+
+          <div class="bg-white border border-gray-200 p-7">
+
+            <div class="text-freedoms">
+              <i data-feather="users"></i>
+            </div>
+
+            <h3 class="font-bold text-xl mt-5">
+              Constituents
+            </h3>
+
+            <p class="text-gray-600 mt-3">
+              Listening to residents and raising local concerns
+              in Parliament.
+            </p>
+
+          </div>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- CTA -->
+    <section class="bg-freedoms text-white py-20">
+
+      <div class="max-w-4xl mx-auto px-6 text-center">
+
+        <p class="uppercase tracking-[0.25em] text-red-100 text-sm font-bold">
+          The Freedoms Party
+        </p>
+
+        <h2 class="serif text-4xl md:text-6xl font-bold mt-4">
+          A stronger voice for Square Country.
+        </h2>
+
+        <p class="mt-6 text-red-50 text-lg max-w-2xl mx-auto">
+          Join the movement and help us build a fairer future
+          for everyone.
+        </p>
+
+        <a href="join.html"
+           class="inline-block mt-8 bg-white text-freedoms
+                  px-8 py-4 rounded-md font-bold
+                  hover:bg-red-50 transition">
+
+          Join the Freedoms Party
+
+        </a>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+
+  <!-- FOOTER -->
+  <footer class="bg-gray-950 text-gray-400">
+
+    <div class="max-w-7xl mx-auto px-6 py-8">
+
+      <div class="flex flex-col md:flex-row justify-between gap-5 text-sm">
+
+        <p>
+          © 2026 Freedoms Party of Square Country
+        </p>
+
+        <div class="flex flex-wrap gap-6">
+
+          <a href="#" class="hover:text-white">
+            Privacy
+          </a>
+
+          <a href="contact.html" class="hover:text-white">
+            Contact
+          </a>
+
+          <a href="#" class="hover:text-white">
+            Accessibility
+          </a>
+
+          <a href="#" class="hover:text-white">
+            Authorised by the Freedoms Party, 13 Upperbank Parkway, Masterton City
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+  <script>
+    feather.replace();
+
+    function toggleMenu() {
+      document
+        .getElementById('mobileMenu')
+        .classList.toggle('hidden');
+    }
+  </script>
+
+</body>
+</html>

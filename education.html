@@ -1,0 +1,1258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Education | Freedoms Party of Square Country</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/feather-icons"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            freedoms: '#C8102E',
+            freedomsDark: '#9F0C24'
+          },
+          fontFamily: {
+            serif: ['Georgia', 'serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    .nav-link {
+      position: relative;
+    }
+
+    .nav-link::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -7px;
+      width: 0;
+      height: 2px;
+      background: #C8102E;
+      transition: width 0.25s ease;
+    }
+
+    .nav-link:hover::after,
+    .nav-link.active::after {
+      width: 100%;
+    }
+
+    .education-card {
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .education-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 16px 35px rgba(0,0,0,0.07);
+    }
+  </style>
+</head>
+
+<body class="bg-white text-gray-900">
+
+
+<!-- ========================================================= -->
+<!-- NAVIGATION -->
+<!-- ========================================================= -->
+
+<header class="border-b border-gray-100 bg-white">
+
+  <div class="max-w-7xl mx-auto px-6">
+
+    <div class="h-20 flex items-center justify-between">
+
+      <!-- LOGO -->
+      <a href="index.html" class="flex items-center gap-3">
+
+        <div class="w-12 h-12 bg-freedoms flex items-center justify-center">
+          <span class="text-white font-black text-2xl">F</span>
+        </div>
+
+        <div class="leading-tight">
+
+          <div class="font-black text-xl tracking-tight">
+            FREEDOMS
+          </div>
+
+          <div class="text-xs tracking-[0.22em] text-gray-500 font-semibold">
+            SQUARE COUNTRY
+          </div>
+
+        </div>
+
+      </a>
+
+
+      <!-- DESKTOP NAV -->
+      <nav class="hidden lg:flex items-center gap-9 text-sm font-semibold">
+
+        <a href="about.html" class="nav-link">
+          About
+        </a>
+
+        <a href="policies.html"
+           class="nav-link active text-freedoms">
+          Our policies
+        </a>
+
+        <a href="team.html" class="nav-link">
+          Our team
+        </a>
+
+        <a href="news.html" class="nav-link">
+          News
+        </a>
+
+        <a href="contact.html" class="nav-link">
+          Contact
+        </a>
+
+        <a href="#join"
+           class="bg-freedoms text-white px-6 py-3 rounded-md
+                  hover:bg-freedomsDark transition">
+          Join us
+        </a>
+
+      </nav>
+
+
+      <!-- MOBILE BUTTON -->
+      <button
+        onclick="toggleMenu()"
+        class="lg:hidden p-2"
+        aria-label="Open menu">
+
+        <i data-feather="menu"></i>
+
+      </button>
+
+    </div>
+
+  </div>
+
+
+  <!-- MOBILE NAV -->
+  <div id="mobileMenu"
+       class="hidden border-t bg-white lg:hidden">
+
+    <div class="px-6 py-5 space-y-4 text-sm font-semibold">
+
+      <a href="about.html"
+         onclick="toggleMenu()"
+         class="block">
+        About
+      </a>
+
+      <a href="policies.html"
+         onclick="toggleMenu()"
+         class="block text-freedoms">
+        Our policies
+      </a>
+
+      <a href="team.html"
+         onclick="toggleMenu()"
+         class="block">
+        Our team
+      </a>
+
+      <a href="news.html"
+         onclick="toggleMenu()"
+         class="block">
+        News
+      </a>
+
+      <a href="contact.html"
+         onclick="toggleMenu()"
+         class="block">
+        Contact
+      </a>
+
+      <a href="#join"
+         onclick="toggleMenu()"
+         class="block bg-freedoms text-white text-center
+                px-5 py-3 rounded-md">
+        Join us
+      </a>
+
+    </div>
+
+  </div>
+
+</header>
+
+
+<!-- ========================================================= -->
+<!-- BREADCRUMB -->
+<!-- ========================================================= -->
+
+<div class="border-b border-gray-200 bg-gray-50">
+
+  <div class="max-w-7xl mx-auto px-6 py-4">
+
+    <div class="flex flex-wrap items-center gap-2
+                text-sm text-gray-500">
+
+      <a href="index.html"
+         class="hover:text-freedoms">
+        Home
+      </a>
+
+      <i data-feather="chevron-right" class="w-4 h-4"></i>
+
+      <a href="policies.html"
+         class="hover:text-freedoms">
+        Our policies
+      </a>
+
+      <i data-feather="chevron-right" class="w-4 h-4"></i>
+
+      <span class="text-gray-900 font-semibold">
+        Education
+      </span>
+
+    </div>
+
+  </div>
+
+</div>
+
+
+<!-- ========================================================= -->
+<!-- HERO -->
+<!-- ========================================================= -->
+
+<section class="bg-freedoms text-white">
+
+  <div class="max-w-7xl mx-auto px-6 py-20 md:py-28">
+
+    <div class="max-w-5xl">
+
+      <p class="uppercase tracking-[0.3em]
+                text-sm font-bold text-red-100 mb-6">
+        Our education policy
+      </p>
+
+      <h1 class="serif text-5xl md:text-7xl lg:text-8xl
+                 font-bold leading-[0.92]">
+        Every student
+        <span class="block">deserves a chance.</span>
+      </h1>
+
+      <p class="mt-8 text-lg md:text-xl text-red-50
+                max-w-3xl leading-relaxed">
+        A public education system that gives every young
+        person the knowledge, skills and opportunities they
+        need to build a successful future.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ========================================================= -->
+<!-- INTRO -->
+<!-- ========================================================= -->
+
+<section class="py-20 md:py-28">
+
+  <div class="max-w-7xl mx-auto px-6">
+
+    <div class="grid lg:grid-cols-[0.8fr_1.5fr] gap-16">
+
+      <div>
+
+        <p class="uppercase tracking-[0.2em]
+                  text-freedoms text-sm font-bold mb-4">
+          Our position
+        </p>
+
+        <h2 class="serif text-4xl md:text-5xl
+                   font-bold leading-tight">
+          Education is the
+          <span class="text-freedoms">
+            foundation.
+          </span>
+        </h2>
+
+      </div>
+
+
+      <div class="text-gray-600 text-lg leading-relaxed">
+
+        <p>
+          Every child and young person deserves access to
+          a high-quality education, regardless of their
+          background, circumstances or where they live.
+        </p>
+
+        <p class="mt-6">
+          The Freedoms Party believes schools should have
+          the resources they need, teachers should be
+          supported and students should be encouraged to
+          reach their full potential.
+        </p>
+
+        <p class="mt-6">
+          We will invest in the people and institutions that
+          make education work — while giving students
+          multiple pathways into further study, training
+          and employment.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ========================================================= -->
+<!-- STATEMENT -->
+<!-- ========================================================= -->
+
+<section class="bg-gray-50 py-20 md:py-24">
+
+  <div class="max-w-7xl mx-auto px-6">
+
+    <div class="border-l-4 border-freedoms
+                pl-7 md:pl-10 max-w-5xl">
+
+      <p class="serif text-3xl md:text-5xl
+                font-bold leading-tight">
+        "Where you start in life should never determine
+        how far you can go."
+      </p>
+
+      <p class="mt-6 text-gray-500 font-semibold">
+        — David Campbell, Education Spokesperson
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ========================================================= -->
+<!-- policies -->
+<!-- ========================================================= -->
+
+<section class="py-20 md:py-28">
+
+  <div class="max-w-7xl mx-auto px-6">
+
+    <div class="mb-14">
+
+      <p class="uppercase tracking-[0.2em]
+                text-freedoms text-sm font-bold mb-3">
+        Our commitments
+      </p>
+
+      <h2 class="serif text-4xl md:text-5xl font-bold">
+        A better education system.
+      </h2>
+
+      <p class="mt-5 text-gray-600 text-lg max-w-2xl">
+        Our education plan puts students first while
+        supporting the teachers and schools that help
+        them succeed.
+      </p>
+
+    </div>
+
+
+    <div class="grid md:grid-cols-2 gap-6">
+
+
+      <!-- 01 -->
+
+      <article class="education-card border border-gray-200
+                      p-8 md:p-10">
+
+        <div class="flex items-start gap-6">
+
+          <div class="text-freedoms font-black text-3xl">
+            01
+          </div>
+
+          <div>
+
+            <h3 class="serif text-2xl md:text-3xl font-bold">
+              Invest in our schools
+            </h3>
+
+            <p class="text-gray-600 mt-4 leading-relaxed">
+              Schools need modern facilities, appropriate
+              resources and reliable funding to give every
+              student the education they deserve.
+            </p>
+
+          </div>
+
+        </div>
+
+      </article>
+
+
+      <!-- 02 -->
+
+      <article class="education-card border border-gray-200
+                      p-8 md:p-10">
+
+        <div class="flex items-start gap-6">
+
+          <div class="text-freedoms font-black text-3xl">
+            02
+          </div>
+
+          <div>
+
+            <h3 class="serif text-2xl md:text-3xl font-bold">
+              Back our teachers
+            </h3>
+
+            <p class="text-gray-600 mt-4 leading-relaxed">
+              Teachers are at the heart of education. We will
+              support them with better resources, professional
+              development and manageable workloads.
+            </p>
+
+          </div>
+
+        </div>
+
+      </article>
+
+
+      <!-- 03 -->
+
+      <article class="education-card border border-gray-200
+                      p-8 md:p-10">
+
+        <div class="flex items-start gap-6">
+
+          <div class="text-freedoms font-black text-3xl">
+            03
+          </div>
+
+          <div>
+
+            <h3 class="serif text-2xl md:text-3xl font-bold">
+              Raise educational achievement
+            </h3>
+
+            <p class="text-gray-600 mt-4 leading-relaxed">
+              We will focus on strong foundations in reading,
+              writing, mathematics and critical thinking while
+              ensuring students have a broad education.
+            </p>
+
+          </div>
+
+        </div>
+
+      </article>
+
+
+      <!-- 04 -->
+
+      <article class="education-card border border-gray-200
+                      p-8 md:p-10">
+
+        <div class="flex items-start gap-6">
+
+          <div class="text-freedoms font-black text-3xl">
+            04
+          </div>
+
+          <div>
+
+            <h3 class="serif text-2xl md:text-3xl font-bold">
+              Support every learner
+            </h3>
+
+            <p class="text-gray-600 mt-4 leading-relaxed">
+              Students have different needs. Schools should
+              have the support and specialist services required
+              to help every learner participate and succeed.
+            </p>
+
+          </div>
+
+        </div>
+
+      </article>
+
+            <!-- 05 -->
+
+      <article class="education-card border border-gray-200
+                      p-8 md:p-10">
+
+        <div class="flex items-start gap-6">
+
+          <div class="text-freedoms font-black text-3xl">
+            05
+          </div>
+
+          <div>
+
+            <h3 class="serif text-2xl md:text-3xl font-bold">
+              Replace the National Diploma of Education
+            </h3>
+
+            <p class="text-gray-600 mt-4 leading-relaxed">
+              It's simple: NDE isn't working for students. We will replace it with a results-proven education system that will work for all students, giving them the education they need to succeed in life.
+            </p>
+
+          </div>
+
+        </div>
+
+      </article>
+
+
+      <!-- 06 -->
+
+      <article class="education-card border border-gray-200
+                      p-8 md:p-10">
+
+        <div class="flex items-start gap-6">
+
+          <div class="text-freedoms font-black text-3xl">
+            06
+          </div>
+
+          <div>
+
+            <h3 class="serif text-2xl md:text-3xl font-bold">
+              Stronger vocational pathways
+            </h3>
+
+            <p class="text-gray-600 mt-4 leading-relaxed">
+              University is not the only route to a successful
+              career. We will strengthen apprenticeships,
+              trades and practical training opportunities.
+            </p>
+
+          </div>
+
+        </div>
+
+      </article>
+
+
+      <!-- 07 -->
+
+      <article class="education-card border border-gray-200
+                      p-8 md:p-10">
+
+        <div class="flex items-start gap-6">
+
+          <div class="text-freedoms font-black text-3xl">
+            07
+          </div>
+
+          <div>
+
+            <h3 class="serif text-2xl md:text-3xl font-bold">
+              Education beyond school
+            </h3>
+
+            <p class="text-gray-600 mt-4 leading-relaxed">
+              Further education, universities and lifelong
+              learning should give people the opportunity
+              to gain new skills throughout their lives.
+            </p>
+
+          </div>
+
+        </div>
+
+      </article>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ========================================================= -->
+<!-- TEACHERS -->
+<!-- ========================================================= -->
+
+<section class="bg-gray-950 text-white py-20 md:py-28">
+
+  <div class="max-w-7xl mx-auto px-6">
+
+    <div class="grid lg:grid-cols-2 gap-16">
+
+      <div>
+
+        <p class="uppercase tracking-[0.2em]
+                  text-red-300 text-sm font-bold mb-5">
+          Teachers
+        </p>
+
+        <h2 class="serif text-4xl md:text-5xl
+                   font-bold leading-tight">
+          Great schools need
+          great teachers.
+        </h2>
+
+        <p class="mt-6 text-gray-300 text-lg leading-relaxed">
+          Teachers should be able to spend their time doing
+          what they entered the profession to do: teaching.
+          We will reduce unnecessary administrative pressure
+          and support teachers to succeed.
+        </p>
+
+      </div>
+
+
+      <div class="space-y-8">
+
+
+        <div class="border-b border-white/20 pb-8">
+
+          <div class="flex gap-5">
+
+            <i data-feather="book-open"
+               class="text-red-300 shrink-0 mt-1">
+            </i>
+
+            <div>
+
+              <h3 class="font-bold text-xl">
+                Better professional development
+              </h3>
+
+              <p class="text-gray-400 mt-2 leading-relaxed">
+                Teachers should have access to high-quality
+                training throughout their careers.
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <div class="border-b border-white/20 pb-8">
+
+          <div class="flex gap-5">
+
+            <i data-feather="clock"
+               class="text-red-300 shrink-0 mt-1">
+            </i>
+
+            <div>
+
+              <h3 class="font-bold text-xl">
+                Less unnecessary paperwork
+              </h3>
+
+              <p class="text-gray-400 mt-2 leading-relaxed">
+                We will look for ways to reduce unnecessary
+                administration and return teachers' time to
+                the classroom.
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <div class="border-b border-white/20 pb-8">
+
+          <div class="flex gap-5">
+
+            <i data-feather="users"
+               class="text-red-300 shrink-0 mt-1">
+            </i>
+
+            <div>
+
+              <h3 class="font-bold text-xl">
+                More support staff
+              </h3>
+
+              <p class="text-gray-400 mt-2 leading-relaxed">
+                Schools should have access to the specialist
+                staff they need to support students and
+                teachers.
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <div>
+
+          <div class="flex gap-5">
+
+            <i data-feather="award"
+               class="text-red-300 shrink-0 mt-1">
+            </i>
+
+            <div>
+
+              <h3 class="font-bold text-xl">
+                Respect the profession
+              </h3>
+
+              <p class="text-gray-400 mt-2 leading-relaxed">
+                Education policy should recognise the
+                expertise and professionalism of teachers.
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ========================================================= -->
+<!-- STUDENTS -->
+<!-- ========================================================= -->
+
+<section class="py-20 md:py-28">
+
+  <div class="max-w-7xl mx-auto px-6">
+
+    <div class="grid lg:grid-cols-3 gap-12">
+
+      <div>
+
+        <p class="uppercase tracking-[0.2em]
+                  text-freedoms text-sm font-bold mb-4">
+          Students
+        </p>
+
+        <h2 class="serif text-4xl md:text-5xl font-bold">
+          Putting students first.
+        </h2>
+
+        <p class="mt-6 text-gray-600 text-lg leading-relaxed">
+          Education should prepare young people for the
+          real world while giving them the knowledge,
+          confidence and support to succeed.
+        </p>
+
+      </div>
+
+
+      <div class="lg:col-span-2 grid md:grid-cols-2 gap-8">
+
+
+        <div class="border-t-2 border-freedoms pt-6">
+
+          <div class="text-freedoms mb-5">
+            <i data-feather="check-circle"></i>
+          </div>
+
+          <h3 class="font-bold text-xl">
+            Strong foundations
+          </h3>
+
+          <p class="text-gray-600 mt-3 leading-relaxed">
+            Every student should leave primary education
+            with strong literacy and numeracy skills.
+          </p>
+
+        </div>
+
+
+        <div class="border-t-2 border-freedoms pt-6">
+
+          <div class="text-freedoms mb-5">
+            <i data-feather="smile"></i>
+          </div>
+
+          <h3 class="font-bold text-xl">
+            Student wellbeing
+          </h3>
+
+          <p class="text-gray-600 mt-3 leading-relaxed">
+            Schools should be safe environments where
+            students can learn, grow and ask for help.
+          </p>
+
+        </div>
+
+
+        <div class="border-t-2 border-freedoms pt-6">
+
+          <div class="text-freedoms mb-5">
+            <i data-feather="monitor"></i>
+          </div>
+
+          <h3 class="font-bold text-xl">
+            Digital skills
+          </h3>
+
+          <p class="text-gray-600 mt-3 leading-relaxed">
+            Students need the digital literacy and critical
+            thinking skills required in a modern economy.
+          </p>
+
+        </div>
+
+
+        <div class="border-t-2 border-freedoms pt-6">
+
+          <div class="text-freedoms mb-5">
+            <i data-feather="compass"></i>
+          </div>
+
+          <h3 class="font-bold text-xl">
+            Real-world opportunities
+          </h3>
+
+          <p class="text-gray-600 mt-3 leading-relaxed">
+            Schools should connect students with employers,
+            training providers and further education.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ========================================================= -->
+<!-- VOCATIONAL + HIGHER EDUCATION -->
+<!-- ========================================================= -->
+
+<section class="bg-red-50 py-20 md:py-28">
+
+  <div class="max-w-7xl mx-auto px-6">
+
+    <div class="grid lg:grid-cols-2 gap-8">
+
+
+      <div class="bg-white border border-red-100 p-8 md:p-10">
+
+        <div class="w-12 h-12 bg-red-50 text-freedoms
+                    flex items-center justify-center mb-6">
+
+          <i data-feather="tool"></i>
+
+        </div>
+
+        <p class="uppercase tracking-[0.2em]
+                  text-freedoms text-xs font-bold">
+          Vocational education
+        </p>
+
+        <h2 class="serif text-3xl md:text-4xl
+                   font-bold mt-3">
+          More pathways into work.
+        </h2>
+
+        <p class="text-gray-600 mt-5 leading-relaxed">
+          Apprenticeships, trades and vocational education
+          provide valuable pathways into rewarding careers.
+          We will work to make these options more accessible
+          and better connected with employers.
+        </p>
+
+      </div>
+
+
+      <div class="bg-white border border-red-100 p-8 md:p-10">
+
+        <div class="w-12 h-12 bg-red-50 text-freedoms
+                    flex items-center justify-center mb-6">
+
+          <i data-feather="book"></i>
+
+        </div>
+
+        <p class="uppercase tracking-[0.2em]
+                  text-freedoms text-xs font-bold">
+          Higher education
+        </p>
+
+        <h2 class="serif text-3xl md:text-4xl
+                   font-bold mt-3">
+          Opportunity after school.
+        </h2>
+
+        <p class="text-gray-600 mt-5 leading-relaxed">
+          Universities and other tertiary institutions are
+          essential to our economy and society. We will
+          support access to high-quality further education
+          and the skills our country needs.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ========================================================= -->
+<!-- EQUAL OPPORTUNITY -->
+<!-- ========================================================= -->
+
+<section class="py-20 md:py-28">
+
+  <div class="max-w-7xl mx-auto px-6">
+
+    <div class="max-w-4xl">
+
+      <p class="uppercase tracking-[0.2em]
+                text-freedoms text-sm font-bold mb-4">
+        Equal opportunity
+      </p>
+
+      <h2 class="serif text-4xl md:text-5xl font-bold">
+        Your postcode shouldn't decide your future.
+      </h2>
+
+      <p class="mt-6 text-gray-600 text-lg leading-relaxed">
+        Students in every part of Square Country deserve
+        access to excellent schools and opportunities.
+        We will work to address educational disadvantage
+        and ensure resources reach the communities that
+        need them most.
+      </p>
+
+    </div>
+
+
+    <div class="grid md:grid-cols-3 gap-6 mt-14">
+
+
+      <div class="border border-gray-200 p-8">
+
+        <div class="text-freedoms font-black text-4xl">
+          01
+        </div>
+
+        <h3 class="font-bold text-xl mt-5">
+          Regional schools
+        </h3>
+
+        <p class="text-gray-600 mt-3 leading-relaxed">
+          Strong schools should be available to students
+          outside the largest cities.
+        </p>
+
+      </div>
+
+
+      <div class="border border-gray-200 p-8">
+
+        <div class="text-freedoms font-black text-4xl">
+          02
+        </div>
+
+        <h3 class="font-bold text-xl mt-5">
+          Support disadvantaged students
+        </h3>
+
+        <p class="text-gray-600 mt-3 leading-relaxed">
+          Additional support should reach students facing
+          barriers to participation and achievement.
+        </p>
+
+      </div>
+
+
+      <div class="border border-gray-200 p-8">
+
+        <div class="text-freedoms font-black text-4xl">
+          03
+        </div>
+
+        <h3 class="font-bold text-xl mt-5">
+          Equal opportunity
+        </h3>
+
+        <p class="text-gray-600 mt-3 leading-relaxed">
+          Every student should have the opportunity to
+          discover their strengths and determine their own
+          future.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ========================================================= -->
+<!-- FINAL PROMISE -->
+<!-- ========================================================= -->
+
+<section class="bg-gray-950 text-white py-20 md:py-28">
+
+  <div class="max-w-5xl mx-auto px-6 text-center">
+
+    <p class="uppercase tracking-[0.25em]
+              text-red-300 text-sm font-bold">
+      Our promise
+    </p>
+
+    <h2 class="serif text-4xl md:text-6xl
+               font-bold mt-4 leading-tight">
+      Every child.
+      Every opportunity.
+    </h2>
+
+    <p class="max-w-2xl mx-auto mt-6 text-gray-400
+              text-lg leading-relaxed">
+      The Freedoms Party will build an education system
+      that gives students the opportunity to succeed,
+      supports teachers and strengthens Square Country
+      for generations to come.
+    </p>
+
+    <a href="policies.html"
+       class="inline-flex items-center gap-2 mt-9
+              bg-freedoms text-white px-7 py-4 rounded-md
+              font-bold hover:bg-freedomsDark transition">
+
+      Back to all policies
+
+      <i data-feather="arrow-right" class="w-4 h-4"></i>
+
+    </a>
+
+  </div>
+
+</section>
+
+
+<!-- ========================================================= -->
+<!-- JOIN -->
+<!-- ========================================================= -->
+
+<section id="join" class="bg-white py-20">
+
+  <div class="max-w-4xl mx-auto px-6 text-center">
+
+    <p class="uppercase tracking-[0.25em]
+              text-freedoms text-sm font-bold">
+      Be part of the movement
+    </p>
+
+    <h2 class="serif text-4xl md:text-6xl
+               font-bold mt-4">
+      Help us build a better education system.
+    </h2>
+
+    <p class="max-w-2xl mx-auto mt-6 text-gray-600 text-lg">
+      Join the Freedoms Party and help us build a
+      fairer future for every student.
+    </p>
+
+    <div class="mt-9 flex flex-col sm:flex-row
+                justify-center gap-4">
+
+      <a href="#"
+         class="bg-freedoms text-white px-8 py-4 rounded-md
+                font-bold hover:bg-freedomsDark transition">
+        Join the Freedoms Party
+      </a>
+
+      <a href="#"
+         class="border border-gray-300 px-8 py-4 rounded-md
+                font-bold hover:border-freedoms
+                hover:text-freedoms transition">
+        Volunteer
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ========================================================= -->
+<!-- FOOTER -->
+<!-- ========================================================= -->
+
+<footer class="bg-white border-t border-gray-200">
+
+  <div class="max-w-7xl mx-auto px-6 py-14">
+
+    <div class="grid md:grid-cols-3 gap-10">
+
+      <div>
+
+        <div class="text-freedoms font-black text-2xl">
+          FREEDOMS
+        </div>
+
+        <p class="text-gray-500 mt-2">
+          The opposition for Square Country.
+        </p>
+
+      </div>
+
+
+      <div>
+
+        <h3 class="font-bold mb-4">
+          Get involved
+        </h3>
+
+        <div class="space-y-2 text-gray-600 text-sm">
+
+          <a href="#" class="block hover:text-freedoms">
+            Join us
+          </a>
+
+          <a href="#" class="block hover:text-freedoms">
+            Volunteer
+          </a>
+
+          <a href="#" class="block hover:text-freedoms">
+            Donate
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <div>
+
+        <h3 class="font-bold mb-4">
+          Follow us
+        </h3>
+
+        <div class="flex gap-3">
+
+          <a href="#"
+             class="w-10 h-10 border border-gray-300
+                    flex items-center justify-center
+                    hover:border-freedoms hover:text-freedoms">
+            <i data-feather="facebook"></i>
+          </a>
+
+          <a href="#"
+             class="w-10 h-10 border border-gray-300
+                    flex items-center justify-center
+                    hover:border-freedoms hover:text-freedoms">
+            <i data-feather="twitter"></i>
+          </a>
+
+          <a href="#"
+             class="w-10 h-10 border border-gray-300
+                    flex items-center justify-center
+                    hover:border-freedoms hover:text-freedoms">
+            <i data-feather="instagram"></i>
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <div class="border-t border-gray-200">
+
+    <div class="max-w-7xl mx-auto px-6 py-7">
+
+      <div class="flex flex-col md:flex-row
+                  justify-between gap-5 text-sm text-gray-500">
+
+        <p>
+          © 2026 Freedoms Party of Square Country
+        </p>
+
+        <div class="flex flex-wrap gap-6">
+
+          <a href="#" class="hover:text-freedoms">
+            Privacy
+          </a>
+
+          <a href="#" class="hover:text-freedoms">
+            Contact
+          </a>
+
+          <a href="#" class="hover:text-freedoms">
+            Accessibility
+          </a>
+
+          <span>
+            Authorised by the Freedoms Party, 13 Upperbank Parkway, Masterton City
+          </span>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</footer>
+
+
+<script>
+
+  feather.replace();
+
+  function toggleMenu() {
+    const menu = document.getElementById("mobileMenu");
+    menu.classList.toggle("hidden");
+  }
+
+</script>
+
+</body>
+</html>

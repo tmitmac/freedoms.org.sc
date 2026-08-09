@@ -1,0 +1,1197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>A Fair Economy | Freedoms Party of Square Country</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/feather-icons"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            freedoms: '#C8102E',
+            freedomsDark: '#9F0C24'
+          },
+          fontFamily: {
+            serif: ['Georgia', 'serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    .nav-link {
+      position: relative;
+    }
+
+    .nav-link::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -7px;
+      width: 0;
+      height: 2px;
+      background: #C8102E;
+      transition: width 0.25s ease;
+    }
+
+    .nav-link:hover::after,
+    .nav-link.active::after {
+      width: 100%;
+    }
+
+    .commitment {
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .commitment:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 15px 35px rgba(0,0,0,0.07);
+    }
+  </style>
+</head>
+
+<body class="bg-white text-gray-900">
+
+
+<!-- ========================================================= -->
+<!-- NAVIGATION -->
+<!-- ========================================================= -->
+
+<header class="border-b border-gray-100 bg-white">
+
+  <div class="max-w-7xl mx-auto px-6">
+
+    <div class="h-20 flex items-center justify-between">
+
+      <!-- LOGO -->
+      <a href="index.html" class="flex items-center gap-3">
+
+        <div class="w-12 h-12 bg-freedoms flex items-center justify-center">
+          <span class="text-white font-black text-2xl">F</span>
+        </div>
+
+        <div class="leading-tight">
+
+          <div class="font-black text-xl tracking-tight">
+            FREEDOMS
+          </div>
+
+          <div class="text-xs tracking-[0.22em] text-gray-500 font-semibold">
+            SQUARE COUNTRY
+          </div>
+
+        </div>
+
+      </a>
+
+
+      <!-- DESKTOP NAV -->
+      <nav class="hidden lg:flex items-center gap-9 text-sm font-semibold">
+
+        <a href="about.html" class="nav-link">
+          About
+        </a>
+
+        <a href="policies.html"
+           class="nav-link active text-freedoms">
+          Our policies
+        </a>
+
+        <a href="team.html" class="nav-link">
+          Our team
+        </a>
+
+        <a href="news.html" class="nav-link">
+          News
+        </a>
+
+        <a href="contact.html" class="nav-link">
+          Contact
+        </a>
+
+        <a href="#join"
+           class="bg-freedoms text-white px-6 py-3 rounded-md
+                  hover:bg-freedomsDark transition">
+          Join us
+        </a>
+
+      </nav>
+
+
+      <!-- MOBILE BUTTON -->
+      <button
+        onclick="toggleMenu()"
+        class="lg:hidden p-2"
+        aria-label="Open menu">
+
+        <i data-feather="menu"></i>
+
+      </button>
+
+    </div>
+
+  </div>
+
+
+  <!-- MOBILE NAV -->
+  <div id="mobileMenu"
+       class="hidden border-t bg-white lg:hidden">
+
+    <div class="px-6 py-5 space-y-4 text-sm font-semibold">
+
+      <a href="about.html"
+         onclick="toggleMenu()"
+         class="block">
+        About
+      </a>
+
+      <a href="policies.html"
+         onclick="toggleMenu()"
+         class="block text-freedoms">
+        Our policies
+      </a>
+
+      <a href="team.html"
+         onclick="toggleMenu()"
+         class="block">
+        Our team
+      </a>
+
+      <a href="news.html"
+         onclick="toggleMenu()"
+         class="block">
+        News
+      </a>
+
+      <a href="contact.html"
+         onclick="toggleMenu()"
+         class="block">
+        Contact
+      </a>
+
+      <a href="#join"
+         onclick="toggleMenu()"
+         class="block bg-freedoms text-white text-center
+                px-5 py-3 rounded-md">
+        Join us
+      </a>
+
+    </div>
+
+  </div>
+
+</header>
+
+
+<!-- ========================================================= -->
+<!-- BREADCRUMB -->
+<!-- ========================================================= -->
+
+<div class="border-b border-gray-200 bg-gray-50">
+
+  <div class="max-w-7xl mx-auto px-6 py-4">
+
+    <div class="flex flex-wrap items-center gap-2
+                text-sm text-gray-500">
+
+      <a href="index.html"
+         class="hover:text-freedoms">
+        Home
+      </a>
+
+      <i data-feather="chevron-right"
+         class="w-4 h-4">
+      </i>
+
+      <a href="policies.html"
+         class="hover:text-freedoms">
+        Our policies
+      </a>
+
+      <i data-feather="chevron-right"
+         class="w-4 h-4">
+      </i>
+
+      <span class="text-gray-900 font-semibold">
+        Economy
+      </span>
+
+    </div>
+
+  </div>
+
+</div>
+
+
+<!-- ========================================================= -->
+<!-- HERO -->
+<!-- ========================================================= -->
+
+<section class="bg-freedoms text-white">
+
+  <div class="max-w-7xl mx-auto px-6 py-20 md:py-28">
+
+    <div class="max-w-5xl">
+
+      <p class="uppercase tracking-[0.3em]
+                text-sm font-bold text-red-100 mb-6">
+        Our economic policy
+      </p>
+
+      <h1 class="serif text-5xl md:text-7xl lg:text-8xl
+                 font-bold leading-[0.92]">
+        A fair economy.
+      </h1>
+
+      <p class="mt-8 text-lg md:text-xl text-red-50
+                max-w-3xl leading-relaxed">
+        An economy that rewards work, supports enterprise
+        and gives every person a genuine opportunity to
+        build a better life.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ========================================================= -->
+<!-- INTRO -->
+<!-- ========================================================= -->
+
+<section class="py-20 md:py-28">
+
+  <div class="max-w-7xl mx-auto px-6">
+
+    <div class="grid lg:grid-cols-[0.8fr_1.5fr] gap-16">
+
+      <div>
+
+        <p class="uppercase tracking-[0.2em]
+                  text-freedoms text-sm font-bold mb-4">
+          Our position
+        </p>
+
+        <h2 class="serif text-4xl md:text-5xl
+                   font-bold leading-tight">
+          Growth should mean
+          <span class="text-freedoms">
+            a better life.
+          </span>
+        </h2>
+
+      </div>
+
+
+      <div class="text-gray-600 text-lg leading-relaxed">
+
+        <p>
+          Square Country needs an economy that works for
+          everyone — not just those who are already doing
+          well.
+        </p>
+
+        <p class="mt-6">
+          The Freedoms Party believes economic growth and
+          fairness go together. We want people to keep more
+          of what they earn, businesses to have the confidence
+          to invest and create jobs, and government to spend
+          taxpayers' money responsibly.
+        </p>
+
+        <p class="mt-6">
+          Our approach is straightforward: make it easier to
+          work, easier to build, easier to invest and easier
+          to get ahead.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ========================================================= -->
+<!-- BIG STATEMENT -->
+<!-- ========================================================= -->
+
+<section class="bg-gray-50 py-20 md:py-24">
+
+  <div class="max-w-7xl mx-auto px-6">
+
+    <div class="border-l-4 border-freedoms
+                pl-7 md:pl-10 max-w-5xl">
+
+      <p class="serif text-3xl md:text-5xl
+                font-bold leading-tight">
+        "A strong economy isn't measured only
+        by what government collects. It's measured
+        by what people are able to achieve."
+      </p>
+
+      <p class="mt-6 text-gray-500 font-semibold">
+        — David Thornfield, Finance Spokesperson
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ========================================================= -->
+<!-- KEY COMMITMENTS -->
+<!-- ========================================================= -->
+
+<section class="py-20 md:py-28">
+
+  <div class="max-w-7xl mx-auto px-6">
+
+    <div class="mb-14">
+
+      <p class="uppercase tracking-[0.2em]
+                text-freedoms text-sm font-bold mb-3">
+        Our commitments
+      </p>
+
+      <h2 class="serif text-4xl md:text-5xl font-bold">
+        An economy that works for you.
+      </h2>
+
+      <p class="mt-5 text-gray-600 text-lg max-w-2xl">
+        Our economic programme focuses on household
+        incomes, opportunity, enterprise and responsible
+        government.
+      </p>
+
+    </div>
+
+
+    <div class="grid md:grid-cols-2 gap-6">
+
+
+      <!-- 01 -->
+
+      <article class="commitment border border-gray-200
+                      p-8 md:p-10">
+
+        <div class="flex items-start gap-6">
+
+          <div class="text-freedoms font-black text-3xl">
+            01
+          </div>
+
+          <div>
+
+            <h3 class="serif text-2xl md:text-3xl font-bold">
+              Make work pay
+            </h3>
+
+            <p class="text-gray-600 mt-4 leading-relaxed">
+              People who work hard should be able to see
+              the benefits in their pay packet. We will
+              focus on lifting household incomes and
+              rewarding employment.
+            </p>
+
+          </div>
+
+        </div>
+
+      </article>
+
+
+      <!-- 02 -->
+
+      <article class="commitment border border-gray-200
+                      p-8 md:p-10">
+
+        <div class="flex items-start gap-6">
+
+          <div class="text-freedoms font-black text-3xl">
+            02
+          </div>
+
+          <div>
+
+            <h3 class="serif text-2xl md:text-3xl font-bold">
+              Support small business
+            </h3>
+
+            <p class="text-gray-600 mt-4 leading-relaxed">
+              Small businesses are at the heart of local
+              economies. We will reduce unnecessary
+              compliance costs and make it easier for
+              businesses to grow.
+            </p>
+
+          </div>
+
+        </div>
+
+      </article>
+
+
+      <!-- 03 -->
+
+      <article class="commitment border border-gray-200
+                      p-8 md:p-10">
+
+        <div class="flex items-start gap-6">
+
+          <div class="text-freedoms font-black text-3xl">
+            03
+          </div>
+
+          <div>
+
+            <h3 class="serif text-2xl md:text-3xl font-bold">
+              Tackle the cost of living
+            </h3>
+
+            <p class="text-gray-600 mt-4 leading-relaxed">
+              Families should not have to choose between
+              essentials. We will address the pressures
+              that make everyday life more expensive.
+            </p>
+
+          </div>
+
+        </div>
+
+      </article>
+
+
+      <!-- 04 -->
+
+      <article class="commitment border border-gray-200
+                      p-8 md:p-10">
+
+        <div class="flex items-start gap-6">
+
+          <div class="text-freedoms font-black text-3xl">
+            04
+          </div>
+
+          <div>
+
+            <h3 class="serif text-2xl md:text-3xl font-bold">
+              Responsible taxation
+            </h3>
+
+            <p class="text-gray-600 mt-4 leading-relaxed">
+              Taxpayers deserve a system that is fair,
+              understandable and competitive while
+              providing government with the revenue it
+              genuinely needs.
+            </p>
+
+          </div>
+
+        </div>
+
+      </article>
+
+
+      <!-- 05 -->
+
+      <article class="commitment border border-gray-200
+                      p-8 md:p-10">
+
+        <div class="flex items-start gap-6">
+
+          <div class="text-freedoms font-black text-3xl">
+            05
+          </div>
+
+          <div>
+
+            <h3 class="serif text-2xl md:text-3xl font-bold">
+              Invest for growth
+            </h3>
+
+            <p class="text-gray-600 mt-4 leading-relaxed">
+              Better infrastructure, innovation and
+              investment will help Square Country become
+              more productive and competitive.
+            </p>
+
+          </div>
+
+        </div>
+
+      </article>
+
+
+      <!-- 06 -->
+
+      <article class="commitment border border-gray-200
+                      p-8 md:p-10">
+
+        <div class="flex items-start gap-6">
+
+          <div class="text-freedoms font-black text-3xl">
+            06
+          </div>
+
+          <div>
+
+            <h3 class="serif text-2xl md:text-3xl font-bold">
+              Introduce a Capital Gains Tax (CGT)
+            </h3>
+
+            <p class="text-gray-600 mt-4 leading-relaxed">
+              To pay for the services all Squares deserve, a CGT will increase government revenue, allowing more to be spent on crucial services.
+            </p>
+
+          </div>
+
+        </div>
+
+      </article>
+
+            <!-- 07 -->
+
+      <article class="commitment border border-gray-200
+                      p-8 md:p-10">
+
+        <div class="flex items-start gap-6">
+
+          <div class="text-freedoms font-black text-3xl">
+            07
+          </div>
+
+          <div>
+
+            <h3 class="serif text-2xl md:text-3xl font-bold">
+              Repeal the Defence Expansion Act 2025
+            </h3>
+
+            <p class="text-gray-600 mt-4 leading-relaxed">
+                The last thing we need to be spending money on right now is defence. We need to spend it on Squares. Freedoms will repeal the DEA and <strong>will not replace it</strong>.
+            </p>
+
+          </div>
+
+        </div>
+
+      </article>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ========================================================= -->
+<!-- HOUSEHOLDS -->
+<!-- ========================================================= -->
+
+<section class="bg-gray-950 text-white py-20 md:py-28">
+
+  <div class="max-w-7xl mx-auto px-6">
+
+    <div class="grid lg:grid-cols-2 gap-16">
+
+      <div>
+
+        <p class="uppercase tracking-[0.2em]
+                  text-red-300 text-sm font-bold mb-5">
+          For working people
+        </p>
+
+        <h2 class="serif text-4xl md:text-5xl
+                   font-bold leading-tight">
+          More money in your pocket.
+        </h2>
+
+        <p class="mt-6 text-gray-300 text-lg leading-relaxed">
+          The economy is not an abstract number on a
+          government spreadsheet. It is the wages people
+          take home, the rent they pay, the groceries they
+          buy and the opportunities available to their
+          children.
+        </p>
+
+      </div>
+
+
+      <div class="space-y-8">
+
+        <div class="border-b border-white/20 pb-8">
+
+          <div class="flex gap-5">
+
+            <i data-feather="dollar-sign"
+               class="text-red-300 shrink-0 mt-1">
+            </i>
+
+            <div>
+
+              <h3 class="font-bold text-xl">
+                Higher household incomes
+              </h3>
+
+              <p class="text-gray-400 mt-2 leading-relaxed">
+                Policies that encourage employment,
+                investment and stronger wages.
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <div class="border-b border-white/20 pb-8">
+
+          <div class="flex gap-5">
+
+            <i data-feather="shopping-cart"
+               class="text-red-300 shrink-0 mt-1">
+            </i>
+
+            <div>
+
+              <h3 class="font-bold text-xl">
+                Lower everyday pressures
+              </h3>
+
+              <p class="text-gray-400 mt-2 leading-relaxed">
+                Action on the costs that put pressure on
+                household budgets.
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <div class="border-b border-white/20 pb-8">
+
+          <div class="flex gap-5">
+
+            <i data-feather="briefcase"
+               class="text-red-300 shrink-0 mt-1">
+            </i>
+
+            <div>
+
+              <h3 class="font-bold text-xl">
+                More opportunities to work
+              </h3>
+
+              <p class="text-gray-400 mt-2 leading-relaxed">
+                A labour market where people can find work,
+                develop skills and progress.
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <div>
+
+          <div class="flex gap-5">
+
+            <i data-feather="trending-up"
+               class="text-red-300 shrink-0 mt-1">
+            </i>
+
+            <div>
+
+              <h3 class="font-bold text-xl">
+                A growing economy
+              </h3>
+
+              <p class="text-gray-400 mt-2 leading-relaxed">
+                Long-term growth that creates jobs,
+                investment and opportunity.
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ========================================================= -->
+<!-- BUSINESS -->
+<!-- ========================================================= -->
+
+<section class="py-20 md:py-28">
+
+  <div class="max-w-7xl mx-auto px-6">
+
+    <div class="grid lg:grid-cols-3 gap-12">
+
+      <div>
+
+        <p class="uppercase tracking-[0.2em]
+                  text-freedoms text-sm font-bold mb-4">
+          Enterprise
+        </p>
+
+        <h2 class="serif text-4xl md:text-5xl font-bold">
+          Backing the people who build.
+        </h2>
+
+      </div>
+
+
+      <div class="lg:col-span-2 grid md:grid-cols-2 gap-10">
+
+
+        <div>
+
+          <div class="w-11 h-11 bg-red-50 text-freedoms
+                      flex items-center justify-center mb-5">
+
+            <i data-feather="briefcase"></i>
+
+          </div>
+
+          <h3 class="font-bold text-xl">
+            Small business
+          </h3>
+
+          <p class="text-gray-600 mt-3 leading-relaxed">
+            Small and medium businesses should spend
+            their time serving customers and creating jobs,
+            not filling out unnecessary forms.
+          </p>
+
+        </div>
+
+
+        <div>
+
+          <div class="w-11 h-11 bg-red-50 text-freedoms
+                      flex items-center justify-center mb-5">
+
+            <i data-feather="zap"></i>
+
+          </div>
+
+          <h3 class="font-bold text-xl">
+            Innovation
+          </h3>
+
+          <p class="text-gray-600 mt-3 leading-relaxed">
+            We will encourage innovation, new industries
+            and investment in the technologies that will
+            shape Square Country's future.
+          </p>
+
+        </div>
+
+
+        <div>
+
+          <div class="w-11 h-11 bg-red-50 text-freedoms
+                      flex items-center justify-center mb-5">
+
+            <i data-feather="globe"></i>
+
+          </div>
+
+          <h3 class="font-bold text-xl">
+            International trade
+          </h3>
+
+          <p class="text-gray-600 mt-3 leading-relaxed">
+            Square Country should be ambitious in the
+            global economy and create opportunities for
+            local businesses to reach new markets.
+          </p>
+
+        </div>
+
+
+        <div>
+
+          <div class="w-11 h-11 bg-red-50 text-freedoms
+                      flex items-center justify-center mb-5">
+
+            <i data-feather="activity"></i>
+
+          </div>
+
+          <h3 class="font-bold text-xl">
+            Productivity
+          </h3>
+
+          <p class="text-gray-600 mt-3 leading-relaxed">
+            Better infrastructure, skills and technology
+            can help workers and businesses produce more
+            and earn more.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ========================================================= -->
+<!-- RESPONSIBLE GOVERNMENT -->
+<!-- ========================================================= -->
+
+<section class="bg-gray-50 py-20 md:py-28">
+
+  <div class="max-w-7xl mx-auto px-6">
+
+    <div class="max-w-3xl">
+
+      <p class="uppercase tracking-[0.2em]
+                text-freedoms text-sm font-bold mb-4">
+        Responsible government
+      </p>
+
+      <h2 class="serif text-4xl md:text-5xl font-bold">
+        Every dollar matters.
+      </h2>
+
+      <p class="mt-6 text-gray-600 text-lg leading-relaxed">
+        Government does not have its own money. It spends
+        money collected from people and businesses through
+        taxation. That means every dollar should be treated
+        with respect.
+      </p>
+
+    </div>
+
+
+    <div class="grid md:grid-cols-3 gap-6 mt-14">
+
+
+      <div class="bg-white border border-gray-200 p-8">
+
+        <div class="text-freedoms font-black text-4xl">
+          01
+        </div>
+
+        <h3 class="font-bold text-xl mt-5">
+          Value for money
+        </h3>
+
+        <p class="text-gray-600 mt-3 leading-relaxed">
+          Government programmes should demonstrate
+          clear results and genuine public value.
+        </p>
+
+      </div>
+
+
+      <div class="bg-white border border-gray-200 p-8">
+
+        <div class="text-freedoms font-black text-4xl">
+          02
+        </div>
+
+        <h3 class="font-bold text-xl mt-5">
+          Sustainable finances
+        </h3>
+
+        <p class="text-gray-600 mt-3 leading-relaxed">
+          Today's decisions should not leave future
+          generations carrying unnecessary costs.
+        </p>
+
+      </div>
+
+
+      <div class="bg-white border border-gray-200 p-8">
+
+        <div class="text-freedoms font-black text-4xl">
+          03
+        </div>
+
+        <h3 class="font-bold text-xl mt-5">
+          Transparency
+        </h3>
+
+        <p class="text-gray-600 mt-3 leading-relaxed">
+          People have a right to understand where their
+          money goes and what government achieves with it.
+        </p>
+
+    </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ========================================================= -->
+<!-- FINAL PROMISE -->
+<!-- ========================================================= -->
+
+<section class="bg-red-50 py-20 md:py-24">
+
+  <div class="max-w-5xl mx-auto px-6 text-center">
+
+    <p class="uppercase tracking-[0.25em]
+              text-freedoms text-sm font-bold">
+      Our promise
+    </p>
+
+    <h2 class="serif text-4xl md:text-6xl
+               font-bold mt-4 leading-tight">
+      A stronger economy.
+      A fairer Square Country.
+    </h2>
+
+    <p class="max-w-2xl mx-auto mt-6 text-gray-600
+              text-lg leading-relaxed">
+      We believe Square Country can be more prosperous,
+      more productive and more fair — and that economic
+      growth should improve the lives of ordinary people.
+    </p>
+
+    <a href="policies.html"
+       class="inline-flex items-center gap-2 mt-9
+              bg-freedoms text-white px-7 py-4 rounded-md
+              font-bold hover:bg-freedomsDark transition">
+
+      Back to all policies
+
+      <i data-feather="arrow-right" class="w-4 h-4"></i>
+
+    </a>
+
+  </div>
+
+</section>
+
+
+<!-- ========================================================= -->
+<!-- JOIN -->
+<!-- ========================================================= -->
+
+<section id="join" class="bg-gray-950 text-white py-20">
+
+  <div class="max-w-4xl mx-auto px-6 text-center">
+
+    <p class="uppercase tracking-[0.25em]
+              text-red-300 text-sm font-bold">
+      Be part of the movement
+    </p>
+
+    <h2 class="serif text-4xl md:text-6xl font-bold mt-4">
+      Help us build a fairer economy.
+    </h2>
+
+    <p class="max-w-2xl mx-auto mt-6 text-gray-400 text-lg">
+      Join the Freedoms Party and help us create an economy
+      where everyone has the opportunity to get ahead.
+    </p>
+
+    <div class="mt-9 flex flex-col sm:flex-row
+                justify-center gap-4">
+
+      <a href="#"
+         class="bg-freedoms px-8 py-4 rounded-md
+                font-bold hover:bg-freedomsDark transition">
+        Join the Freedoms Party
+      </a>
+
+      <a href="#"
+         class="border border-gray-600 px-8 py-4 rounded-md
+                font-bold hover:bg-white/10 transition">
+        Volunteer
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ========================================================= -->
+<!-- FOOTER -->
+<!-- ========================================================= -->
+
+<footer class="bg-white border-t border-gray-200">
+
+  <div class="max-w-7xl mx-auto px-6 py-14">
+
+    <div class="grid md:grid-cols-3 gap-10">
+
+      <div>
+
+        <div class="text-freedoms font-black text-2xl">
+          FREEDOMS
+        </div>
+
+        <p class="text-gray-500 mt-2">
+          A country that works for you.
+        </p>
+
+      </div>
+
+
+      <div>
+
+        <h3 class="font-bold mb-4">
+          Get involved
+        </h3>
+
+        <div class="space-y-2 text-gray-600 text-sm">
+
+          <a href="#" class="block hover:text-freedoms">
+            Join us
+          </a>
+
+          <a href="#" class="block hover:text-freedoms">
+            Volunteer
+          </a>
+
+          <a href="#" class="block hover:text-freedoms">
+            Donate
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <div>
+
+        <h3 class="font-bold mb-4">
+          Follow us
+        </h3>
+
+        <div class="flex gap-3">
+
+          <a href="#"
+             class="w-10 h-10 border border-gray-300
+                    flex items-center justify-center
+                    hover:border-freedoms hover:text-freedoms">
+
+            <i data-feather="facebook"></i>
+
+          </a>
+
+          <a href="#"
+             class="w-10 h-10 border border-gray-300
+                    flex items-center justify-center
+                    hover:border-freedoms hover:text-freedoms">
+
+            <i data-feather="twitter"></i>
+
+          </a>
+
+          <a href="#"
+             class="w-10 h-10 border border-gray-300
+                    flex items-center justify-center
+                    hover:border-freedoms hover:text-freedoms">
+
+            <i data-feather="instagram"></i>
+
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <div class="border-t border-gray-200">
+
+    <div class="max-w-7xl mx-auto px-6 py-7">
+
+      <div class="flex flex-col md:flex-row
+                  justify-between gap-5 text-sm text-gray-500">
+
+        <p>
+          © 2026 Freedoms Party of Square Country
+        </p>
+
+        <div class="flex flex-wrap gap-6">
+
+          <a href="#" class="hover:text-freedoms">
+            Privacy
+          </a>
+
+          <a href="#" class="hover:text-freedoms">
+            Contact
+          </a>
+
+          <a href="#" class="hover:text-freedoms">
+            Accessibility
+          </a>
+
+          <span>
+            Authorised by the Freedoms Party, 13 Upperbank Parkway, Masterton City
+          </span>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</footer>
+
+
+<script>
+
+  feather.replace();
+
+  function toggleMenu() {
+    const menu = document.getElementById("mobileMenu");
+    menu.classList.toggle("hidden");
+  }
+
+</script>
+
+</body>
+</html>
+
