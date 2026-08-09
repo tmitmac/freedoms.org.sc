@@ -1,0 +1,1290 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Freedoms Party reveals MMP list | Freedoms Party of Square Country</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/feather-icons"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            freedoms: '#C8102E',
+            freedomsDark: '#9F0C24'
+          },
+          fontFamily: {
+            serif: ['Georgia', 'serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    .nav-link {
+      position: relative;
+    }
+
+    .nav-link::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -7px;
+      width: 0;
+      height: 2px;
+      background: #C8102E;
+      transition: width 0.25s ease;
+    }
+
+    .nav-link:hover::after {
+      width: 100%;
+    }
+
+    .list-row {
+      transition: background 0.2s ease;
+    }
+
+    .list-row:hover {
+      background: #f9fafb;
+    }
+  </style>
+</head>
+
+<body class="bg-white text-gray-900">
+
+
+<!-- ========================================================= -->
+<!-- NAVIGATION -->
+<!-- ========================================================= -->
+
+<header class="border-b border-gray-100 bg-white">
+
+  <div class="max-w-7xl mx-auto px-6">
+
+    <div class="h-20 flex items-center justify-between">
+
+      <!-- LOGO -->
+
+      <a href="index.html" class="flex items-center gap-3">
+
+        <div class="w-12 h-12 bg-freedoms flex items-center justify-center">
+          <span class="text-white font-black text-2xl">F</span>
+        </div>
+
+        <div class="leading-tight">
+
+          <div class="font-black text-xl tracking-tight">
+            FREEDOMS
+          </div>
+
+          <div class="text-xs tracking-[0.22em] text-gray-500 font-semibold">
+            SQUARE COUNTRY
+          </div>
+
+        </div>
+
+      </a>
+
+
+      <!-- DESKTOP NAV -->
+
+      <nav class="hidden lg:flex items-center gap-9 text-sm font-semibold">
+
+        <a href="about.html" class="nav-link">
+          About
+        </a>
+
+        <a href="priorities.html" class="nav-link">
+          Our policies
+        </a>
+
+        <a href="team.html" class="nav-link">
+          Our team
+        </a>
+
+        <a href="news.html" class="nav-link text-freedoms">
+          News
+        </a>
+
+        <a href="contact.html" class="nav-link">
+          Contact
+        </a>
+
+        <a href="join.html"
+           class="bg-freedoms text-white px-6 py-3 rounded-md
+                  hover:bg-freedomsDark transition">
+          Join us
+        </a>
+
+      </nav>
+
+
+      <!-- MOBILE BUTTON -->
+
+      <button
+        onclick="toggleMenu()"
+        class="lg:hidden p-2"
+        aria-label="Open menu">
+
+        <i data-feather="menu"></i>
+
+      </button>
+
+    </div>
+
+  </div>
+
+
+  <!-- MOBILE NAV -->
+
+  <div id="mobileMenu"
+       class="hidden border-t bg-white lg:hidden">
+
+    <div class="px-6 py-5 space-y-4 text-sm font-semibold">
+
+      <a href="../about.html" onclick="toggleMenu()" class="block">
+        About
+      </a>
+
+      <a href="../priorities.html" onclick="toggleMenu()" class="block">
+        Our policies
+      </a>
+
+      <a href="../team.html" onclick="toggleMenu()" class="block">
+        Our team
+      </a>
+
+      <a href="../news.html"
+         onclick="toggleMenu()"
+         class="block text-freedoms">
+        News
+      </a>
+
+      <a href="../contact.html" onclick="toggleMenu()" class="block">
+        Contact
+      </a>
+
+      <a href="../join.html"
+         onclick="toggleMenu()"
+         class="block bg-freedoms text-white text-center
+                px-5 py-3 rounded-md">
+        Join us
+      </a>
+
+    </div>
+
+  </div>
+
+</header>
+
+
+<!-- ========================================================= -->
+<!-- BREADCRUMB -->
+<!-- ========================================================= -->
+
+<div class="border-b border-gray-200 bg-gray-50">
+
+  <div class="max-w-7xl mx-auto px-6 py-4">
+
+    <div class="flex flex-wrap items-center gap-2
+                text-sm text-gray-500">
+
+      <a href="../index.html" class="hover:text-freedoms">
+        Home
+      </a>
+
+      <i data-feather="chevron-right" class="w-4 h-4"></i>
+
+      <a href="../news.html" class="hover:text-freedoms">
+        News
+      </a>
+
+      <i data-feather="chevron-right" class="w-4 h-4"></i>
+
+      <span class="text-gray-900 font-semibold">
+        Party
+      </span>
+
+    </div>
+
+  </div>
+
+</div>
+
+
+<!-- ========================================================= -->
+<!-- ARTICLE HEADER -->
+<!-- ========================================================= -->
+
+<main>
+
+  <article>
+
+    <header class="max-w-5xl mx-auto px-6 pt-16 md:pt-24">
+
+      <div class="max-w-4xl">
+
+        <div class="flex items-center gap-3 text-sm">
+
+          <span class="bg-red-50 text-freedoms
+                       px-3 py-1.5 font-bold uppercase
+                       tracking-wider">
+            Party
+          </span>
+
+          <span class="text-gray-500">
+            9 August 2026
+          </span>
+
+        </div>
+
+
+        <h1 class="serif text-5xl md:text-6xl lg:text-7xl
+                   font-bold leading-[0.98] mt-7">
+          Freedoms Party reveals
+          <span class="text-freedoms">
+            MMP list
+          </span>
+        </h1>
+
+
+        <p class="text-xl md:text-2xl text-gray-600
+                  leading-relaxed mt-7 max-w-3xl">
+          The Freedoms Party has unveiled the candidates
+          who will stand on its party list at the next
+          general election.
+        </p>
+
+
+        <div class="mt-9 flex items-center gap-4
+                    text-sm text-gray-500">
+
+          <div class="w-10 h-10 bg-freedoms
+                      flex items-center justify-center">
+
+            <span class="text-white font-black">
+              F
+            </span>
+
+          </div>
+
+          <div>
+
+            <div class="font-bold text-gray-900">
+              Freedoms Party
+            </div>
+
+            <div>
+              Party announcement
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </header>
+
+
+    <!-- ===================================================== -->
+    <!-- FEATURED BANNER -->
+    <!-- ===================================================== -->
+
+    <section class="max-w-7xl mx-auto px-6 mt-14 md:mt-20">
+
+      <div class="bg-freedoms text-white p-8 md:p-12">
+
+        <div class="grid md:grid-cols-[1fr_auto]
+                    gap-10 items-center">
+
+          <div>
+
+            <p class="uppercase tracking-[0.2em]
+                      text-red-100 text-sm font-bold">
+              General election
+            </p>
+
+            <h2 class="serif text-3xl md:text-4xl
+                       font-bold mt-3">
+              Meet the team seeking a place in Parliament.
+            </h2>
+
+            <p class="text-red-50 mt-4
+                      max-w-2xl leading-relaxed">
+              Our list brings together experienced
+              parliamentarians, community advocates and
+              new voices from across Square Country.
+            </p>
+
+          </div>
+
+
+          <div class="text-center md:text-right">
+
+            <div class="text-6xl md:text-7xl font-black">
+              23
+            </div>
+
+            <div class="uppercase tracking-widest
+                        text-red-100 text-sm font-bold">
+              candidates
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ===================================================== -->
+    <!-- ARTICLE BODY -->
+    <!-- ===================================================== -->
+
+    <section class="max-w-4xl mx-auto px-6 py-16">
+
+      <div class="prose prose-lg max-w-none">
+
+        <p class="text-xl leading-relaxed text-gray-700">
+          The Freedoms Party has today announced its
+          party list ahead of the next general election,
+          unveiling the team it says will fight for a fairer
+          and stronger Square Country.
+        </p>
+
+
+        <p class="mt-7 text-gray-700 leading-relaxed">
+          Party Leader David Campbell said the list reflected
+          the breadth of the movement and its determination
+          to offer voters a serious alternative to the
+          government.
+        </p>
+
+
+        <blockquote class="border-l-4 border-freedoms
+                            pl-6 my-10">
+
+          <p class="serif text-2xl md:text-3xl
+                    font-bold leading-relaxed">
+            "This is a team that understands the challenges
+            facing Square Country and is ready to get to work."
+          </p>
+
+          <footer class="mt-4 text-sm text-gray-500">
+            David Campbell, Leader of the Freedoms Party
+          </footer>
+
+        </blockquote>
+
+
+        <p class="text-gray-700 leading-relaxed">
+          The party says its candidates come from a wide range
+          of backgrounds and communities, bringing experience
+          in public service, business, education, community
+          organisations and advocacy.
+        </p>
+
+
+        <p class="mt-7 text-gray-700 leading-relaxed">
+          The announcement comes as parties across Square
+          Country begin preparing for the election campaign.
+          Freedoms is positioning itself as the country's
+          largest left-wing opposition party and has promised
+          to campaign on its programme for a fairer economy,
+          stronger public services and more affordable homes.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- ===================================================== -->
+    <!-- LIST -->
+    <!-- ===================================================== -->
+
+    <section class="bg-gray-50 py-16 md:py-20">
+
+      <div class="max-w-5xl mx-auto px-6">
+
+        <div class="mb-10">
+
+          <p class="uppercase tracking-[0.2em]
+                    text-freedoms text-sm font-bold mb-3">
+            The list
+          </p>
+
+          <h2 class="serif text-4xl md:text-5xl font-bold">
+            Freedoms Party list
+          </h2>
+
+          <p class="mt-4 text-gray-600">
+            The candidates announced by the Freedoms Party
+            for the next general election on October 17.
+          </p>
+
+        </div>
+
+
+        <div class="bg-white border border-gray-200">
+
+
+          <!-- CANDIDATE 1 -->
+
+          <div class="list-row flex items-center gap-6
+                      px-6 md:px-8 py-6 border-b
+                      border-gray-200">
+
+            <div class="w-12 text-3xl font-black
+                        text-freedoms">
+              1
+            </div>
+
+            <div class="flex-1">
+
+              <div class="font-bold text-xl">
+                David Campbell
+              </div>
+
+              <div class="text-gray-500 text-sm mt-1">
+                Leader of the Opposition · Candidate for Queenstown
+              </div>
+
+            </div>
+
+            <span class="hidden sm:block
+                         text-xs uppercase
+                         tracking-widest font-bold
+                         text-gray-400">
+              Leader
+            </span>
+
+          </div>
+
+
+          <!-- CANDIDATE 2 -->
+
+          <div class="list-row flex items-center gap-6
+                      px-6 md:px-8 py-6 border-b
+                      border-gray-200">
+
+            <div class="w-12 text-3xl font-black
+                        text-freedoms">
+              2
+            </div>
+
+            <div class="flex-1">
+
+              <div class="font-bold text-xl">
+                Lisa Bancroft
+              </div>
+
+              <div class="text-gray-500 text-sm mt-1">
+                Deputy Leader · List only
+              </div>
+
+            </div>
+
+            <span class="hidden sm:block
+                         text-xs uppercase
+                         tracking-widest font-bold
+                         text-gray-400">
+              Deputy Leader
+            </span>
+
+          </div>
+
+
+          <!-- CANDIDATE 3 -->
+
+          <div class="list-row flex items-center gap-6
+                      px-6 md:px-8 py-6 border-b
+                      border-gray-200">
+
+            <div class="w-12 text-3xl font-black
+                        text-freedoms">
+              3
+            </div>
+
+            <div class="flex-1">
+
+              <div class="font-bold text-xl">
+                Michael Bennett
+              </div>
+
+              <div class="text-gray-500 text-sm mt-1">
+                Immigration spokesperson · Candidate for Western Beaches
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <!-- CANDIDATE 4 -->
+
+          <div class="list-row flex items-center gap-6
+                      px-6 md:px-8 py-6 border-b
+                      border-gray-200">
+
+            <div class="w-12 text-3xl font-black
+                        text-freedoms">
+              4
+            </div>
+
+            <div class="flex-1">
+
+              <div class="font-bold text-xl">
+                David Thornfield
+              </div>
+
+              <div class="text-gray-500 text-sm mt-1">
+                Finance spokesperson · Candidate for Masterton Central
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <!-- CANDIDATE 5 -->
+
+          <div class="list-row flex items-center gap-6
+                      px-6 md:px-8 py-6 border-b
+                      border-gray-200">
+
+            <div class="w-12 text-3xl font-black
+                        text-freedoms">
+              5
+            </div>
+
+            <div class="flex-1">
+
+              <div class="font-bold text-xl">
+                James Hollaway
+              </div>
+
+              <div class="text-gray-500 text-sm mt-1">
+                Housing spokesperson · Candidate for Earlington
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <!-- CANDIDATE 6 -->
+
+          <div class="list-row flex items-center gap-6
+                      px-6 md:px-8 py-6 border-b
+                      border-gray-200">
+
+            <div class="w-12 text-3xl font-black
+                        text-freedoms">
+              6
+            </div>
+
+            <div class="flex-1">
+
+              <div class="font-bold text-xl">
+                Emily Harper
+              </div>
+
+              <div class="text-gray-500 text-sm mt-1">
+                Energy spokesperson · List only
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <!-- CANDIDATE 7 -->
+
+          <div class="list-row flex items-center gap-6
+                      px-6 md:px-8 py-6 border-b
+                      border-gray-200">
+
+            <div class="w-12 text-3xl font-black
+                        text-freedoms">
+              7
+            </div>
+
+            <div class="flex-1">
+
+              <div class="font-bold text-xl">
+                Thomas Reed
+              </div>
+
+              <div class="text-gray-500 text-sm mt-1">
+                Local government spokesperson · Candidate for Uma no machi
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <!-- CANDIDATE 8 -->
+
+          <div class="list-row flex items-center gap-6
+                      px-6 md:px-8 py-6 border-b
+                      border-gray-200">
+
+            <div class="w-12 text-3xl font-black
+                        text-freedoms">
+              8
+            </div>
+
+            <div class="flex-1">
+
+              <div class="font-bold text-xl">
+                Olivia Grant
+              </div>
+
+              <div class="text-gray-500 text-sm mt-1">
+                Environmental campaigner · Candidate for Surish Bridge 
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <!-- CANDIDATE 9 -->
+
+          <div class="list-row flex items-center gap-6
+                      px-6 md:px-8 py-6 border-b
+                      border-gray-200">
+
+            <div class="w-12 text-3xl font-black
+                        text-freedoms">
+              9
+            </div>
+
+            <div class="flex-1">
+
+              <div class="font-bold text-xl">
+                Daniel Brooks
+              </div>
+
+              <div class="text-gray-500 text-sm mt-1">
+                Transport & Infrastructure spokesperson · Candidate for Square City
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <!-- CANDIDATE 10 -->
+
+          <div class="list-row flex items-center gap-6
+                      px-6 md:px-8 py-6 border-b
+                      border-gray-200">
+
+            <div class="w-12 text-3xl font-black
+                        text-freedoms">
+              10
+            </div>
+
+            <div class="flex-1">
+
+              <div class="font-bold text-xl">
+                Hannah Cooper
+              </div>
+
+              <div class="text-gray-500 text-sm mt-1">
+                Candidate for Doncastle
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <!-- CANDIDATE 11 -->
+
+          <div class="list-row flex items-center gap-6
+                      px-6 md:px-8 py-6 border-b
+                      border-gray-200">
+
+            <div class="w-12 text-3xl font-black
+                        text-freedoms">
+              11
+            </div>
+
+            <div class="flex-1">
+
+              <div class="font-bold text-xl">
+                William Parker
+              </div>
+
+              <div class="text-gray-500 text-sm mt-1">
+               Agriculture spokesperson · Candidate for Masterton
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <!-- CANDIDATE 12 -->
+
+          <div class="list-row flex items-center gap-6
+                      px-6 md:px-8 py-6 border-b
+                      border-gray-200">
+
+            <div class="w-12 text-3xl font-black
+                        text-freedoms">
+              12
+            </div>
+
+            <div class="flex-1">
+
+              <div class="font-bold text-xl">
+                Anna Corfield
+              </div>
+
+              <div class="text-gray-500 text-sm mt-1">
+                Candidate for Cunningham
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <!-- CANDIDATE 13 -->
+
+          <div class="list-row flex items-center gap-6
+                      px-6 md:px-8 py-6">
+
+            <div class="w-12 text-3xl font-black
+                        text-freedoms">
+              13
+            </div>
+
+            <div class="flex-1">
+
+              <div class="font-bold text-xl">
+                Alexander Wright
+              </div>
+
+              <div class="text-gray-500 text-sm mt-1">
+                List only
+              </div>
+
+            </div>
+
+          </div>
+
+                    <!-- CANDIDATE 14 -->
+
+          <div class="list-row flex items-center gap-6
+                      px-6 md:px-8 py-6 border-b
+                      border-gray-200">
+
+            <div class="w-12 text-3xl font-black
+                        text-freedoms">
+              14
+            </div>
+
+            <div class="flex-1">
+
+              <div class="font-bold text-xl">
+                Amelia Richardson
+              </div>
+
+              <div class="text-gray-500 text-sm mt-1">
+               Candidate for Kingsford
+              </div>
+
+            </div>
+
+          </div>
+
+                    <!-- CANDIDATE 15 -->
+
+          <div class="list-row flex items-center gap-6
+                      px-6 md:px-8 py-6 border-b
+                      border-gray-200">
+
+            <div class="w-12 text-3xl font-black
+                        text-freedoms">
+              15
+            </div>
+
+            <div class="flex-1">
+
+              <div class="font-bold text-xl">
+                Arthur Bexley
+              </div>
+
+              <div class="text-gray-500 text-sm mt-1">
+               Foreign Affairs spokesperson · Candidate for New Dublin
+              </div>
+
+            </div>
+
+          </div>
+
+                    <!-- CANDIDATE 16 -->
+
+          <div class="list-row flex items-center gap-6
+                      px-6 md:px-8 py-6 border-b
+                      border-gray-200">
+
+            <div class="w-12 text-3xl font-black
+                        text-freedoms">
+              16
+            </div>
+
+            <div class="flex-1">
+
+              <div class="font-bold text-xl">
+                Jessica Warren
+              </div>
+
+              <div class="text-gray-500 text-sm mt-1">
+                List only
+              </div>
+
+            </div>
+
+          </div>
+
+                    <!-- CANDIDATE 17 -->
+
+          <div class="list-row flex items-center gap-6
+                      px-6 md:px-8 py-6 border-b
+                      border-gray-200">
+
+            <div class="w-12 text-3xl font-black
+                        text-freedoms">
+              17
+            </div>
+
+            <div class="flex-1">
+
+              <div class="font-bold text-xl">
+                Daniel Morgan
+              </div>
+
+              <div class="text-gray-500 text-sm mt-1">
+                Candidate for Wellingborough
+              </div>
+
+            </div>
+
+          </div>
+
+                    <!-- CANDIDATE 18 -->
+
+          <div class="list-row flex items-center gap-6
+                      px-6 md:px-8 py-6 border-b
+                      border-gray-200">
+
+            <div class="w-12 text-3xl font-black
+                        text-freedoms">
+              18
+            </div>
+
+            <div class="flex-1">
+
+              <div class="font-bold text-xl">
+                Chloe Anderson
+              </div>
+
+              <div class="text-gray-500 text-sm mt-1">
+                List only
+              </div>
+
+            </div>
+
+          </div>
+
+                    <!-- CANDIDATE 19 -->
+
+          <div class="list-row flex items-center gap-6
+                      px-6 md:px-8 py-6 border-b
+                      border-gray-200">
+
+            <div class="w-12 text-3xl font-black
+                        text-freedoms">
+              19
+            </div>
+
+            <div class="flex-1">
+
+              <div class="font-bold text-xl">
+                Ryan Fletcher
+              </div>
+
+              <div class="text-gray-500 text-sm mt-1">
+                List only
+              </div>
+
+            </div>
+
+          </div>
+
+                    <!-- CANDIDATE 20 -->
+
+          <div class="list-row flex items-center gap-6
+                      px-6 md:px-8 py-6 border-b
+                      border-gray-200">
+
+            <div class="w-12 text-3xl font-black
+                        text-freedoms">
+              20
+            </div>
+
+            <div class="flex-1">
+
+              <div class="font-bold text-xl">
+                Benjamin Clarke
+              </div>
+
+              <div class="text-gray-500 text-sm mt-1">
+                List only
+              </div>
+
+            </div>
+
+          </div>
+
+                    <!-- CANDIDATE 21 -->
+
+          <div class="list-row flex items-center gap-6
+                      px-6 md:px-8 py-6 border-b
+                      border-gray-200">
+
+            <div class="w-12 text-3xl font-black
+                        text-freedoms">
+              21
+            </div>
+
+            <div class="flex-1">
+
+              <div class="font-bold text-xl">
+                Nicholas Fraser
+              </div>
+
+              <div class="text-gray-500 text-sm mt-1">
+                List only
+              </div>
+
+            </div>
+
+          </div>
+
+                    <!-- CANDIDATE 22 -->
+
+          <div class="list-row flex items-center gap-6
+                      px-6 md:px-8 py-6 border-b
+                      border-gray-200">
+
+            <div class="w-12 text-3xl font-black
+                        text-freedoms">
+              22
+            </div>
+
+            <div class="flex-1">
+
+              <div class="font-bold text-xl">
+                Ethan Marshall
+              </div>
+
+              <div class="text-gray-500 text-sm mt-1">
+                List only
+              </div>
+
+            </div>
+
+          </div>
+
+                    <!-- CANDIDATE 23 -->
+
+          <div class="list-row flex items-center gap-6
+                      px-6 md:px-8 py-6 border-b
+                      border-gray-200">
+
+            <div class="w-12 text-3xl font-black
+                        text-freedoms">
+              23
+            </div>
+
+            <div class="flex-1">
+
+              <div class="font-bold text-xl">
+                Grace Sullivan
+              </div>
+
+              <div class="text-gray-500 text-sm mt-1">
+                List only
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ===================================================== -->
+    <!-- WHAT THIS MEANS -->
+    <!-- ===================================================== -->
+
+    <section class="py-20 md:py-24">
+
+      <div class="max-w-4xl mx-auto px-6">
+
+        <p class="uppercase tracking-[0.2em]
+                  text-freedoms text-sm font-bold mb-4">
+          Looking ahead
+        </p>
+
+        <h2 class="serif text-4xl md:text-5xl font-bold">
+          A team ready to fight
+          for Square Country.
+        </h2>
+
+        <div class="mt-8 text-gray-600 text-lg
+                    leading-relaxed space-y-6">
+
+          <p>
+            The Freedoms Party says its candidates will
+            campaign on a programme focused on improving
+            living standards, strengthening public services
+            and making the economy work for more people.
+          </p>
+
+          <p>
+            The party will now take its campaign to
+            communities across Square Country, with
+            candidates expected to campaign alongside
+            local electorate teams in the months ahead.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ===================================================== -->
+    <!-- CTA -->
+    <!-- ===================================================== -->
+
+    <section class="bg-freedoms text-white py-20">
+
+      <div class="max-w-5xl mx-auto px-6 text-center">
+
+        <p class="uppercase tracking-[0.25em]
+                  text-red-100 text-sm font-bold">
+          Be part of the campaign
+        </p>
+
+        <h2 class="serif text-4xl md:text-6xl
+                   font-bold mt-4">
+          Help us take this team
+          to Parliament.
+        </h2>
+
+        <p class="max-w-2xl mx-auto mt-6
+                  text-red-50 text-lg leading-relaxed">
+          Join the Freedoms movement and help us campaign
+          for a fairer, stronger and more hopeful
+          Square Country.
+        </p>
+
+        <div class="mt-9 flex flex-col sm:flex-row
+                    justify-center gap-4">
+
+          <a href="../join.html"
+             class="bg-white text-freedoms
+                    px-8 py-4 rounded-md font-bold
+                    hover:bg-red-50 transition">
+            Join the Freedoms Party
+          </a>
+
+          <a href="../team.html"
+             class="border border-white/50
+                    px-8 py-4 rounded-md font-bold
+                    hover:bg-white/10 transition">
+            Meet our team
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </article>
+
+</main>
+
+
+<!-- ========================================================= -->
+<!-- FOOTER -->
+<!-- ========================================================= -->
+
+<footer class="bg-white border-t border-gray-200">
+
+  <div class="max-w-7xl mx-auto px-6 py-14">
+
+    <div class="grid md:grid-cols-3 gap-10">
+
+      <div>
+
+        <div class="text-freedoms font-black text-2xl">
+          FREEDOMS
+        </div>
+
+        <p class="text-gray-500 mt-2">
+          The opposition for Square Country.
+        </p>
+
+      </div>
+
+
+      <div>
+
+        <h3 class="font-bold mb-4">
+          Get involved
+        </h3>
+
+        <div class="space-y-2 text-gray-600 text-sm">
+
+          <a href="join.html"
+             class="block hover:text-freedoms">
+            Join us
+          </a>
+
+          <a href="#"
+             class="block hover:text-freedoms">
+            Volunteer
+          </a>
+
+          <a href="#"
+             class="block hover:text-freedoms">
+            Donate
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <div>
+
+        <h3 class="font-bold mb-4">
+          Follow us
+        </h3>
+
+        <div class="flex gap-3">
+
+          <a href="#"
+             class="w-10 h-10 border border-gray-300
+                    flex items-center justify-center
+                    hover:border-freedoms hover:text-freedoms">
+            <i data-feather="facebook"></i>
+          </a>
+
+          <a href="#"
+             class="w-10 h-10 border border-gray-300
+                    flex items-center justify-center
+                    hover:border-freedoms hover:text-freedoms">
+            <i data-feather="twitter"></i>
+          </a>
+
+          <a href="#"
+             class="w-10 h-10 border border-gray-300
+                    flex items-center justify-center
+                    hover:border-freedoms hover:text-freedoms">
+            <i data-feather="instagram"></i>
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <div class="border-t border-gray-200">
+
+    <div class="max-w-7xl mx-auto px-6 py-7">
+
+      <div class="flex flex-col md:flex-row
+                  justify-between gap-5 text-sm text-gray-500">
+
+        <p>
+          © 2026 Freedoms Party of Square Country
+        </p>
+
+        <div class="flex flex-wrap gap-6">
+
+          <a href="#" class="hover:text-freedoms">
+            Privacy
+          </a>
+
+          <a href="contact.html" class="hover:text-freedoms">
+            Contact
+          </a>
+
+          <a href="#" class="hover:text-freedoms">
+            Accessibility
+          </a>
+
+          <span>
+            Authorised by the Freedoms Party
+          </span>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</footer>
+
+
+<script>
+
+  feather.replace();
+
+  function toggleMenu() {
+    const menu = document.getElementById("mobileMenu");
+    menu.classList.toggle("hidden");
+  }
+
+</script>
+
+</body>
+</html>
+```
