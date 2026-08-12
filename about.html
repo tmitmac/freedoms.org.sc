@@ -1,0 +1,1011 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>About the Freedoms Party | Freedoms Party of Square Country</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/feather-icons"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            freedoms: '#C8102E',
+            freedomsDark: '#9F0C24'
+          },
+          fontFamily: {
+            serif: ['Georgia', 'serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    .nav-link {
+      position: relative;
+    }
+
+    .nav-link::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -7px;
+      width: 0;
+      height: 2px;
+      background: #C8102E;
+      transition: width 0.25s ease;
+    }
+
+    .nav-link:hover::after,
+    .nav-link.active::after {
+      width: 100%;
+    }
+
+    .timeline-line {
+      position: absolute;
+      left: 23px;
+      top: 50px;
+      bottom: -30px;
+      width: 2px;
+      background: #e5e7eb;
+    }
+
+    .timeline-item:last-child .timeline-line {
+      display: none;
+    }
+  </style>
+</head>
+
+<body class="bg-white text-gray-900">
+
+
+<!-- ========================================================= -->
+<!-- NAVIGATION -->
+<!-- ========================================================= -->
+
+<header class="border-b border-gray-100 bg-white">
+
+  <div class="max-w-7xl mx-auto px-6">
+
+    <div class="h-20 flex items-center justify-between">
+
+      <a href="index.html" class="flex items-center gap-3">
+
+        <div class="w-12 h-12 bg-freedoms flex items-center justify-center">
+          <span class="text-white font-black text-2xl">F</span>
+        </div>
+
+        <div class="leading-tight">
+
+          <div class="font-black text-xl tracking-tight">
+            FREEDOMS
+          </div>
+
+          <div class="text-xs tracking-[0.22em] text-gray-500 font-semibold">
+            SQUARE COUNTRY
+          </div>
+
+        </div>
+
+      </a>
+
+
+      <nav class="hidden lg:flex items-center gap-9 text-sm font-semibold">
+
+        <a href="about.html"
+           class="nav-link active text-freedoms">
+          About
+        </a>
+
+        <a href="policies.html" class="nav-link">
+          Our policies
+        </a>
+
+        <a href="team.html" class="nav-link">
+          Our team
+        </a>
+
+        <a href="news.html" class="nav-link">
+          News
+        </a>
+
+        <a href="contact.html" class="nav-link">
+          Contact
+        </a>
+
+        <a href="join.html"
+           class="bg-freedoms text-white px-6 py-3 rounded-md
+                  hover:bg-freedomsDark transition">
+          Join us
+        </a>
+
+      </nav>
+
+
+      <button
+        onclick="toggleMenu()"
+        class="lg:hidden p-2"
+        aria-label="Open menu">
+
+        <i data-feather="menu"></i>
+
+      </button>
+
+    </div>
+
+  </div>
+
+
+  <div id="mobileMenu"
+       class="hidden border-t bg-white lg:hidden">
+
+    <div class="px-6 py-5 space-y-4 text-sm font-semibold">
+
+      <a href="about.html"
+         onclick="toggleMenu()"
+         class="block text-freedoms">
+        About
+      </a>
+
+      <a href="policies.html"
+         onclick="toggleMenu()"
+         class="block">
+        Our policies
+      </a>
+
+      <a href="team.html"
+         onclick="toggleMenu()"
+         class="block">
+        Our team
+      </a>
+
+      <a href="news.html"
+         onclick="toggleMenu()"
+         class="block">
+        News
+      </a>
+
+      <a href="contact.html"
+         onclick="toggleMenu()"
+         class="block">
+        Contact
+      </a>
+
+      <a href="join.html"
+         onclick="toggleMenu()"
+         class="block bg-freedoms text-white
+                text-center px-5 py-3 rounded-md">
+        Join us
+      </a>
+
+    </div>
+
+  </div>
+
+</header>
+
+
+<!-- ========================================================= -->
+<!-- BREADCRUMB -->
+<!-- ========================================================= -->
+
+<div class="border-b border-gray-200 bg-gray-50">
+
+  <div class="max-w-7xl mx-auto px-6 py-4">
+
+    <div class="flex items-center gap-2
+                text-sm text-gray-500">
+
+      <a href="index.html" class="hover:text-freedoms">
+        Home
+      </a>
+
+      <i data-feather="chevron-right" class="w-4 h-4"></i>
+
+      <span class="font-semibold text-gray-900">
+        About
+      </span>
+
+    </div>
+
+  </div>
+
+</div>
+
+
+<!-- ========================================================= -->
+<!-- HERO -->
+<!-- ========================================================= -->
+
+<section class="bg-freedoms text-white">
+
+  <div class="max-w-7xl mx-auto px-6 py-20 md:py-28">
+
+    <div class="max-w-5xl">
+
+      <p class="uppercase tracking-[0.3em]
+                text-sm font-bold text-red-100 mb-6">
+        Our history
+      </p>
+
+      <h1 class="serif text-5xl md:text-7xl lg:text-8xl
+                 font-bold leading-[0.92]">
+        A movement shaped
+        <span class="block">by Square Country.</span>
+      </h1>
+
+      <p class="mt-8 text-lg md:text-xl
+                text-red-50 max-w-3xl leading-relaxed">
+        For generations, the Freedoms Party has stood for
+        a fairer society, a stronger economy and a government
+        that works for ordinary people.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ========================================================= -->
+<!-- INTRO -->
+<!-- ========================================================= -->
+
+<section class="py-20 md:py-28">
+
+  <div class="max-w-7xl mx-auto px-6">
+
+    <div class="grid lg:grid-cols-2 gap-16 items-start">
+
+      <div>
+
+        <p class="uppercase tracking-[0.2em]
+                  text-freedoms text-sm font-bold mb-4">
+          The Freedoms Party
+        </p>
+
+        <h2 class="serif text-4xl md:text-5xl
+                   font-bold leading-tight">
+          A long tradition of
+          progressive politics.
+        </h2>
+
+      </div>
+
+
+      <div class="text-gray-600 text-lg leading-relaxed space-y-6">
+
+        <p>
+          The Freedoms Party is one of Square Country's
+          major political movements. Throughout its history,
+          the party has evolved alongside the country it
+          represents.
+        </p>
+
+        <p>
+          From its early years as a reform movement to its
+          modern role as the largest party of opposition,
+          Freedoms has sought to give working people,
+          families and communities a stronger voice in
+          government.
+        </p>
+
+        <p>
+          While the issues facing Square Country have
+          changed, the party's central belief has remained:
+          government should improve people's lives and
+          opportunity should not depend on wealth or
+          circumstance.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ========================================================= -->
+<!-- AT A GLANCE -->
+<!-- ========================================================= -->
+
+<section class="bg-gray-50 py-16">
+
+  <div class="max-w-7xl mx-auto px-6">
+
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-5">
+
+
+      <div class="bg-white border border-gray-200 p-7">
+
+        <div class="text-4xl md:text-5xl
+                    font-black text-freedoms">
+          6
+        </div>
+
+        <p class="mt-2 text-gray-600">
+          MPs in Parliament
+        </p>
+
+      </div>
+
+
+      <div class="bg-white border border-gray-200 p-7">
+
+        <div class="text-4xl md:text-5xl
+                    font-black text-freedoms">
+          13
+        </div>
+
+        <p class="mt-2 text-gray-600">
+          MMP candidates
+        </p>
+
+      </div>
+
+
+      <div class="bg-white border border-gray-200 p-7">
+
+        <div class="text-4xl md:text-5xl
+                    font-black text-freedoms">
+          1
+        </div>
+
+        <p class="mt-2 text-gray-600">
+          Parliamentary opposition
+        </p>
+
+      </div>
+
+
+      <div class="bg-white border border-gray-200 p-7">
+
+        <div class="text-4xl md:text-5xl
+                    font-black text-freedoms">
+          2026
+        </div>
+
+        <p class="mt-2 text-gray-600">
+          Our current chapter
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ========================================================= -->
+<!-- HISTORY TIMELINE -->
+<!-- ========================================================= -->
+
+<section class="py-20 md:py-28">
+
+  <div class="max-w-5xl mx-auto px-6">
+
+    <div class="max-w-3xl mb-16">
+
+      <p class="uppercase tracking-[0.2em]
+                text-freedoms text-sm font-bold mb-3">
+        Our history
+      </p>
+
+      <h2 class="serif text-4xl md:text-5xl font-bold">
+        The Freedoms story
+      </h2>
+
+      <p class="mt-5 text-gray-600 text-lg leading-relaxed">
+        The party's history is a story of changing times,
+        political debate and a continuing commitment to
+        giving people a voice.
+      </p>
+
+    </div>
+
+
+    <div class="space-y-0">
+
+
+      <!-- 01 -->
+
+      <div class="timeline-item relative flex gap-7 pb-16">
+
+        <div class="timeline-line"></div>
+
+        <div class="relative z-10 shrink-0 w-12 h-12
+                    bg-freedoms text-white
+                    flex items-center justify-center
+                    font-black">
+          01
+        </div>
+
+        <div class="pt-1">
+
+          <p class="text-freedoms font-black
+                    tracking-widest text-sm">
+            THE BEGINNING
+          </p>
+
+          <h3 class="serif text-3xl font-bold mt-2">
+            A party for reform
+          </h3>
+
+          <p class="mt-4 text-gray-600
+                    leading-relaxed text-lg">
+            The Freedoms movement emerged from a growing
+            demand for political reform and a government
+            more responsive to the needs of ordinary
+            Square Country citizens. Its early supporters
+            brought together workers, reformers and
+            community leaders.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <!-- 02 -->
+
+      <div class="timeline-item relative flex gap-7 pb-16">
+
+        <div class="timeline-line"></div>
+
+        <div class="relative z-10 shrink-0 w-12 h-12
+                    bg-freedoms text-white
+                    flex items-center justify-center
+                    font-black">
+          02
+        </div>
+
+        <div class="pt-1">
+
+          <p class="text-freedoms font-black
+                    tracking-widest text-sm">
+            GROWING INFLUENCE
+          </p>
+
+          <h3 class="serif text-3xl font-bold mt-2">
+            Finding a national voice
+          </h3>
+
+          <p class="mt-4 text-gray-600
+                    leading-relaxed text-lg">
+            As the party grew, Freedoms expanded its
+            organisation beyond its traditional strongholds.
+            Candidates began contesting electorates across
+            Square Country, turning the party into a
+            genuinely national political force.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <!-- 03 -->
+
+      <div class="timeline-item relative flex gap-7 pb-16">
+
+        <div class="timeline-line"></div>
+
+        <div class="relative z-10 shrink-0 w-12 h-12
+                    bg-freedoms text-white
+                    flex items-center justify-center
+                    font-black">
+          03
+        </div>
+
+        <div class="pt-1">
+
+          <p class="text-freedoms font-black
+                    tracking-widest text-sm">
+            GOVERNMENT
+          </p>
+
+          <h3 class="serif text-3xl font-bold mt-2">
+            From opposition to office
+          </h3>
+
+          <p class="mt-4 text-gray-600
+                    leading-relaxed text-lg">
+            Freedoms went on to form governments during
+            periods when voters turned to the party for
+            change. Its time in office helped shape many
+            of the institutions and public services that
+            remain important to Square Country today.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <!-- 04 -->
+
+      <div class="timeline-item relative flex gap-7 pb-16">
+
+        <div class="timeline-line"></div>
+
+        <div class="relative z-10 shrink-0 w-12 h-12
+                    bg-freedoms text-white
+                    flex items-center justify-center
+                    font-black">
+          04
+        </div>
+
+        <div class="pt-1">
+
+          <p class="text-freedoms font-black
+                    tracking-widest text-sm">
+            MODERN FREEDOMS
+          </p>
+
+          <h3 class="serif text-3xl font-bold mt-2">
+            A new generation
+          </h3>
+
+          <p class="mt-4 text-gray-600
+                    leading-relaxed text-lg">
+            A new generation of Freedoms MPs and activists
+            has brought fresh ideas to the movement. The
+            party has renewed its focus on economic fairness,
+            public services, housing, communities and the
+            environment.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <!-- 05 -->
+
+      <div class="timeline-item relative flex gap-7">
+
+        <div class="relative z-10 shrink-0 w-12 h-12
+                    bg-freedoms text-white
+                    flex items-center justify-center
+                    font-black">
+          05
+        </div>
+
+        <div class="pt-1">
+
+          <p class="text-freedoms font-black
+                    tracking-widest text-sm">
+            TODAY
+          </p>
+
+          <h3 class="serif text-3xl font-bold mt-2">
+            The opposition for Square Country
+          </h3>
+
+          <p class="mt-4 text-gray-600
+                    leading-relaxed text-lg">
+            Today, Freedoms is the largest left-wing
+            opposition party in Parliament. With six MPs
+            and a growing nationwide organisation, we are
+            preparing for the next chapter of our history.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ========================================================= -->
+<!-- LEADERSHIP -->
+<!-- ========================================================= -->
+
+<section class="bg-gray-50 py-20 md:py-28">
+
+  <div class="max-w-7xl mx-auto px-6">
+
+    <div class="grid lg:grid-cols-2 gap-16 items-center">
+
+
+      <div>
+
+        <p class="uppercase tracking-[0.2em]
+                  text-freedoms text-sm font-bold mb-4">
+          Leadership
+        </p>
+
+        <h2 class="serif text-4xl md:text-5xl
+                   font-bold leading-tight">
+          Leading the party
+          into its next chapter.
+        </h2>
+
+        <p class="mt-6 text-gray-600 text-lg
+                  leading-relaxed">
+          The Freedoms Party is led by a parliamentary team
+          committed to rebuilding trust in politics and
+          offering Square Country a credible alternative
+          government.
+        </p>
+
+        <a href="team.html"
+           class="inline-flex items-center gap-2
+                  mt-7 text-freedoms font-bold
+                  underline underline-offset-4">
+
+          Meet the Freedoms team
+
+          <i data-feather="arrow-right"
+             class="w-4 h-4"></i>
+
+        </a>
+
+      </div>
+
+
+      <div class="grid sm:grid-cols-2 gap-5">
+
+
+        <div class="bg-white border border-gray-200 p-7">
+
+          <div class="w-16 h-16 bg-gray-100
+                      flex items-center justify-center
+                      mb-6">
+
+            <i data-feather="user"
+               class="w-8 h-8 text-gray-400"></i>
+
+          </div>
+
+          <p class="text-freedoms uppercase
+                    text-xs font-bold tracking-widest">
+            Leader
+          </p>
+
+          <h3 class="serif text-2xl font-bold mt-2">
+            David Campbell
+          </h3>
+
+          <p class="text-gray-600 mt-3">
+            Leader of the Freedoms Party and Leader of
+            the Opposition.
+          </p>
+
+        </div>
+
+
+        <div class="bg-white border border-gray-200 p-7">
+
+          <div class="w-16 h-16 bg-gray-100
+                      flex items-center justify-center
+                      mb-6">
+
+            <i data-feather="user"
+               class="w-8 h-8 text-gray-400"></i>
+
+          </div>
+
+          <p class="text-freedoms uppercase
+                    text-xs font-bold tracking-widest">
+            Deputy Leader
+          </p>
+
+          <h3 class="serif text-2xl font-bold mt-2">
+            Lisa Bancroft
+          </h3>
+
+          <p class="text-gray-600 mt-3">
+            Deputy Leader of the Freedoms Party and a
+            senior member of the parliamentary team.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ========================================================= -->
+<!-- WHAT HAS STAYED THE SAME -->
+<!-- ========================================================= -->
+
+<section class="py-20 md:py-28">
+
+  <div class="max-w-7xl mx-auto px-6">
+
+    <div class="max-w-3xl mb-14">
+
+      <p class="uppercase tracking-[0.2em]
+                text-freedoms text-sm font-bold mb-3">
+        Then and now
+      </p>
+
+      <h2 class="serif text-4xl md:text-5xl font-bold">
+        What has never changed
+      </h2>
+
+    </div>
+
+
+    <div class="grid md:grid-cols-3 gap-6">
+
+
+      <div class="border border-gray-200 p-8">
+
+        <div class="text-freedoms mb-5">
+          <i data-feather="users"
+             class="w-8 h-8"></i>
+        </div>
+
+        <h3 class="serif text-2xl font-bold">
+          People first
+        </h3>
+
+        <p class="text-gray-600 mt-4 leading-relaxed">
+          Politics should improve the lives of the people
+          it serves.
+        </p>
+
+      </div>
+
+
+      <div class="border border-gray-200 p-8">
+
+        <div class="text-freedoms mb-5">
+          <i data-feather="home"
+             class="w-8 h-8"></i>
+        </div>
+
+        <h3 class="serif text-2xl font-bold">
+          Strong communities
+        </h3>
+
+        <p class="text-gray-600 mt-4 leading-relaxed">
+          Every community deserves the opportunity to
+          thrive and have its voice heard.
+        </p>
+
+      </div>
+
+
+      <div class="border border-gray-200 p-8">
+
+        <div class="text-freedoms mb-5">
+          <i data-feather="arrow-up-right"
+             class="w-8 h-8"></i>
+        </div>
+
+        <h3 class="serif text-2xl font-bold">
+          A better future
+        </h3>
+
+        <p class="text-gray-600 mt-4 leading-relaxed">
+          We believe Square Country can always do better
+          and that progress is worth fighting for.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ========================================================= -->
+<!-- CTA -->
+<!-- ========================================================= -->
+
+<section class="bg-freedoms text-white py-20 md:py-24">
+
+  <div class="max-w-5xl mx-auto px-6 text-center">
+
+    <p class="uppercase tracking-[0.25em]
+              text-red-100 text-sm font-bold">
+      The next chapter
+    </p>
+
+    <h2 class="serif text-4xl md:text-6xl
+               font-bold mt-4">
+      Our history isn't finished.
+    </h2>
+
+    <p class="max-w-2xl mx-auto mt-6
+              text-red-50 text-lg leading-relaxed">
+      Join the Freedoms Party and help write the next
+      chapter of our movement — and the future of
+      Square Country.
+    </p>
+
+    <div class="mt-9 flex flex-col sm:flex-row
+                justify-center gap-4">
+
+      <a href="join.html"
+         class="bg-white text-freedoms px-8 py-4
+                rounded-md font-bold
+                hover:bg-red-50 transition">
+        Join the Freedoms Party
+      </a>
+
+      <a href="team.html"
+         class="border border-white/50 px-8 py-4
+                rounded-md font-bold
+                hover:bg-white/10 transition">
+        Meet our team
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ========================================================= -->
+<!-- FOOTER -->
+<!-- ========================================================= -->
+
+<footer class="bg-white border-t border-gray-200">
+
+  <div class="max-w-7xl mx-auto px-6 py-14">
+
+    <div class="grid md:grid-cols-3 gap-10">
+
+      <div>
+
+        <div class="text-freedoms font-black text-2xl">
+          FREEDOMS
+        </div>
+
+        <p class="text-gray-500 mt-2">
+          The opposition for Square Country.
+        </p>
+
+      </div>
+
+
+      <div>
+
+        <h3 class="font-bold mb-4">
+          Get involved
+        </h3>
+
+        <div class="space-y-2 text-gray-600 text-sm">
+
+          <a href="join.html"
+             class="block hover:text-freedoms">
+            Join us
+          </a>
+
+          <a href="#"
+             class="block hover:text-freedoms">
+            Volunteer
+          </a>
+
+          <a href="#"
+             class="block hover:text-freedoms">
+            Donate
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <div>
+
+        <h3 class="font-bold mb-4">
+          Follow us
+        </h3>
+
+        <div class="flex gap-3">
+
+          <a href="#"
+             class="w-10 h-10 border border-gray-300
+                    flex items-center justify-center
+                    hover:border-freedoms hover:text-freedoms">
+            <i data-feather="facebook"></i>
+          </a>
+
+          <a href="#"
+             class="w-10 h-10 border border-gray-300
+                    flex items-center justify-center
+                    hover:border-freedoms hover:text-freedoms">
+            <i data-feather="twitter"></i>
+          </a>
+
+          <a href="#"
+             class="w-10 h-10 border border-gray-300
+                    flex items-center justify-center
+                    hover:border-freedoms hover:text-freedoms">
+            <i data-feather="instagram"></i>
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <div class="border-t border-gray-200">
+
+    <div class="max-w-7xl mx-auto px-6 py-7">
+
+      <div class="flex flex-col md:flex-row
+                  justify-between gap-5 text-sm
+                  text-gray-500">
+
+        <p>
+          © 2026 Freedoms Party of Square Country
+        </p>
+
+        <div class="flex flex-wrap gap-6">
+
+          <a href="#" class="hover:text-freedoms">
+            Privacy
+          </a>
+
+          <a href="contact.html" class="hover:text-freedoms">
+            Contact
+          </a>
+
+          <a href="#" class="hover:text-freedoms">
+            Accessibility
+          </a>
+
+          <span>
+            Authorised by the Freedoms Party
+          </span>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</footer>
+
+
+<script>
+
+  feather.replace();
+
+  function toggleMenu() {
+    const menu = document.getElementById("mobileMenu");
+    menu.classList.toggle("hidden");
+  }
+
+</script>
+
+</body>
+</html>
